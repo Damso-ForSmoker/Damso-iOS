@@ -10,12 +10,15 @@
 		7C7EA1298971C6508DBBC2CE /* Pods_Damso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC41CC4BF6B184B7B5B646D5 /* Pods_Damso.framework */; };
 		DE123C2A296C39AC00B7149B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE123C29296C39AC00B7149B /* AppDelegate.swift */; };
 		DE123C2C296C39AC00B7149B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE123C2B296C39AC00B7149B /* SceneDelegate.swift */; };
-		DE123C2E296C39AC00B7149B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE123C2D296C39AC00B7149B /* ViewController.swift */; };
 		DE123C33296C39AE00B7149B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE123C32296C39AE00B7149B /* Assets.xcassets */; };
 		DE123C36296C39AE00B7149B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE123C34296C39AE00B7149B /* LaunchScreen.storyboard */; };
 		DE123C3F296C406500B7149B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DE123C3E296C406500B7149B /* SnapKit */; };
 		DE123C42296C40B400B7149B /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = DE123C41296C40B400B7149B /* Then */; };
 		DE123C45296C40F700B7149B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DE123C44296C40F700B7149B /* Alamofire */; };
+		DE123C4F296D743C00B7149B /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE123C4E296D743C00B7149B /* BaseVC.swift */; };
+		DE123C51296D746300B7149B /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE123C50296D746300B7149B /* BaseView.swift */; };
+		DEA95B0D2976A38900AE8D0C /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B0C2976A38900AE8D0C /* ReportView.swift */; };
+		DEA95B122976A75B00AE8D0C /* ReportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B112976A75B00AE8D0C /* ReportVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +27,13 @@
 		DE123C26296C39AC00B7149B /* Damso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Damso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE123C29296C39AC00B7149B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE123C2B296C39AC00B7149B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DE123C2D296C39AC00B7149B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DE123C32296C39AE00B7149B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE123C35296C39AE00B7149B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE123C37296C39AE00B7149B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE123C4E296D743C00B7149B /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		DE123C50296D746300B7149B /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		DEA95B0C2976A38900AE8D0C /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
+		DEA95B112976A75B00AE8D0C /* ReportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportVC.swift; sourceTree = "<group>"; };
 		FC41CC4BF6B184B7B5B646D5 /* Pods_Damso.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Damso.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -52,7 +58,6 @@
 				DB7F394FDC0E35B9274B56E2 /* Pods-Damso.debug.xcconfig */,
 				5255AD62BEE5A9637A7D0115 /* Pods-Damso.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -85,14 +90,73 @@
 		DE123C28296C39AC00B7149B /* Damso */ = {
 			isa = PBXGroup;
 			children = (
-				DE123C29296C39AC00B7149B /* AppDelegate.swift */,
-				DE123C2B296C39AC00B7149B /* SceneDelegate.swift */,
-				DE123C2D296C39AC00B7149B /* ViewController.swift */,
-				DE123C32296C39AE00B7149B /* Assets.xcassets */,
-				DE123C34296C39AE00B7149B /* LaunchScreen.storyboard */,
+				DE123C46296D6B5200B7149B /* App */,
+				DE123C47296D6B6400B7149B /* Global */,
+				DE123C48296D6B7A00B7149B /* Presentation */,
 				DE123C37296C39AE00B7149B /* Info.plist */,
 			);
 			path = Damso;
+			sourceTree = "<group>";
+		};
+		DE123C46296D6B5200B7149B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DE123C29296C39AC00B7149B /* AppDelegate.swift */,
+				DE123C2B296C39AC00B7149B /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DE123C47296D6B6400B7149B /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				DE123C4A296D6BD300B7149B /* Support */,
+				DE123C49296D6B8C00B7149B /* Resources */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		DE123C48296D6B7A00B7149B /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				DEA95B0E2976A3D200AE8D0C /* ReportView */,
+				DE123C4B296D738E00B7149B /* Base */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		DE123C49296D6B8C00B7149B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DE123C32296C39AE00B7149B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DE123C4A296D6BD300B7149B /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				DE123C34296C39AE00B7149B /* LaunchScreen.storyboard */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		DE123C4B296D738E00B7149B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DE123C4E296D743C00B7149B /* BaseVC.swift */,
+				DE123C50296D746300B7149B /* BaseView.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DEA95B0E2976A3D200AE8D0C /* ReportView */ = {
+			isa = PBXGroup;
+			children = (
+				DEA95B0C2976A38900AE8D0C /* ReportView.swift */,
+				DEA95B112976A75B00AE8D0C /* ReportVC.swift */,
+			);
+			path = ReportView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,6 +170,7 @@
 				DE123C22296C39AC00B7149B /* Sources */,
 				DE123C23296C39AC00B7149B /* Frameworks */,
 				DE123C24296C39AC00B7149B /* Resources */,
+				F821C6B7D9397DF7E0F5725E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,9 +211,9 @@
 			);
 			mainGroup = DE123C1D296C39AC00B7149B;
 			packageReferences = (
-				DE123C3D296C406500B7149B /* XCRemoteSwiftPackageReference "SnapKit.git" */,
+				DE123C3D296C406500B7149B /* XCRemoteSwiftPackageReference "SnapKit" */,
 				DE123C40296C40B400B7149B /* XCRemoteSwiftPackageReference "Then" */,
-				DE123C43296C40F700B7149B /* XCRemoteSwiftPackageReference "Alamofire.git" */,
+				DE123C43296C40F700B7149B /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = DE123C27296C39AC00B7149B /* Products */;
 			projectDirPath = "";
@@ -172,6 +237,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		F821C6B7D9397DF7E0F5725E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Damso/Pods-Damso-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Damso/Pods-Damso-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Damso/Pods-Damso-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FAB7995D605AB4F1F437093C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -201,9 +283,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE123C2E296C39AC00B7149B /* ViewController.swift in Sources */,
 				DE123C2A296C39AC00B7149B /* AppDelegate.swift in Sources */,
+				DE123C51296D746300B7149B /* BaseView.swift in Sources */,
 				DE123C2C296C39AC00B7149B /* SceneDelegate.swift in Sources */,
+				DEA95B0D2976A38900AE8D0C /* ReportView.swift in Sources */,
+				DEA95B122976A75B00AE8D0C /* ReportVC.swift in Sources */,
+				DE123C4F296D743C00B7149B /* BaseVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,7 +502,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DE123C3D296C406500B7149B /* XCRemoteSwiftPackageReference "SnapKit.git" */ = {
+		DE123C3D296C406500B7149B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -433,7 +518,7 @@
 				minimumVersion = 3.0.0;
 			};
 		};
-		DE123C43296C40F700B7149B /* XCRemoteSwiftPackageReference "Alamofire.git" */ = {
+		DE123C43296C40F700B7149B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -446,7 +531,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		DE123C3E296C406500B7149B /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DE123C3D296C406500B7149B /* XCRemoteSwiftPackageReference "SnapKit.git" */;
+			package = DE123C3D296C406500B7149B /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
 		DE123C41296C40B400B7149B /* Then */ = {
@@ -456,7 +541,7 @@
 		};
 		DE123C44296C40F700B7149B /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DE123C43296C40F700B7149B /* XCRemoteSwiftPackageReference "Alamofire.git" */;
+			package = DE123C43296C40F700B7149B /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */

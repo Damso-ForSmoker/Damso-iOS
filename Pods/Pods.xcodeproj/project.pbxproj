@@ -6,44 +6,141 @@
 	objectVersion = 55;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		72E614C823EA09AB1AAE80D5CD8A4C58 /* NMapsGeometry */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = EB98AD101AB530610FAEE48FABDF7F57 /* Build configuration list for PBXAggregateTarget "NMapsGeometry" */;
+			buildPhases = (
+				06DEA16D4139F67FC0E17642FDBEECD0 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = NMapsGeometry;
+		};
+		8E049F5F4E3BDC647F924FEF22D49D90 /* NMapsMap */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 73E737D5F21341C24A13EBC70CD8D471 /* Build configuration list for PBXAggregateTarget "NMapsMap" */;
+			buildPhases = (
+				B521269790554904B95202DE2D5AC59C /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				258F097AFE79EE06421A954BF7063DC2 /* PBXTargetDependency */,
+			);
+			name = NMapsMap;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		10C999AF525339D8695848A06302D7EA /* Pods-Damso-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E10B804A0597BE86E1DB581CE3E45FB /* Pods-Damso-dummy.m */; };
-		3F95179A8C8321B8E90FB33A319E86A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		C1ED2C5EF241CC8F1B5CFB760419C39A /* Pods-Damso-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C57AB27358B40BEDF5636ECCE077C09 /* Pods-Damso-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		427F162E2CF837009C6BABB7DC274CF9 /* Pods-Damso-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF84383B50B84DD5AB32125F14DCA965 /* Pods-Damso-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B134F3F4C2201E38827B0EC48FFB6E8 /* Pods-Damso-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD80169B3C3F2670DEA8F7FBCF7A5F2 /* Pods-Damso-dummy.m */; };
+		F87FEB07453651F0E37AD87230BF8D1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4CB3ABADFAAEFAF125F36FADAD1FC67D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E049F5F4E3BDC647F924FEF22D49D90;
+			remoteInfo = NMapsMap;
+		};
+		7F00C360A1E47BCFA7970B4BBEC51126 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72E614C823EA09AB1AAE80D5CD8A4C58;
+			remoteInfo = NMapsGeometry;
+		};
+		85BE0E3A619A94F135001870240434EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72E614C823EA09AB1AAE80D5CD8A4C58;
+			remoteInfo = NMapsGeometry;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		09CBB8EA30636853739AAC788B5CD595 /* Pods-Damso-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Damso-acknowledgements.plist"; sourceTree = "<group>"; };
-		0AA07790FD58D536BBCB9A2A8DB1FAE4 /* Pods-Damso-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Damso-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0970046F7060534BA9B286629593DA0C /* NMapsMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NMapsMap.debug.xcconfig; sourceTree = "<group>"; };
 		1481EE4861201DCB6AC17B280AA46EBF /* Pods-Damso */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Damso"; path = Pods_Damso.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FFC0EFC5B3C67B7356579958BFEDC4F /* Pods-Damso-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Damso-Info.plist"; sourceTree = "<group>"; };
+		1A326C79B1B897CBCFDC36BFF5174A43 /* NMapsGeometry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NMapsGeometry.debug.xcconfig; sourceTree = "<group>"; };
+		485FAE6318CCD7779377C7AA4A7B3528 /* NMapsGeometry.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = NMapsGeometry.xcframework; path = framework/NMapsGeometry.xcframework; sourceTree = "<group>"; };
+		4F0C55D25B9900DE7936740E68EFDFCF /* NMapsMap.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = NMapsMap.xcframework; path = framework/NMapsMap.xcframework; sourceTree = "<group>"; };
+		53BB18D8DE6118DEC0AAC01027DBECA8 /* NMapsMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NMapsMap.release.xcconfig; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7E10B804A0597BE86E1DB581CE3E45FB /* Pods-Damso-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Damso-dummy.m"; sourceTree = "<group>"; };
-		8C57AB27358B40BEDF5636ECCE077C09 /* Pods-Damso-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Damso-umbrella.h"; sourceTree = "<group>"; };
+		7F89040B8DC7FC773592AA5FE110E9DF /* NMapsGeometry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NMapsGeometry.release.xcconfig; sourceTree = "<group>"; };
+		90DAA01B109806307EA360DF17F5138D /* Pods-Damso.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Damso.release.xcconfig"; sourceTree = "<group>"; };
+		983FCEF2808419DF12F69DFEBD7685D4 /* NMapsMap-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "NMapsMap-xcframeworks.sh"; sourceTree = "<group>"; };
+		9BD80169B3C3F2670DEA8F7FBCF7A5F2 /* Pods-Damso-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Damso-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F957B18FF5DFC3A00E3013A36929E5A /* Pods-Damso.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Damso.modulemap"; sourceTree = "<group>"; };
-		B897EAD0B4896B2A3D60A4DDB9B1B768 /* Pods-Damso.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Damso.release.xcconfig"; sourceTree = "<group>"; };
-		FB2B241CA3CC91273639408741EBE511 /* Pods-Damso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Damso.debug.xcconfig"; sourceTree = "<group>"; };
+		9FD1680FBF23CC6D49EBFD6455A03DCD /* Pods-Damso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Damso.debug.xcconfig"; sourceTree = "<group>"; };
+		A4385AED2D5054C3DF1FB28EDBBA734F /* Pods-Damso-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Damso-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BCFD376690C13539C33B26219CF1E10B /* Pods-Damso-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Damso-frameworks.sh"; sourceTree = "<group>"; };
+		C55B61ABAAC8D239DAE52684A0421EE4 /* Pods-Damso-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Damso-acknowledgements.plist"; sourceTree = "<group>"; };
+		C7ABE46EB51B7E3FFB3CBAEB3990B5E2 /* Pods-Damso-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Damso-Info.plist"; sourceTree = "<group>"; };
+		E101130795B024FC83E4F774AA209B18 /* NMapsGeometry-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "NMapsGeometry-xcframeworks.sh"; sourceTree = "<group>"; };
+		EF84383B50B84DD5AB32125F14DCA965 /* Pods-Damso-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Damso-umbrella.h"; sourceTree = "<group>"; };
+		FFBA8EB945C2F6A2E830C4EDD0E54720 /* Pods-Damso.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Damso.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5F140104F49BB5D045472BCF70329A9D /* Frameworks */ = {
+		1E26F995453958FC61276040C89C92BA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F95179A8C8321B8E90FB33A319E86A2 /* Foundation.framework in Frameworks */,
+				F87FEB07453651F0E37AD87230BF8D1C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2D36DEB31769E311BD54B654259B3AD6 /* Targets Support Files */ = {
+		169A894F474781F666BE8D90408D3828 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				69A3D07B3A2E50B0CC634FBDAE2BC4D0 /* Pods-Damso */,
+				E101130795B024FC83E4F774AA209B18 /* NMapsGeometry-xcframeworks.sh */,
+				1A326C79B1B897CBCFDC36BFF5174A43 /* NMapsGeometry.debug.xcconfig */,
+				7F89040B8DC7FC773592AA5FE110E9DF /* NMapsGeometry.release.xcconfig */,
 			);
-			name = "Targets Support Files";
+			name = "Support Files";
+			path = "../Target Support Files/NMapsGeometry";
+			sourceTree = "<group>";
+		};
+		25B56312D79088C322C5B52238334BCC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2FE65985C01476131D3AC219F92CC3CF /* NMapsGeometry */,
+				487B37947971C0C75B135158191A5547 /* NMapsMap */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2ED541A35C7BD1778556550CF4846D2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F0C55D25B9900DE7936740E68EFDFCF /* NMapsMap.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2FE65985C01476131D3AC219F92CC3CF /* NMapsGeometry */ = {
+			isa = PBXGroup;
+			children = (
+				DC955F600E602E5041F1000DC79753BB /* Frameworks */,
+				169A894F474781F666BE8D90408D3828 /* Support Files */,
+			);
+			name = NMapsGeometry;
+			path = NMapsGeometry;
+			sourceTree = "<group>";
+		};
+		487B37947971C0C75B135158191A5547 /* NMapsMap */ = {
+			isa = PBXGroup;
+			children = (
+				2ED541A35C7BD1778556550CF4846D2F /* Frameworks */,
+				A3E28C362EAC5C5A2CCC22EE5E2FDA30 /* Support Files */,
+			);
+			name = NMapsMap;
+			path = NMapsMap;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -54,17 +151,29 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		69A3D07B3A2E50B0CC634FBDAE2BC4D0 /* Pods-Damso */ = {
+		A3E28C362EAC5C5A2CCC22EE5E2FDA30 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9F957B18FF5DFC3A00E3013A36929E5A /* Pods-Damso.modulemap */,
-				0AA07790FD58D536BBCB9A2A8DB1FAE4 /* Pods-Damso-acknowledgements.markdown */,
-				09CBB8EA30636853739AAC788B5CD595 /* Pods-Damso-acknowledgements.plist */,
-				7E10B804A0597BE86E1DB581CE3E45FB /* Pods-Damso-dummy.m */,
-				1FFC0EFC5B3C67B7356579958BFEDC4F /* Pods-Damso-Info.plist */,
-				8C57AB27358B40BEDF5636ECCE077C09 /* Pods-Damso-umbrella.h */,
-				FB2B241CA3CC91273639408741EBE511 /* Pods-Damso.debug.xcconfig */,
-				B897EAD0B4896B2A3D60A4DDB9B1B768 /* Pods-Damso.release.xcconfig */,
+				983FCEF2808419DF12F69DFEBD7685D4 /* NMapsMap-xcframeworks.sh */,
+				0970046F7060534BA9B286629593DA0C /* NMapsMap.debug.xcconfig */,
+				53BB18D8DE6118DEC0AAC01027DBECA8 /* NMapsMap.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NMapsMap";
+			sourceTree = "<group>";
+		};
+		A64BF40C080E23C849BB81BFC41C8D45 /* Pods-Damso */ = {
+			isa = PBXGroup;
+			children = (
+				FFBA8EB945C2F6A2E830C4EDD0E54720 /* Pods-Damso.modulemap */,
+				A4385AED2D5054C3DF1FB28EDBBA734F /* Pods-Damso-acknowledgements.markdown */,
+				C55B61ABAAC8D239DAE52684A0421EE4 /* Pods-Damso-acknowledgements.plist */,
+				9BD80169B3C3F2670DEA8F7FBCF7A5F2 /* Pods-Damso-dummy.m */,
+				BCFD376690C13539C33B26219CF1E10B /* Pods-Damso-frameworks.sh */,
+				C7ABE46EB51B7E3FFB3CBAEB3990B5E2 /* Pods-Damso-Info.plist */,
+				EF84383B50B84DD5AB32125F14DCA965 /* Pods-Damso-umbrella.h */,
+				9FD1680FBF23CC6D49EBFD6455A03DCD /* Pods-Damso.debug.xcconfig */,
+				90DAA01B109806307EA360DF17F5138D /* Pods-Damso.release.xcconfig */,
 			);
 			name = "Pods-Damso";
 			path = "Target Support Files/Pods-Damso";
@@ -75,8 +184,9 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				25B56312D79088C322C5B52238334BCC /* Pods */,
 				EF76170B9919F6A6DDF3D4C4A5596BFD /* Products */,
-				2D36DEB31769E311BD54B654259B3AD6 /* Targets Support Files */,
+				EE87A54BC0AF25C6F8B43A0DB9649C7F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +196,22 @@
 				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC955F600E602E5041F1000DC79753BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				485FAE6318CCD7779377C7AA4A7B3528 /* NMapsGeometry.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE87A54BC0AF25C6F8B43A0DB9649C7F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A64BF40C080E23C849BB81BFC41C8D45 /* Pods-Damso */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		EF76170B9919F6A6DDF3D4C4A5596BFD /* Products */ = {
@@ -99,11 +225,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		E7DA6489BCA2AD3677CEC9BD536108E0 /* Headers */ = {
+		E7B778E5445AEAA65148A2DA351B5421 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1ED2C5EF241CC8F1B5CFB760419C39A /* Pods-Damso-umbrella.h in Headers */,
+				427F162E2CF837009C6BABB7DC274CF9 /* Pods-Damso-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,16 +238,18 @@
 /* Begin PBXNativeTarget section */
 		C26B15C4CAA3E7B1011C0BC0A3F07B0C /* Pods-Damso */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A673057C38640F4E35B4E17B49A4DF6C /* Build configuration list for PBXNativeTarget "Pods-Damso" */;
+			buildConfigurationList = 08FAD39510FC2E13CCEC2A535EC9A606 /* Build configuration list for PBXNativeTarget "Pods-Damso" */;
 			buildPhases = (
-				E7DA6489BCA2AD3677CEC9BD536108E0 /* Headers */,
-				18B6EAFCD2D0690AE74B5B4896B690EA /* Sources */,
-				5F140104F49BB5D045472BCF70329A9D /* Frameworks */,
-				EEB9E8F36B087B588BD64BD1AB35956E /* Resources */,
+				E7B778E5445AEAA65148A2DA351B5421 /* Headers */,
+				DCCB01A207B9B3FC3F0607105E0DBC4A /* Sources */,
+				1E26F995453958FC61276040C89C92BA /* Frameworks */,
+				5F59E3A041BB16BCB2978055BBD6B96E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				39C18A5D0E5E5F3C1F1E4084306200B7 /* PBXTargetDependency */,
+				6A89EAF90F66E859E876504E34EA6DCB /* PBXTargetDependency */,
 			);
 			name = "Pods-Damso";
 			productName = Pods_Damso;
@@ -150,13 +278,15 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				72E614C823EA09AB1AAE80D5CD8A4C58 /* NMapsGeometry */,
+				8E049F5F4E3BDC647F924FEF22D49D90 /* NMapsMap */,
 				C26B15C4CAA3E7B1011C0BC0A3F07B0C /* Pods-Damso */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EEB9E8F36B087B588BD64BD1AB35956E /* Resources */ = {
+		5F59E3A041BB16BCB2978055BBD6B96E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -165,18 +295,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06DEA16D4139F67FC0E17642FDBEECD0 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/NMapsGeometry/NMapsGeometry-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/NMapsGeometry/NMapsGeometry-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/NMapsGeometry/NMapsGeometry-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B521269790554904B95202DE2D5AC59C /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/NMapsMap/NMapsMap-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/NMapsMap/NMapsMap-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/NMapsMap/NMapsMap-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		18B6EAFCD2D0690AE74B5B4896B690EA /* Sources */ = {
+		DCCB01A207B9B3FC3F0607105E0DBC4A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10C999AF525339D8695848A06302D7EA /* Pods-Damso-dummy.m in Sources */,
+				6B134F3F4C2201E38827B0EC48FFB6E8 /* Pods-Damso-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		258F097AFE79EE06421A954BF7063DC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NMapsGeometry;
+			target = 72E614C823EA09AB1AAE80D5CD8A4C58 /* NMapsGeometry */;
+			targetProxy = 7F00C360A1E47BCFA7970B4BBEC51126 /* PBXContainerItemProxy */;
+		};
+		39C18A5D0E5E5F3C1F1E4084306200B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NMapsGeometry;
+			target = 72E614C823EA09AB1AAE80D5CD8A4C58 /* NMapsGeometry */;
+			targetProxy = 85BE0E3A619A94F135001870240434EC /* PBXContainerItemProxy */;
+		};
+		6A89EAF90F66E859E876504E34EA6DCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NMapsMap;
+			target = 8E049F5F4E3BDC647F924FEF22D49D90 /* NMapsMap */;
+			targetProxy = 4CB3ABADFAAEFAF125F36FADAD1FC67D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		138EE7F5840AEF4E4028CA5FAAE9EE6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F89040B8DC7FC773592AA5FE110E9DF /* NMapsGeometry.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4122D12474652D4B94029A59C0DC6010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A326C79B1B897CBCFDC36BFF5174A43 /* NMapsGeometry.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		446BA1B9A1F1F2F95D04E5F82EB1B0F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -305,9 +526,62 @@
 			};
 			name = Release;
 		};
-		751907DE4C1196FC599ACC5137555D6F /* Release */ = {
+		CFDDA1A2CF6B8209F7914EBD577C850B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B897EAD0B4896B2A3D60A4DDB9B1B768 /* Pods-Damso.release.xcconfig */;
+			baseConfigurationReference = 9FD1680FBF23CC6D49EBFD6455A03DCD /* Pods-Damso.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Damso/Pods-Damso-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Damso/Pods-Damso.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E683018BA3CA2E27A39E5DF5619B90F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0970046F7060534BA9B286629593DA0C /* NMapsMap.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE0BAD9187DE95A90F2C6B42A1AC1A1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90DAA01B109806307EA360DF17F5138D /* Pods-Damso.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -343,46 +617,35 @@
 			};
 			name = Release;
 		};
-		90CB75BA6BBC9E4A4D04642B211C6248 /* Debug */ = {
+		FE5D137BA104CCBECE001BF38C0AEB3E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB2B241CA3CC91273639408741EBE511 /* Pods-Damso.debug.xcconfig */;
+			baseConfigurationReference = 53BB18D8DE6118DEC0AAC01027DBECA8 /* NMapsMap.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Damso/Pods-Damso-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Damso/Pods-Damso.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		08FAD39510FC2E13CCEC2A535EC9A606 /* Build configuration list for PBXNativeTarget "Pods-Damso" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFDDA1A2CF6B8209F7914EBD577C850B /* Debug */,
+				FE0BAD9187DE95A90F2C6B42A1AC1A1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -392,11 +655,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A673057C38640F4E35B4E17B49A4DF6C /* Build configuration list for PBXNativeTarget "Pods-Damso" */ = {
+		73E737D5F21341C24A13EBC70CD8D471 /* Build configuration list for PBXAggregateTarget "NMapsMap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				90CB75BA6BBC9E4A4D04642B211C6248 /* Debug */,
-				751907DE4C1196FC599ACC5137555D6F /* Release */,
+				E683018BA3CA2E27A39E5DF5619B90F6 /* Debug */,
+				FE5D137BA104CCBECE001BF38C0AEB3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB98AD101AB530610FAEE48FABDF7F57 /* Build configuration list for PBXAggregateTarget "NMapsGeometry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4122D12474652D4B94029A59C0DC6010 /* Debug */,
+				138EE7F5840AEF4E4028CA5FAAE9EE6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
