@@ -6,5 +6,6 @@ target 'Damso' do
   use_frameworks!
 
   # Pods for Damso
+	pod 'NMapsMap'
 
 end

@@ -16,7 +16,6 @@ class BaseView: UIView {
     /// - VC의 loadView() 메서드를 오버라이딩후 super 메서드를 호출하지 않고 view = 커스텀뷰()로 바꿔주어야 합니다.
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = .systemBackground
 
         setupUI()
         setConstraints()

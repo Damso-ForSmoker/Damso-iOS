@@ -16,7 +16,7 @@ class BaseVC: UIViewController {
         
         configure()
         setNavigationBar()
-
+        
     }
     /// Delegate, Register, AddTarget 등
     func configure() {}
