@@ -19,6 +19,18 @@
 		DE123C51296D746300B7149B /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE123C50296D746300B7149B /* BaseView.swift */; };
 		DEA95B0D2976A38900AE8D0C /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B0C2976A38900AE8D0C /* ReportView.swift */; };
 		DEA95B122976A75B00AE8D0C /* ReportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B112976A75B00AE8D0C /* ReportVC.swift */; };
+		DEA95B1929774ED700AE8D0C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B1829774ED700AE8D0C /* OnboardingView.swift */; };
+		DEA95B1B29774EF900AE8D0C /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B1A29774EF900AE8D0C /* OnboardingVC.swift */; };
+		DEA95B1D297751D400AE8D0C /* OnboardingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B1C297751D400AE8D0C /* OnboardingMessage.swift */; };
+		DEA95B252978694700AE8D0C /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = DEA95B1F2978694600AE8D0C /* NotoSansKR-Medium.otf */; };
+		DEA95B262978694700AE8D0C /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DEA95B202978694600AE8D0C /* NotoSansKR-Regular.otf */; };
+		DEA95B272978694700AE8D0C /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DEA95B212978694600AE8D0C /* NotoSansKR-Bold.otf */; };
+		DEA95B282978694700AE8D0C /* NotoSansKR-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = DEA95B222978694700AE8D0C /* NotoSansKR-Light.otf */; };
+		DEA95B292978694700AE8D0C /* NotoSansKR-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = DEA95B232978694700AE8D0C /* NotoSansKR-Thin.otf */; };
+		DEA95B2A2978694700AE8D0C /* NotoSansKR-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = DEA95B242978694700AE8D0C /* NotoSansKR-Black.otf */; };
+		DEA95B2C29786C6E00AE8D0C /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B2B29786C6E00AE8D0C /* UIColor+Extension.swift */; };
+		DEA95B2E2978729A00AE8D0C /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B2D2978729A00AE8D0C /* OnboardingCollectionViewCell.swift */; };
+		DEA95B32297AF65700AE8D0C /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B31297AF65700AE8D0C /* UIButton+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +46,18 @@
 		DE123C50296D746300B7149B /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		DEA95B0C2976A38900AE8D0C /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
 		DEA95B112976A75B00AE8D0C /* ReportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportVC.swift; sourceTree = "<group>"; };
+		DEA95B1829774ED700AE8D0C /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		DEA95B1A29774EF900AE8D0C /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
+		DEA95B1C297751D400AE8D0C /* OnboardingMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingMessage.swift; sourceTree = "<group>"; };
+		DEA95B1F2978694600AE8D0C /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
+		DEA95B202978694600AE8D0C /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
+		DEA95B212978694600AE8D0C /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
+		DEA95B222978694700AE8D0C /* NotoSansKR-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Light.otf"; sourceTree = "<group>"; };
+		DEA95B232978694700AE8D0C /* NotoSansKR-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Thin.otf"; sourceTree = "<group>"; };
+		DEA95B242978694700AE8D0C /* NotoSansKR-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Black.otf"; sourceTree = "<group>"; };
+		DEA95B2B29786C6E00AE8D0C /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		DEA95B2D2978729A00AE8D0C /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		DEA95B31297AF65700AE8D0C /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		FC41CC4BF6B184B7B5B646D5 /* Pods_Damso.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Damso.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -119,6 +143,7 @@
 		DE123C48296D6B7A00B7149B /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DEA95B1729774EB600AE8D0C /* Onboarding */,
 				DEA95B0E2976A3D200AE8D0C /* ReportView */,
 				DE123C4B296D738E00B7149B /* Base */,
 			);
@@ -128,6 +153,9 @@
 		DE123C49296D6B8C00B7149B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DEA95B2B29786C6E00AE8D0C /* UIColor+Extension.swift */,
+				DEA95B31297AF65700AE8D0C /* UIButton+Extension.swift */,
+				DEA95B1E297868DB00AE8D0C /* Fonts */,
 				DE123C32296C39AE00B7149B /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -157,6 +185,30 @@
 				DEA95B112976A75B00AE8D0C /* ReportVC.swift */,
 			);
 			path = ReportView;
+			sourceTree = "<group>";
+		};
+		DEA95B1729774EB600AE8D0C /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				DEA95B1829774ED700AE8D0C /* OnboardingView.swift */,
+				DEA95B1A29774EF900AE8D0C /* OnboardingVC.swift */,
+				DEA95B1C297751D400AE8D0C /* OnboardingMessage.swift */,
+				DEA95B2D2978729A00AE8D0C /* OnboardingCollectionViewCell.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		DEA95B1E297868DB00AE8D0C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DEA95B242978694700AE8D0C /* NotoSansKR-Black.otf */,
+				DEA95B212978694600AE8D0C /* NotoSansKR-Bold.otf */,
+				DEA95B222978694700AE8D0C /* NotoSansKR-Light.otf */,
+				DEA95B1F2978694600AE8D0C /* NotoSansKR-Medium.otf */,
+				DEA95B202978694600AE8D0C /* NotoSansKR-Regular.otf */,
+				DEA95B232978694700AE8D0C /* NotoSansKR-Thin.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +281,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEA95B282978694700AE8D0C /* NotoSansKR-Light.otf in Resources */,
+				DEA95B292978694700AE8D0C /* NotoSansKR-Thin.otf in Resources */,
+				DEA95B252978694700AE8D0C /* NotoSansKR-Medium.otf in Resources */,
 				DE123C36296C39AE00B7149B /* LaunchScreen.storyboard in Resources */,
+				DEA95B262978694700AE8D0C /* NotoSansKR-Regular.otf in Resources */,
 				DE123C33296C39AE00B7149B /* Assets.xcassets in Resources */,
+				DEA95B272978694700AE8D0C /* NotoSansKR-Bold.otf in Resources */,
+				DEA95B2A2978694700AE8D0C /* NotoSansKR-Black.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,11 +342,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE123C2A296C39AC00B7149B /* AppDelegate.swift in Sources */,
+				DEA95B1B29774EF900AE8D0C /* OnboardingVC.swift in Sources */,
+				DEA95B1D297751D400AE8D0C /* OnboardingMessage.swift in Sources */,
 				DE123C51296D746300B7149B /* BaseView.swift in Sources */,
 				DE123C2C296C39AC00B7149B /* SceneDelegate.swift in Sources */,
+				DEA95B32297AF65700AE8D0C /* UIButton+Extension.swift in Sources */,
 				DEA95B0D2976A38900AE8D0C /* ReportView.swift in Sources */,
 				DEA95B122976A75B00AE8D0C /* ReportVC.swift in Sources */,
 				DE123C4F296D743C00B7149B /* BaseVC.swift in Sources */,
+				DEA95B1929774ED700AE8D0C /* OnboardingView.swift in Sources */,
+				DEA95B2C29786C6E00AE8D0C /* UIColor+Extension.swift in Sources */,
+				DEA95B2E2978729A00AE8D0C /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
