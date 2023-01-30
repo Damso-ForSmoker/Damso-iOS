@@ -11,4 +11,5 @@ import UIKit
 extension UIColor {
     class var primaryColor: UIColor? { return UIColor(named: "primaryColor")}
     class var redColor: UIColor? {return UIColor(named: "redColor")}
+    class var systemBackgroundColor: UIColor? { return UIColor(named: "systemBackgroundColor") }
 }
