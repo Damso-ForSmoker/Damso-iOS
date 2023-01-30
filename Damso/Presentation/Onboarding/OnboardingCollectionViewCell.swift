@@ -54,7 +54,7 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
         }
         titleLabel.snp.makeConstraints{ make in
             make.top.equalTo(imgView.snp.bottom)
-            make.leading.equalTo(contentView.snp.leading).offset(39)
+            make.leading.equalTo(contentView.snp.leading).inset(39)
             make.trailing.equalTo(contentView.snp.trailing).inset(40)
         }
         descriptionLabel.snp.makeConstraints{ make in

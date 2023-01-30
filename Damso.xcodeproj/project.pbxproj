@@ -31,6 +31,9 @@
 		DEA95B2C29786C6E00AE8D0C /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B2B29786C6E00AE8D0C /* UIColor+Extension.swift */; };
 		DEA95B2E2978729A00AE8D0C /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B2D2978729A00AE8D0C /* OnboardingCollectionViewCell.swift */; };
 		DEA95B32297AF65700AE8D0C /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B31297AF65700AE8D0C /* UIButton+Extension.swift */; };
+		DEA95B34297EDA5100AE8D0C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B33297EDA5100AE8D0C /* TabBarController.swift */; };
+		DEA95B362981DF2E00AE8D0C /* ReportInputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B352981DF2D00AE8D0C /* ReportInputVC.swift */; };
+		DEA95B3A2983F20400AE8D0C /* ReportInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B392983F20400AE8D0C /* ReportInputView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,9 @@
 		DEA95B2B29786C6E00AE8D0C /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		DEA95B2D2978729A00AE8D0C /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		DEA95B31297AF65700AE8D0C /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		DEA95B33297EDA5100AE8D0C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = TabBar/TabBarController.swift; sourceTree = "<group>"; };
+		DEA95B352981DF2D00AE8D0C /* ReportInputVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportInputVC.swift; sourceTree = "<group>"; };
+		DEA95B392983F20400AE8D0C /* ReportInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportInputView.swift; sourceTree = "<group>"; };
 		FC41CC4BF6B184B7B5B646D5 /* Pods_Damso.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Damso.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -144,8 +150,9 @@
 			isa = PBXGroup;
 			children = (
 				DEA95B1729774EB600AE8D0C /* Onboarding */,
-				DEA95B0E2976A3D200AE8D0C /* ReportView */,
+				DEA95B0E2976A3D200AE8D0C /* Report */,
 				DE123C4B296D738E00B7149B /* Base */,
+				DEA95B33297EDA5100AE8D0C /* TabBarController.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -178,13 +185,13 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		DEA95B0E2976A3D200AE8D0C /* ReportView */ = {
+		DEA95B0E2976A3D200AE8D0C /* Report */ = {
 			isa = PBXGroup;
 			children = (
-				DEA95B0C2976A38900AE8D0C /* ReportView.swift */,
-				DEA95B112976A75B00AE8D0C /* ReportVC.swift */,
+				DEA95B382981DF4D00AE8D0C /* Location */,
+				DEA95B372981DF3400AE8D0C /* information */,
 			);
-			path = ReportView;
+			path = Report;
 			sourceTree = "<group>";
 		};
 		DEA95B1729774EB600AE8D0C /* Onboarding */ = {
@@ -201,14 +208,32 @@
 		DEA95B1E297868DB00AE8D0C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				DEA95B242978694700AE8D0C /* NotoSansKR-Black.otf */,
 				DEA95B212978694600AE8D0C /* NotoSansKR-Bold.otf */,
 				DEA95B222978694700AE8D0C /* NotoSansKR-Light.otf */,
 				DEA95B1F2978694600AE8D0C /* NotoSansKR-Medium.otf */,
 				DEA95B202978694600AE8D0C /* NotoSansKR-Regular.otf */,
 				DEA95B232978694700AE8D0C /* NotoSansKR-Thin.otf */,
+				DEA95B242978694700AE8D0C /* NotoSansKR-Black.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DEA95B372981DF3400AE8D0C /* information */ = {
+			isa = PBXGroup;
+			children = (
+				DEA95B392983F20400AE8D0C /* ReportInputView.swift */,
+				DEA95B352981DF2D00AE8D0C /* ReportInputVC.swift */,
+			);
+			path = information;
+			sourceTree = "<group>";
+		};
+		DEA95B382981DF4D00AE8D0C /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				DEA95B0C2976A38900AE8D0C /* ReportView.swift */,
+				DEA95B112976A75B00AE8D0C /* ReportVC.swift */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,6 +367,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE123C2A296C39AC00B7149B /* AppDelegate.swift in Sources */,
+				DEA95B362981DF2E00AE8D0C /* ReportInputVC.swift in Sources */,
+				DEA95B3A2983F20400AE8D0C /* ReportInputView.swift in Sources */,
+				DEA95B34297EDA5100AE8D0C /* TabBarController.swift in Sources */,
 				DEA95B1B29774EF900AE8D0C /* OnboardingVC.swift in Sources */,
 				DEA95B1D297751D400AE8D0C /* OnboardingMessage.swift in Sources */,
 				DE123C51296D746300B7149B /* BaseView.swift in Sources */,
