@@ -49,6 +49,16 @@
 		DEA95B34297EDA5100AE8D0C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B33297EDA5100AE8D0C /* TabBarController.swift */; };
 		DEA95B362981DF2E00AE8D0C /* ReportInputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B352981DF2D00AE8D0C /* ReportInputVC.swift */; };
 		DEA95B3A2983F20400AE8D0C /* ReportInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B392983F20400AE8D0C /* ReportInputView.swift */; };
+		EC46E73B29892CCE00F767C4 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E73129892CCD00F767C4 /* ReportViewController.swift */; };
+		EC46E73C29892CCE00F767C4 /* ReportPushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E73229892CCE00F767C4 /* ReportPushViewController.swift */; };
+		EC46E73D29892CCE00F767C4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E73329892CCE00F767C4 /* SearchViewController.swift */; };
+		EC46E73E29892CCE00F767C4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E73429892CCE00F767C4 /* ProfileViewController.swift */; };
+		EC46E73F29892CCE00F767C4 /* BottomSheetViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E73529892CCE00F767C4 /* BottomSheetViewController2.swift */; };
+		EC46E74029892CCE00F767C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E73629892CCE00F767C4 /* ViewController.swift */; };
+		EC46E74129892CCE00F767C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC46E73729892CCE00F767C4 /* Main.storyboard */; };
+		EC46E74229892CCE00F767C4 /* ReviewUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E73829892CCE00F767C4 /* ReviewUploadViewController.swift */; };
+		EC46E74329892CCE00F767C4 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E73929892CCE00F767C4 /* FavoritesViewController.swift */; };
+		EC46E74429892CCE00F767C4 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E73A29892CCE00F767C4 /* BottomSheetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +104,16 @@
 		DEA95B33297EDA5100AE8D0C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = TabBar/TabBarController.swift; sourceTree = "<group>"; };
 		DEA95B352981DF2D00AE8D0C /* ReportInputVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportInputVC.swift; sourceTree = "<group>"; };
 		DEA95B392983F20400AE8D0C /* ReportInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportInputView.swift; sourceTree = "<group>"; };
+		EC46E73129892CCD00F767C4 /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		EC46E73229892CCE00F767C4 /* ReportPushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportPushViewController.swift; sourceTree = "<group>"; };
+		EC46E73329892CCE00F767C4 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		EC46E73429892CCE00F767C4 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		EC46E73529892CCE00F767C4 /* BottomSheetViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController2.swift; sourceTree = "<group>"; };
+		EC46E73629892CCE00F767C4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC46E73729892CCE00F767C4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EC46E73829892CCE00F767C4 /* ReviewUploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewUploadViewController.swift; sourceTree = "<group>"; };
+		EC46E73929892CCE00F767C4 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		EC46E73A29892CCE00F767C4 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
 		FC41CC4BF6B184B7B5B646D5 /* Pods_Damso.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Damso.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -194,7 +214,11 @@
 		DE123C48296D6B7A00B7149B /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				02B6BDDB2989297400868944 /* MyData */,
+=======
+				EC46E70029892B4C00F767C4 /* main */,
+>>>>>>> main
 				DEA95B1729774EB600AE8D0C /* Onboarding */,
 				DEA95B0E2976A3D200AE8D0C /* Report */,
 				DE123C4B296D738E00B7149B /* Base */,
@@ -289,6 +313,23 @@
 			path = Location;
 			sourceTree = "<group>";
 		};
+		EC46E70029892B4C00F767C4 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				EC46E73A29892CCE00F767C4 /* BottomSheetViewController.swift */,
+				EC46E73529892CCE00F767C4 /* BottomSheetViewController2.swift */,
+				EC46E73929892CCE00F767C4 /* FavoritesViewController.swift */,
+				EC46E73729892CCE00F767C4 /* Main.storyboard */,
+				EC46E73429892CCE00F767C4 /* ProfileViewController.swift */,
+				EC46E73229892CCE00F767C4 /* ReportPushViewController.swift */,
+				EC46E73129892CCD00F767C4 /* ReportViewController.swift */,
+				EC46E73829892CCE00F767C4 /* ReviewUploadViewController.swift */,
+				EC46E73329892CCE00F767C4 /* SearchViewController.swift */,
+				EC46E73629892CCE00F767C4 /* ViewController.swift */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -369,8 +410,12 @@
 				DE123C36296C39AE00B7149B /* LaunchScreen.storyboard in Resources */,
 				DEA95B262978694700AE8D0C /* NotoSansKR-Regular.otf in Resources */,
 				DE123C33296C39AE00B7149B /* Assets.xcassets in Resources */,
+<<<<<<< HEAD
 				02B6BDF829892BA800868944 /* NotoSans-Bold.ttf in Resources */,
 				02B6BDF929892BA800868944 /* NotoSans-SemiBold.ttf in Resources */,
+=======
+				EC46E74129892CCE00F767C4 /* Main.storyboard in Resources */,
+>>>>>>> main
 				DEA95B272978694700AE8D0C /* NotoSansKR-Bold.otf in Resources */,
 				02B6BDF129892BA000868944 /* RobotoCondensed-Regular.ttf in Resources */,
 				DEA95B2A2978694700AE8D0C /* NotoSansKR-Black.otf in Resources */,
@@ -426,26 +471,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				02B6BDEA29892A2500868944 /* MydataView.swift in Sources */,
+=======
+				EC46E73C29892CCE00F767C4 /* ReportPushViewController.swift in Sources */,
+				EC46E73B29892CCE00F767C4 /* ReportViewController.swift in Sources */,
+>>>>>>> main
 				DE123C2A296C39AC00B7149B /* AppDelegate.swift in Sources */,
 				DEA95B362981DF2E00AE8D0C /* ReportInputVC.swift in Sources */,
 				02B6BDE929892A2500868944 /* infoTableViewCell.swift in Sources */,
 				DEA95B3A2983F20400AE8D0C /* ReportInputView.swift in Sources */,
 				DEA95B34297EDA5100AE8D0C /* TabBarController.swift in Sources */,
 				DEA95B1B29774EF900AE8D0C /* OnboardingVC.swift in Sources */,
+				EC46E74429892CCE00F767C4 /* BottomSheetViewController.swift in Sources */,
 				DEA95B1D297751D400AE8D0C /* OnboardingMessage.swift in Sources */,
 				02B6BDE829892A2500868944 /* editVC.swift in Sources */,
 				DE123C51296D746300B7149B /* BaseView.swift in Sources */,
+				EC46E73E29892CCE00F767C4 /* ProfileViewController.swift in Sources */,
 				DE123C2C296C39AC00B7149B /* SceneDelegate.swift in Sources */,
 				02B6BDE729892A2500868944 /* editView.swift in Sources */,
 				DEA95B32297AF65700AE8D0C /* UIButton+Extension.swift in Sources */,
+				EC46E73F29892CCE00F767C4 /* BottomSheetViewController2.swift in Sources */,
 				DEA95B0D2976A38900AE8D0C /* ReportView.swift in Sources */,
+				EC46E74229892CCE00F767C4 /* ReviewUploadViewController.swift in Sources */,
+				EC46E73D29892CCE00F767C4 /* SearchViewController.swift in Sources */,
 				DEA95B122976A75B00AE8D0C /* ReportVC.swift in Sources */,
 				DE123C4F296D743C00B7149B /* BaseVC.swift in Sources */,
 				02B6BDE429892A2500868944 /* LoginDataView.swift in Sources */,
 				DEA95B1929774ED700AE8D0C /* OnboardingView.swift in Sources */,
+<<<<<<< HEAD
 				02B6BDE529892A2500868944 /* MydataVC.swift in Sources */,
 				02B6BDE629892A2500868944 /* PopupVC.swift in Sources */,
+=======
+				EC46E74029892CCE00F767C4 /* ViewController.swift in Sources */,
+				EC46E74329892CCE00F767C4 /* FavoritesViewController.swift in Sources */,
+>>>>>>> main
 				DEA95B2C29786C6E00AE8D0C /* UIColor+Extension.swift in Sources */,
 				DEA95B2E2978729A00AE8D0C /* OnboardingCollectionViewCell.swift in Sources */,
 				02B6BDEB29892A2500868944 /* PopupView.swift in Sources */,
