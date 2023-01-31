@@ -2,7 +2,11 @@
   "images" : [
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "filename" : "Vector.png",
+=======
+      "filename" : "Vector.svg",
+>>>>>>> main
 =======
       "filename" : "Vector.svg",
 >>>>>>> main
@@ -11,7 +15,10 @@
     },
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "filename" : "Vector@2x.png",
+=======
+>>>>>>> main
 =======
 >>>>>>> main
       "idiom" : "universal",
@@ -19,7 +26,10 @@
     },
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "filename" : "Vector@3x.png",
+=======
+>>>>>>> main
 =======
 >>>>>>> main
       "idiom" : "universal",
