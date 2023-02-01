@@ -7,21 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02B6BDE429892A2500868944 /* LoginDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B6BDDC29892A2500868944 /* LoginDataView.swift */; };
-		02B6BDE529892A2500868944 /* MydataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B6BDDD29892A2500868944 /* MydataVC.swift */; };
-		02B6BDE629892A2500868944 /* PopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B6BDDE29892A2500868944 /* PopupVC.swift */; };
-		02B6BDE729892A2500868944 /* editView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B6BDDF29892A2500868944 /* editView.swift */; };
-		02B6BDE829892A2500868944 /* editVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B6BDE029892A2500868944 /* editVC.swift */; };
-		02B6BDE929892A2500868944 /* infoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B6BDE129892A2500868944 /* infoTableViewCell.swift */; };
-		02B6BDEA29892A2500868944 /* MydataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B6BDE229892A2500868944 /* MydataView.swift */; };
-		02B6BDEB29892A2500868944 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B6BDE329892A2500868944 /* PopupView.swift */; };
-		02B6BDF029892BA000868944 /* NotoSansDisplay-ExtraCondensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02B6BDEC29892BA000868944 /* NotoSansDisplay-ExtraCondensed.ttf */; };
-		02B6BDF129892BA000868944 /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02B6BDED29892BA000868944 /* RobotoCondensed-Regular.ttf */; };
-		02B6BDF229892BA000868944 /* AppleSDGothicNeo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02B6BDEE29892BA000868944 /* AppleSDGothicNeo-Regular.ttf */; };
-		02B6BDF329892BA000868944 /* NotoSansDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02B6BDEF29892BA000868944 /* NotoSansDisplay-Bold.ttf */; };
-		02B6BDF729892BA800868944 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02B6BDF429892BA800868944 /* NotoSans-Regular.ttf */; };
-		02B6BDF829892BA800868944 /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02B6BDF529892BA800868944 /* NotoSans-Bold.ttf */; };
-		02B6BDF929892BA800868944 /* NotoSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02B6BDF629892BA800868944 /* NotoSans-SemiBold.ttf */; };
 		7C7EA1298971C6508DBBC2CE /* Pods_Damso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC41CC4BF6B184B7B5B646D5 /* Pods_Damso.framework */; };
 		DE123C2A296C39AC00B7149B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE123C29296C39AC00B7149B /* AppDelegate.swift */; };
 		DE123C2C296C39AC00B7149B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE123C2B296C39AC00B7149B /* SceneDelegate.swift */; };
@@ -62,21 +47,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		02B6BDDC29892A2500868944 /* LoginDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginDataView.swift; path = ../../../../Datamy/Datamy/LoginDataView.swift; sourceTree = "<group>"; };
-		02B6BDDD29892A2500868944 /* MydataVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MydataVC.swift; path = ../../../../Datamy/MydataVC.swift; sourceTree = "<group>"; };
-		02B6BDDE29892A2500868944 /* PopupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PopupVC.swift; path = ../../../../Datamy/Datamy/PopupVC.swift; sourceTree = "<group>"; };
-		02B6BDDF29892A2500868944 /* editView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = editView.swift; path = ../../../../Datamy/Datamy/editView.swift; sourceTree = "<group>"; };
-		02B6BDE029892A2500868944 /* editVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = editVC.swift; path = ../../../../Datamy/Datamy/editVC.swift; sourceTree = "<group>"; };
-		02B6BDE129892A2500868944 /* infoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = infoTableViewCell.swift; path = ../../../../Datamy/Datamy/infoTableViewCell.swift; sourceTree = "<group>"; };
-		02B6BDE229892A2500868944 /* MydataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MydataView.swift; path = ../../../../Datamy/MydataView.swift; sourceTree = "<group>"; };
-		02B6BDE329892A2500868944 /* PopupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PopupView.swift; path = ../../../../Datamy/Datamy/PopupView.swift; sourceTree = "<group>"; };
-		02B6BDEC29892BA000868944 /* NotoSansDisplay-ExtraCondensed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansDisplay-ExtraCondensed.ttf"; path = "../../../../../../Downloads/Noto-Sans-Display-ExtraCondensed/NotoSansDisplay-ExtraCondensed.ttf"; sourceTree = "<group>"; };
-		02B6BDED29892BA000868944 /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoCondensed-Regular.ttf"; path = "../../../../../../Downloads/Roboto_Condensed/RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
-		02B6BDEE29892BA000868944 /* AppleSDGothicNeo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AppleSDGothicNeo-Regular.ttf"; path = "../../../../../../Downloads/Apple_산돌고딕_Neo/AppleSDGothicNeo-Regular.ttf"; sourceTree = "<group>"; };
-		02B6BDEF29892BA000868944 /* NotoSansDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansDisplay-Bold.ttf"; path = "../../../../../../Downloads/Noto_Sans_Display/static/NotoSansDisplay/NotoSansDisplay-Bold.ttf"; sourceTree = "<group>"; };
-		02B6BDF429892BA800868944 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSans-Regular.ttf"; path = "../../../../../../Downloads/Noto_Sans/NotoSans-Regular.ttf"; sourceTree = "<group>"; };
-		02B6BDF529892BA800868944 /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSans-Bold.ttf"; path = "../../../../../../Downloads/Noto_Sans/NotoSans-Bold.ttf"; sourceTree = "<group>"; };
-		02B6BDF629892BA800868944 /* NotoSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSans-SemiBold.ttf"; path = "../../../../../../Downloads/Noto_Sans/NotoSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		5255AD62BEE5A9637A7D0115 /* Pods-Damso.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Damso.release.xcconfig"; path = "Target Support Files/Pods-Damso/Pods-Damso.release.xcconfig"; sourceTree = "<group>"; };
 		DB7F394FDC0E35B9274B56E2 /* Pods-Damso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Damso.debug.xcconfig"; path = "Target Support Files/Pods-Damso/Pods-Damso.debug.xcconfig"; sourceTree = "<group>"; };
 		DE123C26296C39AC00B7149B /* Damso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Damso.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,7 +63,7 @@
 		DEA95B1A29774EF900AE8D0C /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		DEA95B1C297751D400AE8D0C /* OnboardingMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingMessage.swift; sourceTree = "<group>"; };
 		DEA95B1F2978694600AE8D0C /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
-		DEA95B202978694600AE8D0C /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = text; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
+		DEA95B202978694600AE8D0C /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
 		DEA95B212978694600AE8D0C /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
 		DEA95B222978694700AE8D0C /* NotoSansKR-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Light.otf"; sourceTree = "<group>"; };
 		DEA95B232978694700AE8D0C /* NotoSansKR-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Thin.otf"; sourceTree = "<group>"; };
@@ -132,21 +102,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02B6BDDB2989297400868944 /* MyData */ = {
-			isa = PBXGroup;
-			children = (
-				02B6BDE029892A2500868944 /* editVC.swift */,
-				02B6BDDF29892A2500868944 /* editView.swift */,
-				02B6BDE129892A2500868944 /* infoTableViewCell.swift */,
-				02B6BDDC29892A2500868944 /* LoginDataView.swift */,
-				02B6BDDD29892A2500868944 /* MydataVC.swift */,
-				02B6BDE229892A2500868944 /* MydataView.swift */,
-				02B6BDDE29892A2500868944 /* PopupVC.swift */,
-				02B6BDE329892A2500868944 /* PopupView.swift */,
-			);
-			path = MyData;
-			sourceTree = "<group>";
-		};
 		2792149155DF245702209E50 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,11 +169,6 @@
 		DE123C48296D6B7A00B7149B /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-
-				02B6BDDB2989297400868944 /* MyData */,
-
-				EC46E70029892B4C00F767C4 /* main */,
-
 				EC46E70029892B4C00F767C4 /* main */,
 				DEA95B1729774EB600AE8D0C /* Onboarding */,
 				DEA95B0E2976A3D200AE8D0C /* Report */,
@@ -279,13 +229,6 @@
 		DEA95B1E297868DB00AE8D0C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				02B6BDF529892BA800868944 /* NotoSans-Bold.ttf */,
-				02B6BDF429892BA800868944 /* NotoSans-Regular.ttf */,
-				02B6BDF629892BA800868944 /* NotoSans-SemiBold.ttf */,
-				02B6BDEE29892BA000868944 /* AppleSDGothicNeo-Regular.ttf */,
-				02B6BDEF29892BA000868944 /* NotoSansDisplay-Bold.ttf */,
-				02B6BDEC29892BA000868944 /* NotoSansDisplay-ExtraCondensed.ttf */,
-				02B6BDED29892BA000868944 /* RobotoCondensed-Regular.ttf */,
 				DEA95B212978694600AE8D0C /* NotoSansKR-Bold.otf */,
 				DEA95B222978694700AE8D0C /* NotoSansKR-Light.otf */,
 				DEA95B1F2978694600AE8D0C /* NotoSansKR-Medium.otf */,
@@ -401,26 +344,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02B6BDF229892BA000868944 /* AppleSDGothicNeo-Regular.ttf in Resources */,
-				02B6BDF029892BA000868944 /* NotoSansDisplay-ExtraCondensed.ttf in Resources */,
-				02B6BDF729892BA800868944 /* NotoSans-Regular.ttf in Resources */,
 				DEA95B282978694700AE8D0C /* NotoSansKR-Light.otf in Resources */,
 				DEA95B292978694700AE8D0C /* NotoSansKR-Thin.otf in Resources */,
 				DEA95B252978694700AE8D0C /* NotoSansKR-Medium.otf in Resources */,
-				02B6BDF329892BA000868944 /* NotoSansDisplay-Bold.ttf in Resources */,
 				DE123C36296C39AE00B7149B /* LaunchScreen.storyboard in Resources */,
 				DEA95B262978694700AE8D0C /* NotoSansKR-Regular.otf in Resources */,
 				DE123C33296C39AE00B7149B /* Assets.xcassets in Resources */,
-
-				02B6BDF829892BA800868944 /* NotoSans-Bold.ttf in Resources */,
-				02B6BDF929892BA800868944 /* NotoSans-SemiBold.ttf in Resources */,
-
 				EC46E74129892CCE00F767C4 /* Main.storyboard in Resources */,
-
-				EC46E74129892CCE00F767C4 /* Main.storyboard in Resources */,
-
 				DEA95B272978694700AE8D0C /* NotoSansKR-Bold.otf in Resources */,
-				02B6BDF129892BA000868944 /* RobotoCondensed-Regular.ttf in Resources */,
 				DEA95B2A2978694700AE8D0C /* NotoSansKR-Black.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,28 +405,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
-				02B6BDEA29892A2500868944 /* MydataView.swift in Sources */,
-
 				EC46E73C29892CCE00F767C4 /* ReportPushViewController.swift in Sources */,
 				EC46E73B29892CCE00F767C4 /* ReportViewController.swift in Sources */,
-
-				EC46E73C29892CCE00F767C4 /* ReportPushViewController.swift in Sources */,
-				EC46E73B29892CCE00F767C4 /* ReportViewController.swift in Sources */,
-
 				DE123C2A296C39AC00B7149B /* AppDelegate.swift in Sources */,
 				DEA95B362981DF2E00AE8D0C /* ReportInputVC.swift in Sources */,
-				02B6BDE929892A2500868944 /* infoTableViewCell.swift in Sources */,
 				DEA95B3A2983F20400AE8D0C /* ReportInputView.swift in Sources */,
 				DEA95B34297EDA5100AE8D0C /* TabBarController.swift in Sources */,
 				DEA95B1B29774EF900AE8D0C /* OnboardingVC.swift in Sources */,
 				EC46E74429892CCE00F767C4 /* BottomSheetViewController.swift in Sources */,
 				DEA95B1D297751D400AE8D0C /* OnboardingMessage.swift in Sources */,
-				02B6BDE829892A2500868944 /* editVC.swift in Sources */,
 				DE123C51296D746300B7149B /* BaseView.swift in Sources */,
 				EC46E73E29892CCE00F767C4 /* ProfileViewController.swift in Sources */,
 				DE123C2C296C39AC00B7149B /* SceneDelegate.swift in Sources */,
-				02B6BDE729892A2500868944 /* editView.swift in Sources */,
 				DEA95B32297AF65700AE8D0C /* UIButton+Extension.swift in Sources */,
 				EC46E73F29892CCE00F767C4 /* BottomSheetViewController2.swift in Sources */,
 				DEA95B0D2976A38900AE8D0C /* ReportView.swift in Sources */,
@@ -503,21 +424,11 @@
 				EC46E73D29892CCE00F767C4 /* SearchViewController.swift in Sources */,
 				DEA95B122976A75B00AE8D0C /* ReportVC.swift in Sources */,
 				DE123C4F296D743C00B7149B /* BaseVC.swift in Sources */,
-				02B6BDE429892A2500868944 /* LoginDataView.swift in Sources */,
 				DEA95B1929774ED700AE8D0C /* OnboardingView.swift in Sources */,
-
-				02B6BDE529892A2500868944 /* MydataVC.swift in Sources */,
-				02B6BDE629892A2500868944 /* PopupVC.swift in Sources */,
-
 				EC46E74029892CCE00F767C4 /* ViewController.swift in Sources */,
 				EC46E74329892CCE00F767C4 /* FavoritesViewController.swift in Sources */,
-
-				EC46E74029892CCE00F767C4 /* ViewController.swift in Sources */,
-				EC46E74329892CCE00F767C4 /* FavoritesViewController.swift in Sources */,
-
 				DEA95B2C29786C6E00AE8D0C /* UIColor+Extension.swift in Sources */,
 				DEA95B2E2978729A00AE8D0C /* OnboardingCollectionViewCell.swift in Sources */,
-				02B6BDEB29892A2500868944 /* PopupView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
