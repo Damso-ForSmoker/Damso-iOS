@@ -12,13 +12,6 @@
 		<string>NotoSansKR-Medium.otf</string>
 		<string>NotoSansKR-Regular.otf</string>
 		<string>NotoSansKR-Thin.otf</string>
-		<string>NotoSans-Bold.ttf</string>
-		<string>NotoSans-Regular.ttf</string>
-		<string>NotoSans-SemiBold.ttf</string>
-		<string>NotoSansDisplay-Bold.ttf</string>
-		<string>RobotoCondensed-Regular.ttf</string>
-		<string>NotoSansDisplay-ExtraCondensed.ttf</string>
-		<string>AppleSDGothicNeo-Regular.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

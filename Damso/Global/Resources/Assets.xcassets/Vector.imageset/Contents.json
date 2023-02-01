@@ -1,37 +1,15 @@
 {
   "images" : [
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "filename" : "Vector.png",
-=======
       "filename" : "Vector.svg",
->>>>>>> main
-=======
-      "filename" : "Vector.svg",
->>>>>>> main
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "filename" : "Vector@2x.png",
-=======
->>>>>>> main
-=======
->>>>>>> main
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "filename" : "Vector@3x.png",
-=======
->>>>>>> main
-=======
->>>>>>> main
       "idiom" : "universal",
       "scale" : "3x"
     }
