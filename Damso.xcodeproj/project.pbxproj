@@ -34,6 +34,10 @@
 		DEA95B34297EDA5100AE8D0C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B33297EDA5100AE8D0C /* TabBarController.swift */; };
 		DEA95B362981DF2E00AE8D0C /* ReportInputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B352981DF2D00AE8D0C /* ReportInputVC.swift */; };
 		DEA95B3A2983F20400AE8D0C /* ReportInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B392983F20400AE8D0C /* ReportInputView.swift */; };
+		DEA95B3D2988410D00AE8D0C /* BookmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B3C2988410D00AE8D0C /* BookmarkView.swift */; };
+		DEA95B3F2988412900AE8D0C /* BookmarkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B3E2988412900AE8D0C /* BookmarkVC.swift */; };
+		DEA95B4129884B9600AE8D0C /* BookmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B4029884B9600AE8D0C /* BookmarkTableViewCell.swift */; };
+		DEA95B43298854E900AE8D0C /* BookmarkIsEmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B42298854E900AE8D0C /* BookmarkIsEmptyCell.swift */; };
 		EC46E73B29892CCE00F767C4 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E73129892CCD00F767C4 /* ReportViewController.swift */; };
 		EC46E73C29892CCE00F767C4 /* ReportPushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E73229892CCE00F767C4 /* ReportPushViewController.swift */; };
 		EC46E73D29892CCE00F767C4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E73329892CCE00F767C4 /* SearchViewController.swift */; };
@@ -63,7 +67,7 @@
 		DEA95B1A29774EF900AE8D0C /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		DEA95B1C297751D400AE8D0C /* OnboardingMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingMessage.swift; sourceTree = "<group>"; };
 		DEA95B1F2978694600AE8D0C /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
-		DEA95B202978694600AE8D0C /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
+		DEA95B202978694600AE8D0C /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = text; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
 		DEA95B212978694600AE8D0C /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
 		DEA95B222978694700AE8D0C /* NotoSansKR-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Light.otf"; sourceTree = "<group>"; };
 		DEA95B232978694700AE8D0C /* NotoSansKR-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Thin.otf"; sourceTree = "<group>"; };
@@ -74,6 +78,10 @@
 		DEA95B33297EDA5100AE8D0C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = TabBar/TabBarController.swift; sourceTree = "<group>"; };
 		DEA95B352981DF2D00AE8D0C /* ReportInputVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportInputVC.swift; sourceTree = "<group>"; };
 		DEA95B392983F20400AE8D0C /* ReportInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportInputView.swift; sourceTree = "<group>"; };
+		DEA95B3C2988410D00AE8D0C /* BookmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkView.swift; sourceTree = "<group>"; };
+		DEA95B3E2988412900AE8D0C /* BookmarkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkVC.swift; sourceTree = "<group>"; };
+		DEA95B4029884B9600AE8D0C /* BookmarkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkTableViewCell.swift; sourceTree = "<group>"; };
+		DEA95B42298854E900AE8D0C /* BookmarkIsEmptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkIsEmptyCell.swift; sourceTree = "<group>"; };
 		EC46E73129892CCD00F767C4 /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		EC46E73229892CCE00F767C4 /* ReportPushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportPushViewController.swift; sourceTree = "<group>"; };
 		EC46E73329892CCE00F767C4 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -209,6 +217,7 @@
 		DEA95B0E2976A3D200AE8D0C /* Report */ = {
 			isa = PBXGroup;
 			children = (
+				DEA95B3B298840EE00AE8D0C /* Bookmark */,
 				DEA95B382981DF4D00AE8D0C /* Location */,
 				DEA95B372981DF3400AE8D0C /* information */,
 			);
@@ -255,6 +264,17 @@
 				DEA95B112976A75B00AE8D0C /* ReportVC.swift */,
 			);
 			path = Location;
+			sourceTree = "<group>";
+		};
+		DEA95B3B298840EE00AE8D0C /* Bookmark */ = {
+			isa = PBXGroup;
+			children = (
+				DEA95B3C2988410D00AE8D0C /* BookmarkView.swift */,
+				DEA95B3E2988412900AE8D0C /* BookmarkVC.swift */,
+				DEA95B4029884B9600AE8D0C /* BookmarkTableViewCell.swift */,
+				DEA95B42298854E900AE8D0C /* BookmarkIsEmptyCell.swift */,
+			);
+			path = Bookmark;
 			sourceTree = "<group>";
 		};
 		EC46E70029892B4C00F767C4 /* main */ = {
@@ -417,17 +437,22 @@
 				DE123C51296D746300B7149B /* BaseView.swift in Sources */,
 				EC46E73E29892CCE00F767C4 /* ProfileViewController.swift in Sources */,
 				DE123C2C296C39AC00B7149B /* SceneDelegate.swift in Sources */,
+				DEA95B3F2988412900AE8D0C /* BookmarkVC.swift in Sources */,
+				DE123C2C296C39AC00B7149B /* SceneDelegate.swift in Sources */,
+				DEA95B43298854E900AE8D0C /* BookmarkIsEmptyCell.swift in Sources */,
 				DEA95B32297AF65700AE8D0C /* UIButton+Extension.swift in Sources */,
 				EC46E73F29892CCE00F767C4 /* BottomSheetViewController2.swift in Sources */,
 				DEA95B0D2976A38900AE8D0C /* ReportView.swift in Sources */,
 				EC46E74229892CCE00F767C4 /* ReviewUploadViewController.swift in Sources */,
 				EC46E73D29892CCE00F767C4 /* SearchViewController.swift in Sources */,
+				DEA95B4129884B9600AE8D0C /* BookmarkTableViewCell.swift in Sources */,
 				DEA95B122976A75B00AE8D0C /* ReportVC.swift in Sources */,
 				DE123C4F296D743C00B7149B /* BaseVC.swift in Sources */,
 				DEA95B1929774ED700AE8D0C /* OnboardingView.swift in Sources */,
 				EC46E74029892CCE00F767C4 /* ViewController.swift in Sources */,
 				EC46E74329892CCE00F767C4 /* FavoritesViewController.swift in Sources */,
 				DEA95B2C29786C6E00AE8D0C /* UIColor+Extension.swift in Sources */,
+				DEA95B3D2988410D00AE8D0C /* BookmarkView.swift in Sources */,
 				DEA95B2E2978729A00AE8D0C /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
