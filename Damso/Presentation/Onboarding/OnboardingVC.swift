@@ -50,7 +50,6 @@ class OnboardingVC: BaseVC {
     @objc func skipButtonTapped(_ sender: UIButton){
         print("skip")
     }
-    
     @objc func nextButtonTapped(_ sender: UIButton){
         let index = currentIndex == messages.count - 1 ? currentIndex : (currentIndex + 1) % 3
         currentIndex = index
