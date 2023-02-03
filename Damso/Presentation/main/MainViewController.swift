@@ -9,7 +9,7 @@ import UIKit
 import NMapsMap
 //import MaterialComponents.MaterialBottomSheet
 
-class ViewController: UIViewController, UISheetPresentationControllerDelegate {
+class MainViewController: UIViewController, UISheetPresentationControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()

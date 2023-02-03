@@ -14,18 +14,21 @@ class TabBarController: UITabBarController {
         
         //인스턴스를 생성 시켜 연결시키시면 됩니다.
         //우리 프로젝트의 모든 rootView는 NavigationController를 사용하기 때문에 UINavigationController를 인스턴스 하면 됩니다.
-        let Report = UINavigationController(rootViewController: ReportVC())
-        let Bookmark = UINavigationController(rootViewController: BookmarkVC())
+        let report = UINavigationController(rootViewController: ReportVC())
+        let bookmark = UINavigationController(rootViewController: BookmarkVC())
+        let main = UINavigationController(rootViewController: MainViewController())
+        let search = UINavigationController(rootViewController: SearchViewController())
 
         //UITabBarItem 인스턴스를 생성시킨 다음, ViewController의 tabBarItem property에 할당하면 됩니다.
-        Report.tabBarItem = UITabBarItem(title: "제보하기", image: UIImage(systemName: "plus.circle"), selectedImage: UIImage(systemName: "plus.circle")?.withTintColor(.blue))
-        Bookmark.tabBarItem = UITabBarItem(title: "즐겨찾기", image: UIImage(systemName: "heart"), selectedImage: UIImage(systemName: "heart.fill"))
+        report.tabBarItem = UITabBarItem(title: "제보하기", image: UIImage(systemName: "plus.circle"), selectedImage: UIImage(systemName: "plus.circle")?.withTintColor(.blue))
+        bookmark.tabBarItem = UITabBarItem(title: "즐겨찾기", image: UIImage(systemName: "heart"), selectedImage: UIImage(systemName: "heart.fill"))
+        main.tabBarItem = UITabBarItem(title: "메인", image: UIImage(named: "HomeIcon"), selectedImage: UIImage(named: "HomeIconSelected"))
+        search.tabBarItem = UITabBarItem(title: "주변", image: UIImage(named: "SearchIcon"), selectedImage: UIImage(named: "SearchIcon")?.withTintColor(.blue))
         
         
         //TabBarController에 ViewController를 포함시킴
         //viewController 변수에 직접 접근해도 됩
-        self.setViewControllers([Report, Bookmark], animated: false)
-        
+        self.setViewControllers([main, search, report, bookmark], animated: false)
         
         self.tabBar.backgroundColor = .white //TabBar의 색을 하얀색으로 설정
     }
