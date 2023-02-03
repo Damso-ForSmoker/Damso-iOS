@@ -62,12 +62,12 @@ class OnboardingView: BaseView {
         nextButton.snp.makeConstraints{ make in
             make.trailing.leading.equalTo(safeAreaLayoutGuide).inset(109)
             make.top.equalTo(collectionView.snp.bottom)
-            make.bottom.equalTo(skipButton.snp.top).inset(6)
+            make.bottom.equalTo(skipButton.snp.top).offset(-6)
         }
         skipButton.snp.makeConstraints{ make in
             make.trailing.equalTo(nextButton.snp.trailing)
             make.leading.equalTo(nextButton.snp.leading)
-            make.top.equalTo(nextButton.snp.bottom).inset(6)
+            make.top.equalTo(nextButton.snp.bottom).offset(6)
         }
     }
 }

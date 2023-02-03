@@ -6,10 +6,14 @@
 //
 
 import UIKit
+import Then
 
 class OnboardingVC: BaseVC {
     //MARK: - Properties
     let onboardingView = OnboardingView()
+    let nextScreen = TabBarController().then{
+        $0.modalPresentationStyle = .fullScreen
+    }
     
     var isFinished: Bool = false
     
@@ -32,7 +36,6 @@ class OnboardingVC: BaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
     }
     
     //MARK: - configure
@@ -41,6 +44,7 @@ class OnboardingVC: BaseVC {
         onboardingView.collectionView.dataSource = self
         
         onboardingView.collectionView.register(OnboardingCollectionViewCell.self, forCellWithReuseIdentifier: OnboardingCollectionViewCell.identifier)
+        
         onboardingView.skipButton.addTarget(self, action: #selector(skipButtonTapped(_:)), for: .touchUpInside)
         onboardingView.nextButton.addTarget(self, action: #selector(nextButtonTapped(_:)), for: .touchUpInside)
     }
@@ -48,25 +52,26 @@ class OnboardingVC: BaseVC {
     
     //MARK: - Helper
     @objc func skipButtonTapped(_ sender: UIButton){
-        print("skip")
+        self.view.window?.rootViewController = nextScreen
     }
     
     @objc func nextButtonTapped(_ sender: UIButton){
-        let index = currentIndex == messages.count - 1 ? currentIndex : (currentIndex + 1) % 3
+        let index = currentIndex == messages.count - 1 ? currentIndex : (currentIndex + 1) % 2
         currentIndex = index
         
-        onboardingView.collectionView.scrollToItem(at: [0, currentIndex], at: .right, animated: true)
+        onboardingView.collectionView.scrollToItem(at: [0,currentIndex], at: .right, animated: true)
         
         
         if isFinished == true {
-            print("skip")
+            self.view.window?.rootViewController = nextScreen
         }
         
-        if onboardingView.nextButton.currentTitle == "완료" && currentIndex == messages.count - 1 {
+        if onboardingView.nextButton.currentTitle=="닫기"&&currentIndex == messages.count - 1 {
             // 완료일 때 화면 이동
             isFinished = true
         }
     }
+    
     func setButton(){
         if currentIndex == messages.count - 1 {
             onboardingView.skipButton.isHidden = true
