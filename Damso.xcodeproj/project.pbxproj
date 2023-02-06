@@ -17,6 +17,10 @@
 		DE123C45296C40F700B7149B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DE123C44296C40F700B7149B /* Alamofire */; };
 		DE123C4F296D743C00B7149B /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE123C4E296D743C00B7149B /* BaseVC.swift */; };
 		DE123C51296D746300B7149B /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE123C50296D746300B7149B /* BaseView.swift */; };
+		DE5F0BA32990480100660E52 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = DE5F0BA22990480100660E52 /* SwiftyJSON */; };
+		DE5F0BA5299049B800660E52 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F0BA4299049B800660E52 /* Keys.swift */; };
+		DE5F0BA72990513F00660E52 /* GeocodingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F0BA62990513F00660E52 /* GeocodingManager.swift */; };
+		DE5F0BA92990579D00660E52 /* ReverseGCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F0BA82990579D00660E52 /* ReverseGCModel.swift */; };
 		DEA95B0D2976A38900AE8D0C /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B0C2976A38900AE8D0C /* ReportView.swift */; };
 		DEA95B122976A75B00AE8D0C /* ReportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B112976A75B00AE8D0C /* ReportVC.swift */; };
 		DEA95B1929774ED700AE8D0C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B1829774ED700AE8D0C /* OnboardingView.swift */; };
@@ -59,6 +63,9 @@
 		DE123C37296C39AE00B7149B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE123C4E296D743C00B7149B /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		DE123C50296D746300B7149B /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		DE5F0BA4299049B800660E52 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		DE5F0BA62990513F00660E52 /* GeocodingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingManager.swift; sourceTree = "<group>"; };
+		DE5F0BA82990579D00660E52 /* ReverseGCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseGCModel.swift; sourceTree = "<group>"; };
 		DEA95B0C2976A38900AE8D0C /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
 		DEA95B112976A75B00AE8D0C /* ReportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportVC.swift; sourceTree = "<group>"; };
 		DEA95B1829774ED700AE8D0C /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -99,6 +106,7 @@
 				DE123C45296C40F700B7149B /* Alamofire in Frameworks */,
 				DE123C3F296C406500B7149B /* SnapKit in Frameworks */,
 				DE123C42296C40B400B7149B /* Then in Frameworks */,
+				DE5F0BA32990480100660E52 /* SwiftyJSON in Frameworks */,
 				7C7EA1298971C6508DBBC2CE /* Pods_Damso.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,6 +152,7 @@
 		DE123C28296C39AC00B7149B /* Damso */ = {
 			isa = PBXGroup;
 			children = (
+				DE5F0B9F29901DE900660E52 /* Data */,
 				DE123C46296D6B5200B7149B /* App */,
 				DE123C47296D6B6400B7149B /* Global */,
 				DE123C48296D6B7A00B7149B /* Presentation */,
@@ -173,6 +182,7 @@
 		DE123C48296D6B7A00B7149B /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DEA95B3B298840EE00AE8D0C /* Bookmark */,
 				EC46E70029892B4C00F767C4 /* main */,
 				DEA95B1729774EB600AE8D0C /* Onboarding */,
 				DEA95B0E2976A3D200AE8D0C /* Input */,
@@ -210,12 +220,29 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		DE5F0B9F29901DE900660E52 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DE5F0BA029903E9600660E52 /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DE5F0BA029903E9600660E52 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DE5F0BA4299049B800660E52 /* Keys.swift */,
+				DE5F0BA62990513F00660E52 /* GeocodingManager.swift */,
+				DE5F0BA82990579D00660E52 /* ReverseGCModel.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		DEA95B0E2976A3D200AE8D0C /* Input */ = {
 			isa = PBXGroup;
 			children = (
-				DEA95B3B298840EE00AE8D0C /* Bookmark */,
 				DEA95B382981DF4D00AE8D0C /* Location */,
-				DEA95B372981DF3400AE8D0C /* information */,
+				DEA95B372981DF3400AE8D0C /* Inputinformation */,
 			);
 			path = Input;
 			sourceTree = "<group>";
@@ -244,13 +271,13 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		DEA95B372981DF3400AE8D0C /* information */ = {
+		DEA95B372981DF3400AE8D0C /* Inputinformation */ = {
 			isa = PBXGroup;
 			children = (
 				DEA95B392983F20400AE8D0C /* ReportInputView.swift */,
 				DEA95B352981DF2D00AE8D0C /* ReportInputVC.swift */,
 			);
-			path = information;
+			path = Inputinformation;
 			sourceTree = "<group>";
 		};
 		DEA95B382981DF4D00AE8D0C /* Location */ = {
@@ -310,6 +337,7 @@
 				DE123C3E296C406500B7149B /* SnapKit */,
 				DE123C41296C40B400B7149B /* Then */,
 				DE123C44296C40F700B7149B /* Alamofire */,
+				DE5F0BA22990480100660E52 /* SwiftyJSON */,
 			);
 			productName = Damso;
 			productReference = DE123C26296C39AC00B7149B /* Damso.app */;
@@ -343,6 +371,7 @@
 				DE123C3D296C406500B7149B /* XCRemoteSwiftPackageReference "SnapKit" */,
 				DE123C40296C40B400B7149B /* XCRemoteSwiftPackageReference "Then" */,
 				DE123C43296C40F700B7149B /* XCRemoteSwiftPackageReference "Alamofire" */,
+				DE5F0BA12990480100660E52 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = DE123C27296C39AC00B7149B /* Products */;
 			projectDirPath = "";
@@ -427,6 +456,7 @@
 				DEA95B34297EDA5100AE8D0C /* TabBarController.swift in Sources */,
 				DEA95B1B29774EF900AE8D0C /* OnboardingVC.swift in Sources */,
 				EC46E74429892CCE00F767C4 /* BottomSheetViewController.swift in Sources */,
+				DE5F0BA72990513F00660E52 /* GeocodingManager.swift in Sources */,
 				DEA95B1D297751D400AE8D0C /* OnboardingMessage.swift in Sources */,
 				DE123C51296D746300B7149B /* BaseView.swift in Sources */,
 				DE123C2C296C39AC00B7149B /* SceneDelegate.swift in Sources */,
@@ -434,6 +464,7 @@
 				DE123C2C296C39AC00B7149B /* SceneDelegate.swift in Sources */,
 				DEA95B43298854E900AE8D0C /* BookmarkIsEmptyCell.swift in Sources */,
 				DEA95B32297AF65700AE8D0C /* UIButton+Extension.swift in Sources */,
+				DE5F0BA92990579D00660E52 /* ReverseGCModel.swift in Sources */,
 				EC46E73F29892CCE00F767C4 /* BottomSheetViewController2.swift in Sources */,
 				DEA95B0D2976A38900AE8D0C /* ReportView.swift in Sources */,
 				EC46E74229892CCE00F767C4 /* ReviewUploadViewController.swift in Sources */,
@@ -444,6 +475,7 @@
 				DEA95B1929774ED700AE8D0C /* OnboardingView.swift in Sources */,
 				EC46E74029892CCE00F767C4 /* MainViewController.swift in Sources */,
 				DEA95B2C29786C6E00AE8D0C /* UIColor+Extension.swift in Sources */,
+				DE5F0BA5299049B800660E52 /* Keys.swift in Sources */,
 				DEA95B3D2988410D00AE8D0C /* BookmarkView.swift in Sources */,
 				DEA95B2E2978729A00AE8D0C /* OnboardingCollectionViewCell.swift in Sources */,
 			);
@@ -683,6 +715,14 @@
 				minimumVersion = 5.6.1;
 			};
 		};
+		DE5F0BA12990480100660E52 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -700,6 +740,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DE123C43296C40F700B7149B /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		DE5F0BA22990480100660E52 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE5F0BA12990480100660E52 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
