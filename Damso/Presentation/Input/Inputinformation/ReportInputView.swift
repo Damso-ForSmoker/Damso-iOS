@@ -22,6 +22,11 @@ class ReportInputView: BaseView {
         $0.layer.cornerRadius = 15
     }
     
+    var locationLabel = UILabel().then{
+        $0.adjustsFontSizeToFitWidth = true
+        $0.font = UIFont(name: "NotoSansKR-Medium", size: 17)
+        $0.textColor = .black
+    }
     let nameLabel = UILabel().then{
         $0.text = "흡연구역 이름 *"
         $0.font = UIFont(name: "NotoSansKR-Bold", size: 15)
@@ -122,6 +127,7 @@ class ReportInputView: BaseView {
     override func setupUI(){
         self.addSubview(locationTitle)
         self.addSubview(locationTextField)
+        locationTextField.addSubview(locationLabel)
         self.addSubview(nameLabel)
         self.addSubview(nameTextField)
         self.addSubview(classificationLabel)
@@ -144,6 +150,9 @@ class ReportInputView: BaseView {
             make.top.equalTo(locationTitle.snp.bottom).offset(7)
             make.trailing.leading.equalTo(safeAreaLayoutGuide).inset(13)
             make.height.equalTo(50)
+        }
+        locationLabel.snp.makeConstraints{ make in
+            make.trailing.leading.top.bottom.equalToSuperview().inset(10)
         }
         nameLabel.snp.makeConstraints{ make in
             make.top.equalTo(locationTextField.snp.bottom).offset(30)
