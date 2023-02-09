@@ -67,6 +67,9 @@
 		EC46E74129892CCE00F767C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC46E73729892CCE00F767C4 /* Main.storyboard */; };
 		EC46E74229892CCE00F767C4 /* ReviewUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E73829892CCE00F767C4 /* ReviewUploadViewController.swift */; };
 		EC46E74429892CCE00F767C4 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E73A29892CCE00F767C4 /* BottomSheetViewController.swift */; };
+		EC46E74A299525A600F767C4 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E749299525A600F767C4 /* Keys.swift */; };
+		EC46E74C2995600100F767C4 /* Markers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E74B2995600100F767C4 /* Markers.swift */; };
+		EC46E74E299565DD00F767C4 /* MarkersHTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E74D299565DD00F767C4 /* MarkersHTTPMethod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -129,6 +132,9 @@
 		EC46E73729892CCE00F767C4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		EC46E73829892CCE00F767C4 /* ReviewUploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewUploadViewController.swift; sourceTree = "<group>"; };
 		EC46E73A29892CCE00F767C4 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
+		EC46E749299525A600F767C4 /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		EC46E74B2995600100F767C4 /* Markers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Markers.swift; sourceTree = "<group>"; };
+		EC46E74D299565DD00F767C4 /* MarkersHTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkersHTTPMethod.swift; sourceTree = "<group>"; };
 		FC41CC4BF6B184B7B5B646D5 /* Pods_Damso.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Damso.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -289,6 +295,8 @@
 				DE0139EC29953DD400EC9A5A /* Keys.swift */,
 				DE5F0BA62990513F00660E52 /* GeocodingManager.swift */,
 				DE5F0BA82990579D00660E52 /* ReverseGCModel.swift */,
+				EC46E74B2995600100F767C4 /* Markers.swift */,
+				EC46E74D299565DD00F767C4 /* MarkersHTTPMethod.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -517,6 +525,7 @@
 				DE123C2A296C39AC00B7149B /* AppDelegate.swift in Sources */,
 				0214CCD529926D6400EC5CAE /* infoTableViewCell.swift in Sources */,
 				DEA95B362981DF2E00AE8D0C /* ReportInputVC.swift in Sources */,
+				EC46E74E299565DD00F767C4 /* MarkersHTTPMethod.swift in Sources */,
 				DEA95B3A2983F20400AE8D0C /* ReportInputView.swift in Sources */,
 				DEA95B34297EDA5100AE8D0C /* TabBarController.swift in Sources */,
 				DEA95B1B29774EF900AE8D0C /* OnboardingVC.swift in Sources */,
@@ -553,6 +562,7 @@
 				DEA95B2C29786C6E00AE8D0C /* UIColor+Extension.swift in Sources */,
 				DEA95B3D2988410D00AE8D0C /* BookmarkView.swift in Sources */,
 				DEA95B2E2978729A00AE8D0C /* OnboardingCollectionViewCell.swift in Sources */,
+				EC46E74C2995600100F767C4 /* Markers.swift in Sources */,
 				0214CCD729926D6400EC5CAE /* editVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -693,7 +703,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AYG8MBJF93;
+				DEVELOPMENT_TEAM = SN4DKJ8AHY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Damso/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -722,7 +732,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AYG8MBJF93;
+				DEVELOPMENT_TEAM = SN4DKJ8AHY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Damso/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
