@@ -7,8 +7,22 @@
 
 import Foundation
 
-struct MarkerGet : Codable {
-    let facility_id: Int
-    let la: Int
-    let lo: Int
+// MARK: - Welcome
+struct Markers: Codable {
+    let isSuccess: Bool
+    let code: Int
+    let message: Bool
+    let result: [Pin]
 }
+
+// MARK: - Result
+struct Pin: Codable {
+    let facilityId: Int
+    let la, lo: String
+
+    enum CodingKeys: String, CodingKey {
+        case facilityId = "facility_id"
+        case la, lo
+    }
+}
+
