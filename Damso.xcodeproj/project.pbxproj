@@ -26,6 +26,9 @@
 		0214CCE129926D6400EC5CAE /* secondInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0214CCD429926D6400EC5CAE /* secondInfoTableViewCell.swift */; };
 		7C7EA1298971C6508DBBC2CE /* Pods_Damso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC41CC4BF6B184B7B5B646D5 /* Pods_Damso.framework */; };
 		DE0139ED29953DD500EC9A5A /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0139EC29953DD400EC9A5A /* Keys.swift */; };
+		DE0139EF2995604A00EC9A5A /* ReportInputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0139EE2995604A00EC9A5A /* ReportInputModel.swift */; };
+		DE0139F12995671C00EC9A5A /* ReportInputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0139F02995671C00EC9A5A /* ReportInputManager.swift */; };
+		DE0139F329957B8D00EC9A5A /* ReportInputResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0139F229957B8D00EC9A5A /* ReportInputResult.swift */; };
 		DE123C2A296C39AC00B7149B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE123C29296C39AC00B7149B /* AppDelegate.swift */; };
 		DE123C2C296C39AC00B7149B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE123C2B296C39AC00B7149B /* SceneDelegate.swift */; };
 		DE123C33296C39AE00B7149B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE123C32296C39AE00B7149B /* Assets.xcassets */; };
@@ -90,6 +93,9 @@
 		5255AD62BEE5A9637A7D0115 /* Pods-Damso.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Damso.release.xcconfig"; path = "Target Support Files/Pods-Damso/Pods-Damso.release.xcconfig"; sourceTree = "<group>"; };
 		DB7F394FDC0E35B9274B56E2 /* Pods-Damso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Damso.debug.xcconfig"; path = "Target Support Files/Pods-Damso/Pods-Damso.debug.xcconfig"; sourceTree = "<group>"; };
 		DE0139EC29953DD400EC9A5A /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keys.swift; path = "../../../../../../../PersonalFolder/Study/UMC/3기/앱런칭 프로젝트/iOS/Keys.swift"; sourceTree = "<group>"; };
+		DE0139EE2995604A00EC9A5A /* ReportInputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportInputModel.swift; sourceTree = "<group>"; };
+		DE0139F02995671C00EC9A5A /* ReportInputManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportInputManager.swift; sourceTree = "<group>"; };
+		DE0139F229957B8D00EC9A5A /* ReportInputResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportInputResult.swift; sourceTree = "<group>"; };
 		DE123C26296C39AC00B7149B /* Damso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Damso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE123C29296C39AC00B7149B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE123C2B296C39AC00B7149B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -289,6 +295,9 @@
 				DE0139EC29953DD400EC9A5A /* Keys.swift */,
 				DE5F0BA62990513F00660E52 /* GeocodingManager.swift */,
 				DE5F0BA82990579D00660E52 /* ReverseGCModel.swift */,
+				DE0139EE2995604A00EC9A5A /* ReportInputModel.swift */,
+				DE0139F02995671C00EC9A5A /* ReportInputManager.swift */,
+				DE0139F229957B8D00EC9A5A /* ReportInputResult.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -526,8 +535,10 @@
 				DE0139ED29953DD500EC9A5A /* Keys.swift in Sources */,
 				DE5F0BA72990513F00660E52 /* GeocodingManager.swift in Sources */,
 				DEA95B1D297751D400AE8D0C /* OnboardingMessage.swift in Sources */,
+				DE0139F329957B8D00EC9A5A /* ReportInputResult.swift in Sources */,
 				DE123C51296D746300B7149B /* BaseView.swift in Sources */,
 				0214CCDB29926D6400EC5CAE /* LoginView.swift in Sources */,
+				DE0139EF2995604A00EC9A5A /* ReportInputModel.swift in Sources */,
 				0214CCD829926D6400EC5CAE /* LoginDataView.swift in Sources */,
 				0214CCD929926D6400EC5CAE /* MydataView.swift in Sources */,
 				DE123C2C296C39AC00B7149B /* SceneDelegate.swift in Sources */,
@@ -545,6 +556,7 @@
 				0214CCE129926D6400EC5CAE /* secondInfoTableViewCell.swift in Sources */,
 				0214CCD629926D6400EC5CAE /* PopupVC.swift in Sources */,
 				EC46E73D29892CCE00F767C4 /* SearchViewController.swift in Sources */,
+				DE0139F12995671C00EC9A5A /* ReportInputManager.swift in Sources */,
 				DEA95B4129884B9600AE8D0C /* BookmarkTableViewCell.swift in Sources */,
 				DEA95B122976A75B00AE8D0C /* ReportVC.swift in Sources */,
 				DE123C4F296D743C00B7149B /* BaseVC.swift in Sources */,

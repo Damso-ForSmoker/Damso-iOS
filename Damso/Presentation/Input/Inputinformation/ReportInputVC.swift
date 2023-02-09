@@ -21,13 +21,14 @@ class ReportInputVC: BaseVC {
         $0.sourceType = .photoLibrary //image를 앨범에서 선택하는 코드
     }
     
+    
     override func loadView(){
         view = reportinputView
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -68,13 +69,12 @@ class ReportInputVC: BaseVC {
     }
     
     @objc func tappedReportButton(_ sender: UIButton){
-        print("제보하기")
+        lazy var data: ReportInputModel = ReportInputModel(location: reportinputView.locationLabel?.text, title: reportinputView.locationTitle?.text, type: 2, installAgency: reportinputView.supervisorTextField?.text)
     }
     
     @objc func tappedUploadButton(_ sender: UIButton){
         self.present(imgPicker, animated: true, completion: nil) //imagepickerview 화면을 띄우는 코드
     }
-
 }
 
 extension ReportInputVC: UITextFieldDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate
