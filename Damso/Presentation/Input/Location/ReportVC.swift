@@ -93,8 +93,4 @@ extension ReportVC: CLLocationManagerDelegate, NMFMapViewTouchDelegate, NMFMapVi
             }
         })
     }
-    
-    func mapView(_ mapView: NMFMapView, cameraDidChangeByReason reason: Int, animated: Bool){
-        
-    }
 }
