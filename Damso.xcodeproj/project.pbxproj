@@ -25,6 +25,7 @@
 		0214CCE029926D6400EC5CAE /* editView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0214CCD329926D6400EC5CAE /* editView.swift */; };
 		0214CCE129926D6400EC5CAE /* secondInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0214CCD429926D6400EC5CAE /* secondInfoTableViewCell.swift */; };
 		7C7EA1298971C6508DBBC2CE /* Pods_Damso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC41CC4BF6B184B7B5B646D5 /* Pods_Damso.framework */; };
+		DE0139ED29953DD500EC9A5A /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0139EC29953DD400EC9A5A /* Keys.swift */; };
 		DE123C2A296C39AC00B7149B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE123C29296C39AC00B7149B /* AppDelegate.swift */; };
 		DE123C2C296C39AC00B7149B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE123C2B296C39AC00B7149B /* SceneDelegate.swift */; };
 		DE123C33296C39AE00B7149B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE123C32296C39AE00B7149B /* Assets.xcassets */; };
@@ -35,7 +36,6 @@
 		DE123C4F296D743C00B7149B /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE123C4E296D743C00B7149B /* BaseVC.swift */; };
 		DE123C51296D746300B7149B /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE123C50296D746300B7149B /* BaseView.swift */; };
 		DE5F0BA32990480100660E52 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = DE5F0BA22990480100660E52 /* SwiftyJSON */; };
-		DE5F0BA5299049B800660E52 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F0BA4299049B800660E52 /* Keys.swift */; };
 		DE5F0BA72990513F00660E52 /* GeocodingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F0BA62990513F00660E52 /* GeocodingManager.swift */; };
 		DE5F0BA92990579D00660E52 /* ReverseGCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F0BA82990579D00660E52 /* ReverseGCModel.swift */; };
 		DEA95B0D2976A38900AE8D0C /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B0C2976A38900AE8D0C /* ReportView.swift */; };
@@ -92,6 +92,7 @@
 		0214CCD429926D6400EC5CAE /* secondInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondInfoTableViewCell.swift; sourceTree = "<group>"; };
 		5255AD62BEE5A9637A7D0115 /* Pods-Damso.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Damso.release.xcconfig"; path = "Target Support Files/Pods-Damso/Pods-Damso.release.xcconfig"; sourceTree = "<group>"; };
 		DB7F394FDC0E35B9274B56E2 /* Pods-Damso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Damso.debug.xcconfig"; path = "Target Support Files/Pods-Damso/Pods-Damso.debug.xcconfig"; sourceTree = "<group>"; };
+		DE0139EC29953DD400EC9A5A /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keys.swift; path = "../../../../../../../PersonalFolder/Study/UMC/3기/앱런칭 프로젝트/iOS/Keys.swift"; sourceTree = "<group>"; };
 		DE123C26296C39AC00B7149B /* Damso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Damso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE123C29296C39AC00B7149B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE123C2B296C39AC00B7149B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,7 +101,6 @@
 		DE123C37296C39AE00B7149B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE123C4E296D743C00B7149B /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		DE123C50296D746300B7149B /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
-		DE5F0BA4299049B800660E52 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		DE5F0BA62990513F00660E52 /* GeocodingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingManager.swift; sourceTree = "<group>"; };
 		DE5F0BA82990579D00660E52 /* ReverseGCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseGCModel.swift; sourceTree = "<group>"; };
 		DEA95B0C2976A38900AE8D0C /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
@@ -292,8 +292,7 @@
 		DE5F0BA029903E9600660E52 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				DE5F0BA4299049B800660E52 /* Keys.swift */,
-				EC46E749299525A600F767C4 /* Keys.swift */,
+				DE0139EC29953DD400EC9A5A /* Keys.swift */,
 				DE5F0BA62990513F00660E52 /* GeocodingManager.swift */,
 				DE5F0BA82990579D00660E52 /* ReverseGCModel.swift */,
 				EC46E74B2995600100F767C4 /* Markers.swift */,
@@ -533,7 +532,7 @@
 				EC46E74429892CCE00F767C4 /* BottomSheetViewController.swift in Sources */,
 				0214CCE029926D6400EC5CAE /* editView.swift in Sources */,
 				0214CCDA29926D6400EC5CAE /* PopupView.swift in Sources */,
-				EC46E74A299525A600F767C4 /* Keys.swift in Sources */,
+				DE0139ED29953DD500EC9A5A /* Keys.swift in Sources */,
 				DE5F0BA72990513F00660E52 /* GeocodingManager.swift in Sources */,
 				DEA95B1D297751D400AE8D0C /* OnboardingMessage.swift in Sources */,
 				DE123C51296D746300B7149B /* BaseView.swift in Sources */,
@@ -561,7 +560,6 @@
 				DEA95B1929774ED700AE8D0C /* OnboardingView.swift in Sources */,
 				EC46E74029892CCE00F767C4 /* MainViewController.swift in Sources */,
 				DEA95B2C29786C6E00AE8D0C /* UIColor+Extension.swift in Sources */,
-				DE5F0BA5299049B800660E52 /* Keys.swift in Sources */,
 				DEA95B3D2988410D00AE8D0C /* BookmarkView.swift in Sources */,
 				DEA95B2E2978729A00AE8D0C /* OnboardingCollectionViewCell.swift in Sources */,
 				EC46E74C2995600100F767C4 /* Markers.swift in Sources */,
