@@ -20,11 +20,12 @@ class MainViewController: UIViewController, UISheetPresentationControllerDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let mapView = NMFMapView(frame: view.frame)
-        view.addSubview(mapView)
+        let naverMapView = NMFNaverMapView(frame: view.frame)
+        naverMapView.showLocationButton = true
+        view.addSubview(naverMapView)
         
-        mapView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
-        mapView.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 0).isActive = true
+        naverMapView.mapView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
+        naverMapView.mapView.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 0).isActive = true
         
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -38,23 +39,20 @@ class MainViewController: UIViewController, UISheetPresentationControllerDelegat
                     //현 위치로 카메라 이동
             let cameraUpdate = NMFCameraUpdate(scrollTo: NMGLatLng(lat: locationManager.location?.coordinate.latitude ?? 0, lng: locationManager.location?.coordinate.longitude ?? 0))
             cameraUpdate.animation = .easeIn
-            mapView.moveCamera(cameraUpdate)
+            naverMapView.mapView.moveCamera(cameraUpdate)
                     
                 } else {
                     print("위치 서비스 Off 상태")
                 }
         
-        let marker = NMFMarker()
-        marker.position = NMGLatLng(lat: 37.5670135, lng: 126.9783740)
-        marker.mapView = mapView
-        
-        let naverMapView = NMFNaverMapView(frame: view.frame)
-        naverMapView.showLocationButton = true
-        view.addSubview(naverMapView)
+//        var marker = NMFMarker()
+//        marker.position = NMGLatLng(lat: 37.5670135, lng: 126.9783740)
+//        marker.mapView = mapView
         
         
-        
-
+        MarkersHTTPMethod.markersHTTPMethod.callPin{ marker in
+            marker.mapView = naverMapView.mapView
+        }
     }
     
 
