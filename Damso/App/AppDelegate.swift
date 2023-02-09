@@ -7,6 +7,8 @@
 
 import UIKit
 import NMapsMap
+import KakaoSDKCommon
+import NaverThirdPartyLogin
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
