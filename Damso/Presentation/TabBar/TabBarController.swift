@@ -18,17 +18,19 @@ class TabBarController: UITabBarController {
         let bookmark = UINavigationController(rootViewController: BookmarkVC())
         let main = UINavigationController(rootViewController: MainViewController())
         let search = UINavigationController(rootViewController: SearchViewController())
+        let myInfo = UINavigationController(rootViewController: MydataVC())
 
         //UITabBarItem 인스턴스를 생성시킨 다음, ViewController의 tabBarItem property에 할당하면 됩니다.
         report.tabBarItem = UITabBarItem(title: "제보하기", image: UIImage(systemName: "plus.circle"), selectedImage: UIImage(systemName: "plus.circle")?.withTintColor(.blue))
         bookmark.tabBarItem = UITabBarItem(title: "즐겨찾기", image: UIImage(systemName: "heart"), selectedImage: UIImage(systemName: "heart.fill"))
         main.tabBarItem = UITabBarItem(title: "메인", image: UIImage(named: "HomeIcon"), selectedImage: UIImage(named: "HomeIconSelected"))
         search.tabBarItem = UITabBarItem(title: "주변", image: UIImage(named: "SearchIcon"), selectedImage: UIImage(named: "SearchIcon")?.withTintColor(.blue))
+        myInfo.tabBarItem = UITabBarItem(title: "내 정보", image: UIImage(named: "MyInfo"), selectedImage:UIImage(named: "MyInfo") )
         
         
         //TabBarController에 ViewController를 포함시킴
         //viewController 변수에 직접 접근해도 됩
-        self.setViewControllers([main, search, report, bookmark], animated: false)
+        self.setViewControllers([main, search, report, bookmark, myInfo], animated: false)
         
         self.tabBar.backgroundColor = .white //TabBar의 색을 하얀색으로 설정
     }
