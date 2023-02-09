@@ -7,5 +7,11 @@ target 'Damso' do
 
   # Pods for Damso
 	pod 'NMapsMap'
+  pod 'KakaoSDKAuth'
+  pod 'KakaoSDKCommon'
+  pod 'KakaoSDKUser'
+  pod 'SnapKit'
+  pod 'Then'
+  pod 'naveridlogin-sdk-ios'
 
 end

@@ -17,7 +17,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         NMFAuthManager.shared().clientId = Keys.naverClientID
+        KakaoSDK.initSDK(appKey: "10b5acb7e08f675d7eb1ca51cd7e4df8")
         
+        application.registerForRemoteNotifications()
+        let instance = NaverThirdPartyLoginConnection.getSharedInstance()
+        instance?.isNaverAppOauthEnable = true //네이버앱 로그인 설정
+        instance?.isInAppOauthEnable = true //사파리 로그인 설정
+
+        instance?.serviceUrlScheme = "youbeen" //URL Scheme
+        instance?.consumerKey = "hMZvNe3ACPoJdrLoSt6I" //클라이언트 아이디
+        instance?.consumerSecret = "aqK98e8zWw" //시크릿 아이디
+        instance?.appName = "loginPage" //앱이름
         return true
     }
 
@@ -34,6 +44,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+            NaverThirdPartyLoginConnection.getSharedInstance()?.application(app, open: url, options: options)
+            return true
+    }
+
 
 
 }
