@@ -11,6 +11,11 @@ import Then
 
 class ReportInputView: BaseView {
     //MARK: - Properties
+    let scrollView = UIScrollView().then{
+        $0.backgroundColor = .white
+        $0.showsHorizontalScrollIndicator = false
+    }
+    let contentView = UIView()
     let locationTitle = UILabel().then{
         $0.font = UIFont(name: "NotoSansKR-Bold", size: 15)
         $0.textColor = .black
@@ -49,21 +54,26 @@ class ReportInputView: BaseView {
         $0.titleLabel?.adjustsFontSizeToFitWidth = true
         $0.setImage(UIImage(systemName: "square"), for: .normal)
         $0.setImage(UIImage(systemName: "checkmark.square"), for: .selected)
+        $0.tintColor = .black
         $0.backgroundColor = .clear
     }
     let OpenButton = UIButton().then{
         $0.setTitle("개방형", for: .normal)
         $0.setTitleColor(.black, for: .normal)
+        $0.titleLabel?.adjustsFontSizeToFitWidth = true
         $0.setImage(UIImage(systemName: "square"), for: .normal)
         $0.setImage(UIImage(systemName: "checkmark.square"), for: .selected)
+        $0.tintColor = .black
         $0.backgroundColor = .clear
     }
     
     let closedButton = UIButton().then {
         $0.setTitle("폐쇄형", for: .normal)
         $0.setTitleColor(.black, for: .normal)
+        $0.titleLabel?.adjustsFontSizeToFitWidth = true
         $0.setImage(UIImage(systemName: "square"), for: .normal)
         $0.setImage(UIImage(systemName: "checkmark.square"), for: .selected)
+        $0.tintColor = .black
         $0.backgroundColor = .clear
     }
     
@@ -73,6 +83,7 @@ class ReportInputView: BaseView {
         $0.titleLabel?.adjustsFontSizeToFitWidth = true
         $0.setImage(UIImage(systemName: "square"), for: .normal)
         $0.setImage(UIImage(systemName: "checkmark.square"), for: .selected)
+        $0.tintColor = .black
         $0.backgroundColor = .clear
     }
     
@@ -125,30 +136,39 @@ class ReportInputView: BaseView {
     
     //MARK: - setupUI
     override func setupUI(){
-        self.addSubview(locationTitle)
-        self.addSubview(locationTextField)
+        self.addSubview(scrollView)
+        self.scrollView.addSubview(contentView)
+        self.contentView.addSubview(locationTitle)
+        self.contentView.addSubview(locationTextField)
         locationTextField.addSubview(locationLabel)
-        self.addSubview(nameLabel)
-        self.addSubview(nameTextField)
-        self.addSubview(classificationLabel)
-        self.addSubview(stackV)
-        self.addSubview(supervisorLabel)
-        self.addSubview(supervisorTextField)
-        self.addSubview(imgLabel)
-        self.addSubview(imgView)
-        self.addSubview(uploadButton)
-        self.addSubview(reportButton)
+        self.contentView.addSubview(nameLabel)
+        self.contentView.addSubview(nameTextField)
+        self.contentView.addSubview(classificationLabel)
+        self.contentView.addSubview(stackV)
+        self.contentView.addSubview(supervisorLabel)
+        self.contentView.addSubview(supervisorTextField)
+        self.contentView.addSubview(imgLabel)
+        self.contentView.addSubview(imgView)
+        self.contentView.addSubview(uploadButton)
+        self.contentView.addSubview(reportButton)
     }
     
     //MARK: - setConstraints
     override func setConstraints(){
+        scrollView.snp.makeConstraints{ make in
+            make.top.bottom.trailing.leading.equalTo(safeAreaLayoutGuide)
+        }
+        contentView.snp.makeConstraints{ make in
+            make.top.bottom.trailing.leading.equalToSuperview()
+            make.width.equalToSuperview()
+        }
         locationTitle.snp.makeConstraints{ make in
-            make.top.equalTo(safeAreaLayoutGuide).inset(5)
-            make.leading.equalTo(safeAreaLayoutGuide).inset(13)
+            make.top.equalToSuperview().inset(5)
+            make.leading.equalToSuperview().inset(13)
         }
         locationTextField.snp.makeConstraints{ make in
             make.top.equalTo(locationTitle.snp.bottom).offset(7)
-            make.trailing.leading.equalTo(safeAreaLayoutGuide).inset(13)
+            make.trailing.leading.equalToSuperview().inset(13)
             make.height.equalTo(50)
         }
         locationLabel.snp.makeConstraints{ make in
@@ -160,7 +180,7 @@ class ReportInputView: BaseView {
         }
         nameTextField.snp.makeConstraints{ make in
             make.top.equalTo(nameLabel.snp.bottom).offset(7)
-            make.leading.trailing.equalTo(safeAreaLayoutGuide).inset(13)
+            make.leading.trailing.equalToSuperview().inset(13)
             make.height.equalTo(50)
         }
         classificationLabel.snp.makeConstraints{ make in
@@ -169,24 +189,24 @@ class ReportInputView: BaseView {
         }
         stackV.snp.makeConstraints{ make in
             make.top.equalTo(classificationLabel.snp.bottom).offset(7)
-            make.leading.trailing.equalTo(safeAreaLayoutGuide).inset(13)
+            make.leading.trailing.equalToSuperview().inset(13)
             make.height.equalTo(50)
         }
         supervisorLabel.snp.makeConstraints{ make in
             make.top.equalTo(stackV.snp.bottom).offset(30)
-            make.leading.trailing.equalTo(safeAreaLayoutGuide).inset(13)
+            make.leading.trailing.equalToSuperview().inset(13)
         }
         supervisorTextField.snp.makeConstraints{ make in
             make.top.equalTo(supervisorLabel.snp.bottom).offset(7)
-            make.leading.trailing.equalTo(safeAreaLayoutGuide).inset(13)
+            make.leading.trailing.equalToSuperview().inset(13)
             make.height.equalTo(50)
         }
         imgLabel.snp.makeConstraints{ make in
             make.top.equalTo(supervisorTextField.snp.bottom).offset(30)
-            make.leading.trailing.equalTo(safeAreaLayoutGuide).inset(13)
+            make.leading.trailing.equalToSuperview().inset(13)
         }
         imgView.snp.makeConstraints{ make in
-            make.leading.equalTo(safeAreaLayoutGuide).inset(13)
+            make.leading.equalToSuperview().inset(13)
             make.top.equalTo(imgLabel.snp.bottom).offset(7)
             make.width.equalTo(113)
             make.height.equalTo(imgView.snp.width)
@@ -194,12 +214,13 @@ class ReportInputView: BaseView {
         uploadButton.snp.makeConstraints{ make in
             make.centerY.equalTo(imgView.snp.centerY)
             make.leading.equalTo(imgView.snp.trailing).offset(15)
-            make.trailing.equalTo(safeAreaLayoutGuide).inset(15)
+            make.trailing.equalToSuperview().inset(15)
         }
         reportButton.snp.makeConstraints{ make in
-            make.centerX.equalTo(safeAreaLayoutGuide.snp.centerX)
-            make.bottom.equalTo(safeAreaLayoutGuide).inset(28)
-            make.trailing.leading.equalTo(safeAreaLayoutGuide).inset(110)
+            make.centerX.equalToSuperview()
+            make.top.equalTo(imgView.snp.bottom).offset(28)
+            make.bottom.equalToSuperview().inset(28)
+            make.trailing.leading.equalToSuperview().inset(110)
         }
         
     }
