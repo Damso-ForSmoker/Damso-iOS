@@ -10,8 +10,6 @@ target 'Damso' do
   pod 'KakaoSDKAuth'
   pod 'KakaoSDKCommon'
   pod 'KakaoSDKUser'
-  pod 'SnapKit'
-  pod 'Then'
   pod 'naveridlogin-sdk-ios'
 
 end

@@ -1,3 +1,8 @@
 ${PODS_ROOT}/Target Support Files/Pods-Damso/Pods-Damso-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/KakaoSDKAuth/KakaoSDKAuth.framework
+${BUILT_PRODUCTS_DIR}/KakaoSDKCommon/KakaoSDKCommon.framework
+${BUILT_PRODUCTS_DIR}/KakaoSDKUser/KakaoSDKUser.framework
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/NMapsGeometry/NMapsGeometry.framework/NMapsGeometry
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/NMapsMap/NMapsMap.framework/NMapsMap
+${PODS_XCFRAMEWORKS_BUILD_DIR}/naveridlogin-sdk-ios/NaverThirdPartyLogin.framework/NaverThirdPartyLogin
