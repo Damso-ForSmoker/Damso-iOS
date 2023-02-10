@@ -11,16 +11,7 @@ import Then
 
 class MydataView: UIView {
 
-//    var titleLabel = UILabel().then{
-//        $0.backgroundColor = .white
-//        $0.text = "내 정보"
-//        $0.textColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
-//        $0.font = UIFont(name: "NotoSans-Bold", size: 20)
-//        $0.textAlignment = .center
-//    }
-    
     var notLoginView = UIView().then {
-  //      $0.frame = CGRect(x: 0, y: 0, width: 390, height: 167)
         $0.backgroundColor = .white
     }
     
@@ -67,12 +58,6 @@ class MydataView: UIView {
         $0.textAlignment = .center
     }
     
-/*    let loginButton = UIButton().then {
-        $0.setTitle("로그인 하러 가기", for: .normal)
-        $0.titleLabel?.font = UIFont(name: "AppleSDGothicNeo-Regular", size: 16)
-        $0.setTitleColor(UIColor(red: 0.851, green: 0.851, blue: 0.851, alpha: 1), for: .normal)
-        $0.setUnderline()
-    } */
     var setLabel = UILabel().then {
         $0.text = "설정"
         $0.textColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
@@ -95,7 +80,6 @@ class MydataView: UIView {
         /// - addSubviews를 하거나 뷰의 배경색을 바꾸는 등 설정을 합니다.
         func setupUI() {
             self.backgroundColor = .white
-//            self.addSubview(titleLabel)
             self.addSubview(notLoginView)
             notLoginView.addSubview(shadows)
             
@@ -106,7 +90,6 @@ class MydataView: UIView {
             notLoginView.addSubview(shapes)
             notLoginView.addSubview(notloginLabel)
             notLoginView.addSubview(infologLabel)
-        //    self.addSubview(loginButton)
             
             layer1.bounds = shapes.bounds
             layer1.position = shapes.center
@@ -120,12 +103,6 @@ class MydataView: UIView {
         /// UI 제약조건 설정
         /// - Anchor, Snapkit 등을 이용해 UI 컴포넌트의 위치, 크기 등 제약조건을 설정합니다.
         func setConstraints() {
-//            titleLabel.snp.makeConstraints{ make in
-//                make.width.equalTo(61)
-//                make.height.equalTo(27)
-//                make.top.equalTo(safeAreaLayoutGuide).offset(11)
-//                make.centerX.equalTo(safeAreaLayoutGuide.snp.centerX)
-//            }
             
             notLoginView.snp.makeConstraints{ make in
                 make.width.equalTo(390)
@@ -149,28 +126,10 @@ class MydataView: UIView {
                 make.top.equalTo(notLoginView.snp.top).offset(61)
                 make.centerX.equalTo(safeAreaLayoutGuide.snp.centerX)
             }
-            
- /*           loginButton.snp.makeConstraints { make in
-                make.top.equalTo(notLoginView.snp.top).offset(125)
-                make.left.equalTo(notLoginView.snp.left).offset(143)
-                make.width.equalTo(106)
-                make.height.equalTo(19)
-            }*/
     
     }
     
 
 }
 
-/*
- extension UIButton {
- func setUnderline() {
- guard let title = title(for: .normal) else {return}
- let attributedString = NSMutableAttributedString(string: title)
- attributedString.addAttribute(.underlineStyle, value: NSUnderlineStyle.single.rawValue,
- range: NSRange(location: 0, length: title.count))
- 
- setAttributedTitle(attributedString, for: .normal)
- }
- } */
 

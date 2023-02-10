@@ -12,11 +12,7 @@ import Then
 class MydataVC: UIViewController {
     
     let mydataView = MydataView()
-  //  let loginDataView = LoginDataView()
     
- //   let setButton = UIButton().then {
- //       $0.setImage(UIImage(named: "Vector"), for: .normal)
- //   }
     let titleLabel = UILabel().then {
         $0.text = "내 정보"
         $0.textColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
@@ -49,13 +45,7 @@ class MydataVC: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        
-   //     self.view.addSubview(loginDataView)
-     //   self.view.addSubview(setButton)
-     //   setButton.addTarget(self, action: #selector(goSetProfile(_:)), for: .touchUpInside)
-       
-     //   self.view.addSubview(mydataView)
+  
         self.view.addSubview(loginButton)
         
         loginButton.addTarget(self, action: #selector(goLogin(_:)), for: .touchUpInside)
@@ -76,11 +66,6 @@ class MydataVC: UIViewController {
     
 
     func setupView() {
-/*        setButton.snp.makeConstraints { make in
-            make.top.equalTo(loginDataView.loginView.snp.top).offset(8)
-            make.left.equalToSuperview().offset(363)
-            make.width.height.equalTo(12)
-        } */
         
         loginButton.snp.makeConstraints { make in
             make.top.equalTo(mydataView.notLoginView.snp.top).offset(125)
@@ -102,13 +87,6 @@ class MydataVC: UIViewController {
         tableView.reloadData()
     }
 
-   @objc func goSetProfile(_ sender: UIButton) {
-        guard let uvc = self.storyboard?.instantiateViewController(withIdentifier: "editVC") else {return}
-        uvc.modalPresentationStyle = .fullScreen //전체화면으로 보이게 설정
-        // vcName?.modalTransitionStyle = .crossDissolve //전환 애니메이션 설정
-        self.present(uvc, animated: true)
- }
-    
     @objc func goLogin(_ sender: UIButton) {
         let secondVC = LoginVC()
         self.navigationController?.pushViewController(secondVC, animated: true)

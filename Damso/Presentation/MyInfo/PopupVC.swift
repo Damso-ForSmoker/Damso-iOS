@@ -25,7 +25,6 @@ class PopupVC: UIViewController {
     }
     
     func configure() {
-      //  popupView.cancelButton.addTarget(self, action: #selector(goBack(_:)), for: .touchUpInside)
     }
         /// 네비게이션 바 설정
         /// - 타이틀, 아이템 등 네비게이션과 관련된 설정을 합니다.

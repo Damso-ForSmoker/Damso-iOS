@@ -11,6 +11,13 @@ class editVC: UIViewController {
 
     let editview = editView()
     
+    let titleLabel = UILabel().then {
+        $0.text = "내 정보 수정"
+        $0.textColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
+        $0.font = UIFont(name: "NotoSansKR-Bold", size: 20)
+        $0.sizeToFit()
+    }
+    
     override func loadView() {
         view = editview
     }
@@ -18,7 +25,6 @@ class editVC: UIViewController {
         super.viewDidLoad()
 
         
-        editview.backButton.addTarget(self, action: #selector(gotoBack(_:)), for: .touchUpInside)
         configure()
         setNavigationBar()
         // Do any additional setup after loading the view.
@@ -27,11 +33,13 @@ class editVC: UIViewController {
     func configure() {
     }
     
-    func setNavigationBar() {}
+    func setNavigationBar() {
+        self.navigationItem.titleView = titleLabel
+        self.navigationController?.navigationBar.tintColor = .black
+        self.navigationController?.navigationBar.topItem?.title = ""
+        
+    }
 
-    @objc func gotoBack(_ sender: UIButton) {
-         self.dismiss(animated: true)
-     }
 
     
 }

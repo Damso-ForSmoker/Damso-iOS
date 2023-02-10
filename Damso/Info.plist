@@ -12,11 +12,21 @@
 				<string>kakao10b5acb7e08f675d7eb1ca51cd7e4df8</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>youbeen</string>
+			</array>
+		</dict>
 	</array>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>kakaolink</string>
 		<string>kakaokompassauth</string>
+		<string>naversearchthirdlogin</string>
+		<string>naversearchapp</string>
 	</array>
 	<key>NSAppTransportSecurity</key>
 	<dict>
@@ -32,6 +42,9 @@
 		<string>NotoSansKR-Regular.otf</string>
 		<string>NotoSansKR-Thin.otf</string>
 		<string>NotoSansDisplay-ExtraCondensed.ttf</string>
+		<string>RobotoCondensed-Regular.ttf</string>
+		<string>NotoSans-SemiBold.ttf</string>
+		<string>AppleSDGothicNeo-Regular.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
