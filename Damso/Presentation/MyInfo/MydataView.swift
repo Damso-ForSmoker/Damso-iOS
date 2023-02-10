@@ -11,13 +11,13 @@ import Then
 
 class MydataView: UIView {
 
-    var titleLabel = UILabel().then{
-        $0.backgroundColor = .white
-        $0.text = "내 정보"
-        $0.textColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
-        $0.font = UIFont(name: "NotoSans-Bold", size: 20)
-        $0.textAlignment = .center
-    }
+//    var titleLabel = UILabel().then{
+//        $0.backgroundColor = .white
+//        $0.text = "내 정보"
+//        $0.textColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
+//        $0.font = UIFont(name: "NotoSans-Bold", size: 20)
+//        $0.textAlignment = .center
+//    }
     
     var notLoginView = UIView().then {
   //      $0.frame = CGRect(x: 0, y: 0, width: 390, height: 167)
@@ -56,7 +56,7 @@ class MydataView: UIView {
     let notloginLabel = UILabel().then {
         $0.text = "로그인이 되어있지 않아요!"
         $0.textColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
-        $0.font = UIFont(name: "NotoSans-Bold", size: 20)
+        $0.font = UIFont(name: "NotoSansKR-Bold", size: 20)
         $0.textAlignment = .center
     }
     
@@ -76,7 +76,7 @@ class MydataView: UIView {
     var setLabel = UILabel().then {
         $0.text = "설정"
         $0.textColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
-        $0.font = UIFont(name: "NotoSans-Bold", size: 20)
+        $0.font = UIFont(name: "NotoSansKR-Bold", size: 20)
         $0.textAlignment = .center
     }
     
@@ -95,7 +95,7 @@ class MydataView: UIView {
         /// - addSubviews를 하거나 뷰의 배경색을 바꾸는 등 설정을 합니다.
         func setupUI() {
             self.backgroundColor = .white
-            self.addSubview(titleLabel)
+//            self.addSubview(titleLabel)
             self.addSubview(notLoginView)
             notLoginView.addSubview(shadows)
             
@@ -120,34 +120,34 @@ class MydataView: UIView {
         /// UI 제약조건 설정
         /// - Anchor, Snapkit 등을 이용해 UI 컴포넌트의 위치, 크기 등 제약조건을 설정합니다.
         func setConstraints() {
-            titleLabel.snp.makeConstraints{ make in
-                make.width.equalTo(61)
-                make.height.equalTo(27)
-                make.top.equalTo(safeAreaLayoutGuide).offset(11)
-                make.centerX.equalTo(safeAreaLayoutGuide.snp.centerX)
-            }
+//            titleLabel.snp.makeConstraints{ make in
+//                make.width.equalTo(61)
+//                make.height.equalTo(27)
+//                make.top.equalTo(safeAreaLayoutGuide).offset(11)
+//                make.centerX.equalTo(safeAreaLayoutGuide.snp.centerX)
+//            }
             
             notLoginView.snp.makeConstraints{ make in
                 make.width.equalTo(390)
                 make.height.equalTo(167)
                 
-                make.top.equalTo(titleLabel.snp.bottom).offset(23)
+                make.top.equalTo(safeAreaLayoutGuide).offset(23)
                 make.centerX.equalTo(safeAreaLayoutGuide.snp.centerX)
             }
             
             setLabel.snp.makeConstraints{ make in
-                make.top.equalTo(safeAreaLayoutGuide).offset(244)
+                make.top.equalTo(notLoginView.snp.bottom).offset(16)
                 make.left.equalToSuperview().offset(17)
             }
      
             notloginLabel.snp.makeConstraints { make in
                 make.top.equalTo(notLoginView.snp.top).offset(36)
-                make.left.equalTo(notLoginView.snp.left).offset(85)
+                make.centerX.equalTo(safeAreaLayoutGuide.snp.centerX)
             }
             
             infologLabel.snp.makeConstraints { make in
                 make.top.equalTo(notLoginView.snp.top).offset(61)
-                make.left.equalTo(notLoginView.snp.left).offset(50)
+                make.centerX.equalTo(safeAreaLayoutGuide.snp.centerX)
             }
             
  /*           loginButton.snp.makeConstraints { make in

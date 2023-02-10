@@ -45,13 +45,13 @@ class LoginView: UIView {
     func setConstraints() {
         logoImage.snp.makeConstraints { make in
             make.centerX.equalTo(safeAreaLayoutGuide.snp.centerX)
-            make.top.equalToSuperview().offset(67)
+            make.top.equalToSuperview().offset(47)
             make.width.equalTo(260)
             make.height.equalTo(194)
         }
         
         logoLabel.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(203)
+            make.top.equalToSuperview().offset(183)
             make.centerX.equalTo(safeAreaLayoutGuide.snp.centerX)
             make.width.equalTo(246)
             make.height.equalTo(28)

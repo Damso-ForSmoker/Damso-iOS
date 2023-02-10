@@ -43,7 +43,7 @@ class afterLoginVC: UIViewController {
         self.view.addSubview(setButton)
         setButton.addTarget(self, action: #selector(goSetProfile(_:)), for: .touchUpInside)
        
-        getInfoData()
+//        getInfoData()
         configure()
         setNavigationBar()
         setupView()
@@ -93,29 +93,29 @@ class afterLoginVC: UIViewController {
          self.present(uvc, animated: true)
   }
     
-    func getInfoData() {
-        GetInfoService.shared.getInfo { (response) in
-            
-            switch(response) {
-                
-            case .success(let personData):
-                
-                if let data = personData as? MyInfo {
-                    self.loginDataView.userLabel.text = data.nickname
-                    self.loginDataView.profileImage.image = UIImage(named: data.profile)
-                }
-                
-            case .requestErr(let message) :
-                print("requestErr", message)
-            case .pathErr :
-                print("pathErr")
-            case .serverErr :
-                print("serverErr")
-            case .networkFail :
-                print("networkFail")
-            }
-        }
-    }
+//    func getInfoData() {
+//        GetInfoService.shared.getInfo { (response) in
+//
+//            switch(response) {
+//
+//            case .success(let personData):
+//
+//                if let data = personData as? MyInfo {
+//                    self.loginDataView.userLabel.text = data.nickname
+//                    self.loginDataView.profileImage.image = UIImage(named: data.profile)
+//                }
+//
+//            case .requestErr(let message) :
+//                print("requestErr", message)
+//            case .pathErr :
+//                print("pathErr")
+//            case .serverErr :
+//                print("serverErr")
+//            case .networkFail :
+//                print("networkFail")
+//            }
+//        }
+//    }
 
 }
 
