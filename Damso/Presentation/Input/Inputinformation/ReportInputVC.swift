@@ -20,7 +20,7 @@ class ReportInputVC: BaseVC {
     let imgPicker = UIImagePickerController().then{
         $0.sourceType = .photoLibrary //image를 앨범에서 선택하는 코드
     }
-    
+    var btncheck : Bool = false
     
     override func loadView(){
         view = reportinputView
@@ -61,7 +61,13 @@ class ReportInputVC: BaseVC {
     @objc func tappedclassificationButton(_ sender: UIButton){ //버튼 하나만 설정하게 하는 메소드
         for btn in btnArray{
             if sender == btn{
-                btn.isSelected = true
+                if btn.isSelected{
+                    btn.isSelected = false
+                    btncheck = false
+                } else{
+                    btn.isSelected = true
+                    btncheck = true
+                }
             } else {
                 btn.isSelected = false
             }
@@ -69,7 +75,15 @@ class ReportInputVC: BaseVC {
     }
     
     @objc func tappedReportButton(_ sender: UIButton){
-        lazy var data: ReportInputModel = ReportInputModel(location: reportinputView.locationLabel?.text, title: reportinputView.locationTitle?.text, type: 2, installAgency: reportinputView.supervisorTextField?.text)
+        if reportinputView.nameTextField.text?.isEmpty ?? true || reportinputView.supervisorTextField.text?.isEmpty ?? true || !btncheck {//텍스트 필드에 값이 없을때 와 시설 형태가 클릭된게 없을 때
+            print("불가능")
+        } else{
+            let data = ReportInputModel(location: reportinputView.locationLabel.text!, title: reportinputView.nameTextField.text!, type: 2, installAgency: reportinputView.supervisorTextField.text!)
+            print(data)
+            ReportInputManager.reportInputManager.uploadNewArea(model: data, completion: { resultString in
+                print(resultString)
+            })
+        }
     }
     
     @objc func tappedUploadButton(_ sender: UIButton){

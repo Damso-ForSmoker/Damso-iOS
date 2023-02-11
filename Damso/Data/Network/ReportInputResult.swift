@@ -10,5 +10,5 @@ import Foundation
 struct ReportInputResult: Codable{
     var isSuccess: Bool
     var code: Int
-    var message: Bool
+    var message: String
 }

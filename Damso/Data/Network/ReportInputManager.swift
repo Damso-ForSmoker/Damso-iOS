@@ -15,8 +15,9 @@ class ReportInputManager{
     private init() {}
     
     //MARK: - callAPI
-    func uploadNewArea(model: ReportInputModel, completion: @escaping (Bool)->Void){
-        let url = "3.37.122.59:3000/main/facility/register" //url
+    func uploadNewArea(model: ReportInputModel, completion: @escaping (String)->Void){
+        let url = "http://3.37.122.59:3000/main/facility/register" //url
+        var resultString = ""
         
         let header: HTTPHeaders = [
             "Content-Type" : "multipart/form-data" //멀티파트 폼 데이터 형식으로 넘길 것이라는 것을 명시
@@ -44,8 +45,12 @@ class ReportInputManager{
             case .success(let result):
                 if result.isSuccess{
                     print("업로드 성공")
+                    resultString = "\(result.isSuccess)"
+                    completion(resultString)
                 } else {
                     print(result.message)
+                    resultString = "\(result.message)"
+                    completion(resultString)
                 }
             case .failure(let error):
                 print(error.localizedDescription)
