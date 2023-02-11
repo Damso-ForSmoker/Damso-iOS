@@ -7,7 +7,7 @@
 
 import Foundation
 
-// MARK: - Welcome
+// MARK: - Markers
 struct Markers: Codable {
     let isSuccess: Bool
     let code: Int
@@ -23,6 +23,25 @@ struct Pin: Codable {
     enum CodingKeys: String, CodingKey {
         case facilityId = "facility_id"
         case la, lo
+    }
+}
+
+// MARK: - DetailSimple
+struct DetailSimple: Codable {
+    let isSuccess: Bool
+    let code: Int
+    let message: Bool
+    let result: [Simple]
+}
+
+// MARK: - Result
+struct Simple: Codable {
+    let facilityId: Int
+    let title, img, report, rating: String
+
+    enum CodingKeys: String, CodingKey {
+        case facilityId = "facility_id"
+        case title, img, report, rating
     }
 }
 
