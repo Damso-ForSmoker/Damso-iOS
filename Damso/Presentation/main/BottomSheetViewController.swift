@@ -11,12 +11,12 @@ import UIKit
 
 class BottomSheetViewController: UIViewController {
 
+    @IBAction func nextButton(_ sender: Any) {
+        guard let nextVC = self.storyboard?.instantiateViewController(identifier: "BottomSheetViewController2") as? BottomSheetViewController2 else {return}
+        
+        self.navigationController?.pushViewController(nextVC, animated: true)
+    }
+    
+    
+
 }
-//extension UIButton {
-//
-//  open override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
-//    let margin: CGFloat = 100
-//    let hitArea = self.bounds.insetBy(dx: -margin, dy: -margin)
-//    return hitArea.contains(point)
-//  }
-//}
