@@ -16,32 +16,11 @@ class infoTableViewCell: UITableViewCell {
     static let identifier = "infoTableViewCell"
     
     var cellDelegate: infoTableViewDelegate?
- /*   lazy var stackView: UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [ leftLabel, rightButton])
-        contentView.addSubview(stackView)
 
-        stackView.snp.makeConstraints { (make) in
-            make.top.left.bottom.right.equalTo(contentView)
-            //make.left.right.equalTo(contentView)
-            //make.top.equalTo(contentView).offset(273)
-        }
-        return stackView
-    }() */
-    
-/*    lazy var leftLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont(name: "NotoSans-Regular", size: 16)
-        
-        return label
-    }()*/
     var leftLabel = UILabel().then {
         $0.font = UIFont(name: "NotoSans-Regular", size: 16)
     }
-/*    lazy var rightButton: UIButton = {
-        let button = UIButton()
-        button.setBackgroundImage(UIImage(named: "chevron-right"), for: .normal)
-        return button
-    }()*/
+
     var rightButton = UIButton().then {
         $0.setBackgroundImage(UIImage(named: "chevron-right"), for: .normal)
     }

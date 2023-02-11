@@ -31,7 +31,7 @@ class PopupView: UIView {
     
     let sLabel = UILabel().then {
         $0.text = "제보하신 흡연구역이 모두 사라져요"
-        $0.font = UIFont(name: "NotoSans-Regular", size: 12)
+        $0.font = UIFont(name: "NotoSansKR-Regular", size: 12)
         $0.textColor = UIColor(red: 0.658, green: 0.658, blue: 0.658, alpha: 1)
     }
     
@@ -39,7 +39,7 @@ class PopupView: UIView {
         $0.layer.backgroundColor = UIColor(red: 0.823, green: 0.89, blue: 1, alpha: 1).cgColor
         $0.layer.cornerRadius = 24
         $0.setTitle("네, 탈퇴할게요", for: .normal)
-        $0.titleLabel?.font = UIFont(name: "NotoSans-Regular", size: 15)
+        $0.titleLabel?.font = UIFont(name: "NotoSansKR-Regular", size: 15)
         $0.setTitleColor(UIColor(red: 0.259, green: 0.522, blue: 0.957, alpha: 1), for: .normal)
     }
     
@@ -49,9 +49,8 @@ class PopupView: UIView {
         $0.layer.backgroundColor = UIColor(red: 0.259, green: 0.522, blue: 0.957, alpha: 1).cgColor
         $0.layer.cornerRadius = 24
         $0.setTitle("취소", for: .normal)
-        $0.titleLabel?.font = UIFont(name: "NotoSans-Regular", size: 15)
+        $0.titleLabel?.font = UIFont(name: "NotoSansKR-Regular", size: 15)
         $0.setTitleColor(UIColor(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
-     //   $0.addTarget(self, action: #selector(goBack(_:)), for: .touchUpInside)
     }
     
     override init(frame: CGRect) {
@@ -83,16 +82,16 @@ class PopupView: UIView {
         }
         img.snp.makeConstraints { make in
             make.top.equalTo(popview.snp.top).offset(19)
-            make.left.equalTo(popview.snp.left).offset(123)
+            make.centerX.equalTo(safeAreaLayoutGuide.snp.centerX)
             make.width.height.equalTo(55)
         }
         mLabel.snp.makeConstraints { make in
             make.top.equalTo(img.snp.bottom).offset(7)
-            make.left.equalTo(popview.snp.left).offset(34)
+            make.centerX.equalTo(safeAreaLayoutGuide.snp.centerX)
         }
         sLabel.snp.makeConstraints { make in
             make.top.equalTo(mLabel.snp.bottom).offset(7)
-            make.left.equalTo(popview.snp.left).offset(64)
+            make.centerX.equalTo(safeAreaLayoutGuide.snp.centerX)
         }
         delButton.snp.makeConstraints { make in
             make.top.equalTo(sLabel.snp.bottom).offset(23)

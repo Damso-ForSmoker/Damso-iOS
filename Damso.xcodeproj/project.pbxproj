@@ -24,6 +24,8 @@
 		0214CCDF29926D6400EC5CAE /* afterLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0214CCD229926D6400EC5CAE /* afterLoginVC.swift */; };
 		0214CCE029926D6400EC5CAE /* editView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0214CCD329926D6400EC5CAE /* editView.swift */; };
 		0214CCE129926D6400EC5CAE /* secondInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0214CCD429926D6400EC5CAE /* secondInfoTableViewCell.swift */; };
+		02277CAD29965DF4002E164E /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02277CAC29965DF4002E164E /* Keys.swift */; };
+		02277CAF299668FB002E164E /* NotoSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02277CAE299668FB002E164E /* NotoSans-SemiBold.ttf */; };
 		7C7EA1298971C6508DBBC2CE /* Pods_Damso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC41CC4BF6B184B7B5B646D5 /* Pods_Damso.framework */; };
 		DE123C2A296C39AC00B7149B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE123C29296C39AC00B7149B /* AppDelegate.swift */; };
 		DE123C2C296C39AC00B7149B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE123C2B296C39AC00B7149B /* SceneDelegate.swift */; };
@@ -90,6 +92,8 @@
 		0214CCD229926D6400EC5CAE /* afterLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = afterLoginVC.swift; sourceTree = "<group>"; };
 		0214CCD329926D6400EC5CAE /* editView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = editView.swift; sourceTree = "<group>"; };
 		0214CCD429926D6400EC5CAE /* secondInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondInfoTableViewCell.swift; sourceTree = "<group>"; };
+		02277CAC29965DF4002E164E /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keys.swift; path = ../../../../../Downloads/Keys.swift; sourceTree = "<group>"; };
+		02277CAE299668FB002E164E /* NotoSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSans-SemiBold.ttf"; path = "../../../../../../Downloads/Noto_Sans/NotoSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		5255AD62BEE5A9637A7D0115 /* Pods-Damso.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Damso.release.xcconfig"; path = "Target Support Files/Pods-Damso/Pods-Damso.release.xcconfig"; sourceTree = "<group>"; };
 		DB7F394FDC0E35B9274B56E2 /* Pods-Damso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Damso.debug.xcconfig"; path = "Target Support Files/Pods-Damso/Pods-Damso.debug.xcconfig"; sourceTree = "<group>"; };
 		DE123C26296C39AC00B7149B /* Damso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Damso.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -329,6 +333,7 @@
 				0214CCC329926D3800EC5CAE /* NotoSansDisplay-Bold.ttf */,
 				0214CCC029926D3700EC5CAE /* NotoSansDisplay-ExtraCondensed.ttf */,
 				0214CCC229926D3800EC5CAE /* RobotoCondensed-Regular.ttf */,
+				02277CAE299668FB002E164E /* NotoSans-SemiBold.ttf */,
 				DEA95B212978694600AE8D0C /* NotoSansKR-Bold.otf */,
 				DEA95B222978694700AE8D0C /* NotoSansKR-Light.otf */,
 				DEA95B1F2978694600AE8D0C /* NotoSansKR-Medium.otf */,
@@ -466,6 +471,7 @@
 				0214CCC629926D3800EC5CAE /* RobotoCondensed-Regular.ttf in Resources */,
 				DEA95B262978694700AE8D0C /* NotoSansKR-Regular.otf in Resources */,
 				DE123C33296C39AE00B7149B /* Assets.xcassets in Resources */,
+				02277CAF299668FB002E164E /* NotoSans-SemiBold.ttf in Resources */,
 				EC46E74129892CCE00F767C4 /* Main.storyboard in Resources */,
 				DEA95B272978694700AE8D0C /* NotoSansKR-Bold.otf in Resources */,
 				DEA95B2A2978694700AE8D0C /* NotoSansKR-Black.otf in Resources */,
@@ -708,6 +714,7 @@
 				DEVELOPMENT_TEAM = SN4DKJ8AHY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Damso/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "위치 기반 서비스 제공을 위해 GPS 정보가 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -737,6 +744,7 @@
 				DEVELOPMENT_TEAM = SN4DKJ8AHY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Damso/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "위치 기반 서비스 제공을 위해 GPS 정보가 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";

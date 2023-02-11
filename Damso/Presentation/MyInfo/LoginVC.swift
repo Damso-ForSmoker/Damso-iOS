@@ -82,7 +82,7 @@ class LoginVC: UIViewController {
     
     func setUI() {
         kakaoLoginButton.snp.makeConstraints{ make in
-            make.top.equalTo(loginView.logoLabel.snp.bottom).offset(342)
+            make.top.equalTo(loginView.logoLabel.snp.bottom).offset(242)
             make.centerX.equalToSuperview()
             make.width.equalTo(300)
             make.height.equalTo(44)
@@ -105,7 +105,9 @@ class LoginVC: UIViewController {
         
         /// 네비게이션 바 설정
         /// - 타이틀, 아이템 등 네비게이션과 관련된 설정을 합니다.
-    func setNavigationBar() {}
+    func setNavigationBar() {
+        self.navigationItem.hidesBackButton = true
+    }
     
                                 
     @objc func kakaoLogin(_ sender: UIButton!) {
@@ -117,10 +119,8 @@ class LoginVC: UIViewController {
                 else {
                     print("loginWithKakaoTalk() success.")
                     
-                    guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "afterLoginVC") else {return}
-                    vc.modalPresentationStyle = .fullScreen //전체화면으로 보이게 설정
-                    // vcName?.modalTransitionStyle = .crossDissolve //전환 애니메이션 설정
-                    self.present(vc, animated: true)
+                    let secondVC = afterLoginVC()
+                    self.navigationController?.pushViewController(secondVC, animated: true)
 
                     //do something
                     _ = oauthToken
@@ -134,10 +134,8 @@ class LoginVC: UIViewController {
             else {
                 print("loginWithKakaoAccount() success.")
                 
-                guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "afterLoginVC") else {return}
-                vc.modalPresentationStyle = .fullScreen //전체화면으로 보이게 설정
-                // vcName?.modalTransitionStyle = .crossDissolve //전환 애니메이션 설정
-                self.present(vc, animated: true)
+                let secondVC = afterLoginVC()
+                self.navigationController?.pushViewController(secondVC, animated: true) //전환 애니메이션 설정
                 //do something
                 _ = oauthToken
             }
@@ -219,19 +217,15 @@ extension LoginVC : NaverThirdPartyLoginConnectionDelegate{
     func oauth20ConnectionDidFinishRequestACTokenWithAuthCode() {
         print("네이버 로그인 성공")
         self.naverLoginPaser()
-        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "afterLoginVC") else {return}
-        vc.modalPresentationStyle = .fullScreen //전체화면으로 보이게 설정
-        // vcName?.modalTransitionStyle = .crossDissolve //전환 애니메이션 설정
-        self.present(vc, animated: true)
+        let secondVC = afterLoginVC()
+        self.navigationController?.pushViewController(secondVC, animated: true)
 
     }
     
     func oauth20ConnectionDidFinishRequestACTokenWithRefreshToken() {
         print("네이버 토큰\(naverLoginInstance?.accessToken)")
-        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "afterLoginVC") else {return}
-        vc.modalPresentationStyle = .fullScreen //전체화면으로 보이게 설정
-        // vcName?.modalTransitionStyle = .crossDissolve //전환 애니메이션 설정
-        self.present(vc, animated: true)
+        let secondVC = afterLoginVC()
+        self.navigationController?.pushViewController(secondVC, animated: true)
     }
     
     func oauth20ConnectionDidFinishDeleteToken() {
