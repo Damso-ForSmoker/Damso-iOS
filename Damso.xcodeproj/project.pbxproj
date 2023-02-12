@@ -24,12 +24,14 @@
 		0214CCDF29926D6400EC5CAE /* afterLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0214CCD229926D6400EC5CAE /* afterLoginVC.swift */; };
 		0214CCE029926D6400EC5CAE /* editView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0214CCD329926D6400EC5CAE /* editView.swift */; };
 		0214CCE129926D6400EC5CAE /* secondInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0214CCD429926D6400EC5CAE /* secondInfoTableViewCell.swift */; };
-		02277CAD29965DF4002E164E /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02277CAC29965DF4002E164E /* Keys.swift */; };
-		02277CAF299668FB002E164E /* NotoSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02277CAE299668FB002E164E /* NotoSans-SemiBold.ttf */; };
 		7C7EA1298971C6508DBBC2CE /* Pods_Damso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC41CC4BF6B184B7B5B646D5 /* Pods_Damso.framework */; };
 		DE0139EF2995604A00EC9A5A /* ReportInputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0139EE2995604A00EC9A5A /* ReportInputModel.swift */; };
 		DE0139F12995671C00EC9A5A /* ReportInputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0139F02995671C00EC9A5A /* ReportInputManager.swift */; };
 		DE0139F329957B8D00EC9A5A /* ReportInputResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0139F229957B8D00EC9A5A /* ReportInputResult.swift */; };
+		DE0139F62997908100EC9A5A /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0139F52997908100EC9A5A /* SearchView.swift */; };
+		DE0139F82997909700EC9A5A /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0139F72997909700EC9A5A /* SearchVC.swift */; };
+		DE0139FC299817AF00EC9A5A /* SearchTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0139FB299817AF00EC9A5A /* SearchTypeView.swift */; };
+		DE0139FE2998E66C00EC9A5A /* SearchTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0139FD2998E66C00EC9A5A /* SearchTypeVC.swift */; };
 		DE123C2A296C39AC00B7149B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE123C29296C39AC00B7149B /* AppDelegate.swift */; };
 		DE123C2C296C39AC00B7149B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE123C2B296C39AC00B7149B /* SceneDelegate.swift */; };
 		DE123C33296C39AE00B7149B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE123C32296C39AE00B7149B /* Assets.xcassets */; };
@@ -61,7 +63,7 @@
 		DEA95B3A2983F20400AE8D0C /* ReportInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B392983F20400AE8D0C /* ReportInputView.swift */; };
 		DEA95B3D2988410D00AE8D0C /* BookmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B3C2988410D00AE8D0C /* BookmarkView.swift */; };
 		DEA95B3F2988412900AE8D0C /* BookmarkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B3E2988412900AE8D0C /* BookmarkVC.swift */; };
-		DEA95B4129884B9600AE8D0C /* BookmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B4029884B9600AE8D0C /* BookmarkTableViewCell.swift */; };
+		DEA95B4129884B9600AE8D0C /* SmokingAreaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B4029884B9600AE8D0C /* SmokingAreaTableViewCell.swift */; };
 		DEA95B43298854E900AE8D0C /* BookmarkIsEmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B42298854E900AE8D0C /* BookmarkIsEmptyCell.swift */; };
 		EC46E73B29892CCE00F767C4 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E73129892CCD00F767C4 /* ReportViewController.swift */; };
 		EC46E73C29892CCE00F767C4 /* ReportPushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E73229892CCE00F767C4 /* ReportPushViewController.swift */; };
@@ -73,7 +75,6 @@
 		EC46E74429892CCE00F767C4 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E73A29892CCE00F767C4 /* BottomSheetViewController.swift */; };
 		EC46E74C2995600100F767C4 /* Markers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E74B2995600100F767C4 /* Markers.swift */; };
 		EC46E74E299565DD00F767C4 /* MarkersHTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E74D299565DD00F767C4 /* MarkersHTTPMethod.swift */; };
-		EC46E7502995A4B100F767C4 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E74F2995A4B100F767C4 /* Keys.swift */; };
 		EC46E7522995C23F00F767C4 /* DetailSimpleHTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E7512995C23F00F767C4 /* DetailSimpleHTTPMethod.swift */; };
 /* End PBXBuildFile section */
 
@@ -95,13 +96,15 @@
 		0214CCD229926D6400EC5CAE /* afterLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = afterLoginVC.swift; sourceTree = "<group>"; };
 		0214CCD329926D6400EC5CAE /* editView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = editView.swift; sourceTree = "<group>"; };
 		0214CCD429926D6400EC5CAE /* secondInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondInfoTableViewCell.swift; sourceTree = "<group>"; };
-		02277CAC29965DF4002E164E /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keys.swift; path = ../../../../../Downloads/Keys.swift; sourceTree = "<group>"; };
-		02277CAE299668FB002E164E /* NotoSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSans-SemiBold.ttf"; path = "../../../../../../Downloads/Noto_Sans/NotoSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		5255AD62BEE5A9637A7D0115 /* Pods-Damso.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Damso.release.xcconfig"; path = "Target Support Files/Pods-Damso/Pods-Damso.release.xcconfig"; sourceTree = "<group>"; };
 		DB7F394FDC0E35B9274B56E2 /* Pods-Damso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Damso.debug.xcconfig"; path = "Target Support Files/Pods-Damso/Pods-Damso.debug.xcconfig"; sourceTree = "<group>"; };
 		DE0139EE2995604A00EC9A5A /* ReportInputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportInputModel.swift; sourceTree = "<group>"; };
 		DE0139F02995671C00EC9A5A /* ReportInputManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportInputManager.swift; sourceTree = "<group>"; };
 		DE0139F229957B8D00EC9A5A /* ReportInputResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportInputResult.swift; sourceTree = "<group>"; };
+		DE0139F52997908100EC9A5A /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		DE0139F72997909700EC9A5A /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		DE0139FB299817AF00EC9A5A /* SearchTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTypeView.swift; sourceTree = "<group>"; };
+		DE0139FD2998E66C00EC9A5A /* SearchTypeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTypeVC.swift; sourceTree = "<group>"; };
 		DE123C26296C39AC00B7149B /* Damso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Damso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE123C29296C39AC00B7149B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE123C2B296C39AC00B7149B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,7 +134,7 @@
 		DEA95B392983F20400AE8D0C /* ReportInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportInputView.swift; sourceTree = "<group>"; };
 		DEA95B3C2988410D00AE8D0C /* BookmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkView.swift; sourceTree = "<group>"; };
 		DEA95B3E2988412900AE8D0C /* BookmarkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkVC.swift; sourceTree = "<group>"; };
-		DEA95B4029884B9600AE8D0C /* BookmarkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkTableViewCell.swift; sourceTree = "<group>"; };
+		DEA95B4029884B9600AE8D0C /* SmokingAreaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokingAreaTableViewCell.swift; sourceTree = "<group>"; };
 		DEA95B42298854E900AE8D0C /* BookmarkIsEmptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkIsEmptyCell.swift; sourceTree = "<group>"; };
 		EC46E73129892CCD00F767C4 /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		EC46E73229892CCE00F767C4 /* ReportPushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportPushViewController.swift; sourceTree = "<group>"; };
@@ -143,7 +146,6 @@
 		EC46E73A29892CCE00F767C4 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
 		EC46E74B2995600100F767C4 /* Markers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Markers.swift; sourceTree = "<group>"; };
 		EC46E74D299565DD00F767C4 /* MarkersHTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkersHTTPMethod.swift; sourceTree = "<group>"; };
-		EC46E74F2995A4B100F767C4 /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keys.swift; path = ../../../../Downloads/Keys.swift; sourceTree = "<group>"; };
 		EC46E7512995C23F00F767C4 /* DetailSimpleHTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSimpleHTTPMethod.swift; sourceTree = "<group>"; };
 		FC41CC4BF6B184B7B5B646D5 /* Pods_Damso.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Damso.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -201,6 +203,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DE0139F42997902400EC9A5A /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				DE0139F52997908100EC9A5A /* SearchView.swift */,
+				DE0139F72997909700EC9A5A /* SearchVC.swift */,
+				DE0139FB299817AF00EC9A5A /* SearchTypeView.swift */,
+				DE0139FD2998E66C00EC9A5A /* SearchTypeVC.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		DE123C1D296C39AC00B7149B = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +265,7 @@
 		DE123C48296D6B7A00B7149B /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DE0139F42997902400EC9A5A /* Search */,
 				0214CCBF29926C8100EC5CAE /* MyInfo */,
 				DEA95B3B298840EE00AE8D0C /* Bookmark */,
 				EC46E70029892B4C00F767C4 /* main */,
@@ -302,7 +316,6 @@
 		DE5F0BA029903E9600660E52 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				EC46E74F2995A4B100F767C4 /* Keys.swift */,
 				DE5F0BA62990513F00660E52 /* GeocodingManager.swift */,
 				DE5F0BA82990579D00660E52 /* ReverseGCModel.swift */,
 				DE0139EE2995604A00EC9A5A /* ReportInputModel.swift */,
@@ -342,7 +355,6 @@
 				0214CCC329926D3800EC5CAE /* NotoSansDisplay-Bold.ttf */,
 				0214CCC029926D3700EC5CAE /* NotoSansDisplay-ExtraCondensed.ttf */,
 				0214CCC229926D3800EC5CAE /* RobotoCondensed-Regular.ttf */,
-				02277CAE299668FB002E164E /* NotoSans-SemiBold.ttf */,
 				DEA95B212978694600AE8D0C /* NotoSansKR-Bold.otf */,
 				DEA95B222978694700AE8D0C /* NotoSansKR-Light.otf */,
 				DEA95B1F2978694600AE8D0C /* NotoSansKR-Medium.otf */,
@@ -376,7 +388,7 @@
 			children = (
 				DEA95B3C2988410D00AE8D0C /* BookmarkView.swift */,
 				DEA95B3E2988412900AE8D0C /* BookmarkVC.swift */,
-				DEA95B4029884B9600AE8D0C /* BookmarkTableViewCell.swift */,
+				DEA95B4029884B9600AE8D0C /* SmokingAreaTableViewCell.swift */,
 				DEA95B42298854E900AE8D0C /* BookmarkIsEmptyCell.swift */,
 			);
 			path = Bookmark;
@@ -480,7 +492,6 @@
 				0214CCC629926D3800EC5CAE /* RobotoCondensed-Regular.ttf in Resources */,
 				DEA95B262978694700AE8D0C /* NotoSansKR-Regular.otf in Resources */,
 				DE123C33296C39AE00B7149B /* Assets.xcassets in Resources */,
-				02277CAF299668FB002E164E /* NotoSans-SemiBold.ttf in Resources */,
 				EC46E74129892CCE00F767C4 /* Main.storyboard in Resources */,
 				DEA95B272978694700AE8D0C /* NotoSansKR-Bold.otf in Resources */,
 				DEA95B2A2978694700AE8D0C /* NotoSansKR-Black.otf in Resources */,
@@ -544,6 +555,7 @@
 				EC46E74E299565DD00F767C4 /* MarkersHTTPMethod.swift in Sources */,
 				DEA95B3A2983F20400AE8D0C /* ReportInputView.swift in Sources */,
 				DEA95B34297EDA5100AE8D0C /* TabBarController.swift in Sources */,
+				DE0139FC299817AF00EC9A5A /* SearchTypeView.swift in Sources */,
 				DEA95B1B29774EF900AE8D0C /* OnboardingVC.swift in Sources */,
 				EC46E74429892CCE00F767C4 /* BottomSheetViewController.swift in Sources */,
 				0214CCE029926D6400EC5CAE /* editView.swift in Sources */,
@@ -562,19 +574,21 @@
 				DE123C2C296C39AC00B7149B /* SceneDelegate.swift in Sources */,
 				0214CCDD29926D6400EC5CAE /* MydataVC.swift in Sources */,
 				DEA95B43298854E900AE8D0C /* BookmarkIsEmptyCell.swift in Sources */,
+				DE0139F82997909700EC9A5A /* SearchVC.swift in Sources */,
 				DEA95B32297AF65700AE8D0C /* UIButton+Extension.swift in Sources */,
 				DE5F0BA92990579D00660E52 /* ReverseGCModel.swift in Sources */,
 				0214CCDC29926D6400EC5CAE /* LoginVC.swift in Sources */,
 				EC46E73F29892CCE00F767C4 /* BottomSheetViewController2.swift in Sources */,
 				DEA95B0D2976A38900AE8D0C /* ReportView.swift in Sources */,
+				DE0139FE2998E66C00EC9A5A /* SearchTypeVC.swift in Sources */,
 				EC46E74229892CCE00F767C4 /* ReviewUploadViewController.swift in Sources */,
 				EC46E7522995C23F00F767C4 /* DetailSimpleHTTPMethod.swift in Sources */,
 				0214CCE129926D6400EC5CAE /* secondInfoTableViewCell.swift in Sources */,
 				0214CCD629926D6400EC5CAE /* PopupVC.swift in Sources */,
 				EC46E73D29892CCE00F767C4 /* SearchViewController.swift in Sources */,
 				DE0139F12995671C00EC9A5A /* ReportInputManager.swift in Sources */,
-				EC46E7502995A4B100F767C4 /* Keys.swift in Sources */,
-				DEA95B4129884B9600AE8D0C /* BookmarkTableViewCell.swift in Sources */,
+				DE0139F62997908100EC9A5A /* SearchView.swift in Sources */,
+				DEA95B4129884B9600AE8D0C /* SmokingAreaTableViewCell.swift in Sources */,
 				DEA95B122976A75B00AE8D0C /* ReportVC.swift in Sources */,
 				DE123C4F296D743C00B7149B /* BaseVC.swift in Sources */,
 				DEA95B1929774ED700AE8D0C /* OnboardingView.swift in Sources */,
@@ -723,7 +737,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SN4DKJ8AHY;
+				DEVELOPMENT_TEAM = AYG8MBJF93;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Damso/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "위치 기반 서비스 제공을 위해 GPS 정보가 필요합니다.";
@@ -753,7 +767,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SN4DKJ8AHY;
+				DEVELOPMENT_TEAM = AYG8MBJF93;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Damso/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "위치 기반 서비스 제공을 위해 GPS 정보가 필요합니다.";

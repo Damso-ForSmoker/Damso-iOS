@@ -88,7 +88,6 @@ extension ReportVC: CLLocationManagerDelegate, NMFMapViewTouchDelegate, NMFMapVi
         
         GeocodingManager.geocodingManager.callReversedGeocoding(lon: "\(latlng.lng)", lat: "\(latlng.lat)", completionHandler: { addressString in
             DispatchQueue.main.async {
-                
                 self.reportView.locationLabel.text = addressString
             }
         })

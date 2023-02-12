@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 import Then
 
-class BookmarkTableViewCell: UITableViewCell {
+class SmokingAreaTableViewCell: UITableViewCell {
     
     static let identifier = "BookmarkTableViewCell"
     
@@ -17,6 +17,8 @@ class BookmarkTableViewCell: UITableViewCell {
     let areaImgView = UIImageView().then{
         $0.backgroundColor = .systemBackgroundColor
         $0.layer.cornerRadius = 3
+        $0.image = UIImage(named: "AreaExactlyOpenImg")
+        $0.contentMode = .scaleAspectFit
     }
     
     //흡연구역명 레이블

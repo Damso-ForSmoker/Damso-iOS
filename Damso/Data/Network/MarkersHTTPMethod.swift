@@ -23,29 +23,9 @@ class MarkersHTTPMethod{
             switch response.result {
             case .success(let value):
                 //print(value)
-                
-                let marker = NMFMarker()
-                var pinInfoArr :Array<Pin> = []
-                
-                for i in value.result {
-                    //marker.position = NMGLatLng(lat: Double(value.result[15].la)!, lng: Double(value.result[15].lo)!)
-                    
-                    //marker.position = NMGLatLng(lat: Double(i.la)!, lng: Double(i.lo)!)
-                    pinInfoArr.append(Pin(facilityId: i.facilityId, la: i.la, lo: i.lo))
-                    //print(Double(i.la)!)
-                    //print(markerArr)
-                    
-                    //print(Double(value.result[15].la)!)
-                    //print(Double(value.result[15].lo)!)
-                    
-                }
-                completionHandler(pinInfoArr)
-                    
-                
-                
+                completionHandler(value.result)
             case .failure(let error):
                 print(error.localizedDescription)
-                
             }
         }
     }
