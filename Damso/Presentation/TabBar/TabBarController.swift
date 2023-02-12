@@ -17,7 +17,7 @@ class TabBarController: UITabBarController {
         let report = UINavigationController(rootViewController: ReportVC())
         let bookmark = UINavigationController(rootViewController: BookmarkVC())
         let main = UINavigationController(rootViewController: MainViewController())
-        let search = UINavigationController(rootViewController: SearchViewController())
+        let search = UINavigationController(rootViewController: SearchVC())
         let myInfo = UINavigationController(rootViewController: MydataVC())
 
         //UITabBarItem 인스턴스를 생성시킨 다음, ViewController의 tabBarItem property에 할당하면 됩니다.
