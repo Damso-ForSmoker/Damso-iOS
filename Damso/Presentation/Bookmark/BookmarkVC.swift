@@ -10,7 +10,7 @@ import UIKit
 class BookmarkVC: BaseVC {
     
     let bookmarkView = BookmarkView()
-    let bookmarkCell = BookmarkTableViewCell()
+    let TableViewCell = SmokingAreaTableViewCell()
     
     override func loadView(){
         view = bookmarkView
@@ -20,7 +20,7 @@ class BookmarkVC: BaseVC {
         bookmarkView.tableView.delegate = self
         bookmarkView.tableView.dataSource = self
         
-        bookmarkView.tableView.register(BookmarkTableViewCell.self, forCellReuseIdentifier: BookmarkTableViewCell.identifier)
+        bookmarkView.tableView.register(SmokingAreaTableViewCell.self, forCellReuseIdentifier: SmokingAreaTableViewCell.identifier)
         
     }
     
@@ -40,7 +40,7 @@ extension BookmarkVC: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = bookmarkView.tableView.dequeueReusableCell(withIdentifier:BookmarkTableViewCell.identifier, for: indexPath) as? BookmarkTableViewCell else{ return UITableViewCell() }
+        guard let cell = bookmarkView.tableView.dequeueReusableCell(withIdentifier:SmokingAreaTableViewCell.identifier, for: indexPath) as? SmokingAreaTableViewCell else{ return UITableViewCell() }
         return cell
     }
     
