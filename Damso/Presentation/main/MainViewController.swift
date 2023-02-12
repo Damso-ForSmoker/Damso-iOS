@@ -15,8 +15,8 @@ import Alamofire
 class MainViewController: UIViewController, UISheetPresentationControllerDelegate, CLLocationManagerDelegate{
     
     var locationManager = CLLocationManager()
-    lazy var pinArr: Array<Pin> = []
-    lazy var markerArr: Array<NMFMarker> = []
+    var pinArr: Array<Pin> = []
+    var markerArr: Array<NMFMarker> = []
     
     
     override func viewDidLoad() {
@@ -47,34 +47,14 @@ class MainViewController: UIViewController, UISheetPresentationControllerDelegat
             print("위치 서비스 Off 상태")
         }
         
-        //        var marker = NMFMarker()
-        //        marker.position = NMGLatLng(lat: 37.5670135, lng: 126.9783740)
-        //        marker.mapView = mapView
         
-        //let markersHTTPMethod = MarkersHTTPMethod()
-        
-        //private init() {}
-        
-        
-        //marker.iconImage = NMFOverlayImage(name: "marker_icon")
-        
-        for i in 0...9 {
-            MarkersHTTPMethod.markersHTTPMethod.callPin() { pinInfoArr in
-                DispatchQueue.main.async {
-                    self.pinArr = pinInfoArr
-                    //                    print(self.pinArr)
-                    self.markerArr.append(NMFMarker(position: NMGLatLng(lat: Double(pinInfoArr[i].la)!, lng: Double(pinInfoArr[i].lo)!)))
-                    self.markerArr[self.markerArr.count-1].mapView = naverMapView.mapView
-                }
+        MarkersHTTPMethod.markersHTTPMethod.callPin() { pinInfoArr in
+            self.pinArr = pinInfoArr
+            for i in 0...9 {
+                self.markerArr.append(NMFMarker(position: NMGLatLng(lat: Double(pinInfoArr[i].la)!, lng: Double(pinInfoArr[i].lo)!)))
+                self.markerArr[self.markerArr.count-1].mapView = naverMapView.mapView
             }
-            print(self.pinArr)
-            
-            
-            //            markerArr.append(NMFMarker(position: NMGLatLng(lat: Double(pinArr[i].la)!, lng: Double(pinArr[i].lo)!)))
-            //            markerArr[i].mapView = naverMapView.mapView
+               
         }
     }
-    
-    
-    
 }
