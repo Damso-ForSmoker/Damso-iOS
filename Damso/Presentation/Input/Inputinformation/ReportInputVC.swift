@@ -97,8 +97,8 @@ class ReportInputVC: BaseVC {
                 if result{ //서버 데이터 전달에 성공했다면
                     let successAlert = UIAlertController(title: "제보 완료", message: "정상적으로 제보되었습니다.", preferredStyle: .alert)
                     successAlert.addAction(okAction)
-                    
                     self.present(successAlert, animated: false, completion: nil)
+                    self.navigationController?.popViewController(animated: true) //제보를 성공적으로 마쳤으면 제보하기 화면으로 되돌아갑니다.
                 } else{
                     let failAlert = UIAlertController(title: "제보 실패", message: "제보에 실패하였습니다.", preferredStyle: .alert)
                     
