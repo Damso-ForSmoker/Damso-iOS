@@ -8,7 +8,7 @@
 import UIKit
 
 class ReportInputVC: BaseVC {
-    
+    //MARK: - Properties
     let reportinputView = ReportInputView()
     var locationString: String?{
         didSet{
@@ -21,18 +21,20 @@ class ReportInputVC: BaseVC {
         $0.sourceType = .photoLibrary //image를 앨범에서 선택하는 코드
     }
     var btncheck : Bool = false
-    
+    lazy var la: Double = 0
+    lazy var lo: Double = 0
+    //MARK: - loadView
     override func loadView(){
         view = reportinputView
     }
-    
+    //MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
     }
     
-    
+    //MARK: - configure
     override func configure() {
         self.reportinputView.nameTextField.delegate = self
         self.reportinputView.supervisorTextField.delegate = self
@@ -45,7 +47,7 @@ class ReportInputVC: BaseVC {
         
         self.reportinputView.uploadButton.addTarget(self, action: #selector(tappedUploadButton(_:)), for: .touchUpInside)
     }
-    
+    //MARK: - setNavigationBar
     override func setNavigationBar() {
         self.navigationItem.title = "흡연구역 제보하기"
     }
@@ -53,7 +55,7 @@ class ReportInputVC: BaseVC {
     
     
     //MARK: - Helper
-    func updateLabel(location: String?){
+    func updateLabel(location: String?){ //
         guard let location = location else {return} //넘어온 값이 있다면 값을 없다면 없는 값 리턴
         reportinputView.locationLabel.text = location //위에서 할당한 값을 라벨로 할당
     }
@@ -74,20 +76,54 @@ class ReportInputVC: BaseVC {
         }
     }
     
-    @objc func tappedReportButton(_ sender: UIButton){
+    @objc func tappedReportButton(_ sender: UIButton){ //제보하기 버튼을 눌렀을 때 실행되는 함수
+        //필수로 필요한 데이터인 텍스트 필드 값이 없을 때와 시설 형태 체크가 되어있지 않을때를 체크
+        let okAction = UIAlertAction(title: "확인", style: .default, handler: nil)
         if reportinputView.nameTextField.text?.isEmpty ?? true || reportinputView.supervisorTextField.text?.isEmpty ?? true || !btncheck {//텍스트 필드에 값이 없을때 와 시설 형태가 클릭된게 없을 때
             print("불가능")
-        } else{
-            let data = ReportInputModel(location: reportinputView.locationLabel.text!, title: reportinputView.nameTextField.text!, type: 2, installAgency: reportinputView.supervisorTextField.text!)
+            let rejectAlert = UIAlertController(title: "필수 정보 입력", message: "필수적으로 입력되어야 하는 데이터가 입력되지 않았습니다.", preferredStyle: .alert)
+            rejectAlert.addAction(okAction)
+            present(rejectAlert, animated: false, completion: nil)
+        } else{ //필요한 데이터가 모두 입력되었을때
+            let typeNum = checkType() //사용자가 체크한 타입을 확인
+            
+            let data = ReportInputModel(location: reportinputView.locationLabel.text!, title: reportinputView.nameTextField.text!, type: typeNum, installAgency: reportinputView.supervisorTextField.text!, la: self.la, lo: self.lo) //서버로 넘길 데이터를 생성
+            
             print(data)
-            ReportInputManager.reportInputManager.uploadNewArea(model: data, completion: { resultString in
-                print(resultString)
+            
+            //서버 통신
+            ReportInputManager.reportInputManager.uploadNewArea(model: data, completion: { result in
+                print(result)
+                if result{ //서버 데이터 전달에 성공했다면
+                    let successAlert = UIAlertController(title: "제보 완료", message: "정상적으로 제보되었습니다.", preferredStyle: .alert)
+                    successAlert.addAction(okAction)
+                    
+                    self.present(successAlert, animated: false, completion: nil)
+                } else{
+                    let failAlert = UIAlertController(title: "제보 실패", message: "제보에 실패하였습니다.", preferredStyle: .alert)
+                    
+                    failAlert.addAction(okAction)
+                    
+                    self.present(failAlert, animated: false, completion: nil)
+                }
             })
         }
     }
     
     @objc func tappedUploadButton(_ sender: UIButton){
         self.present(imgPicker, animated: true, completion: nil) //imagepickerview 화면을 띄우는 코드
+    }
+    
+    func checkType() -> Int{
+        for btn in btnArray { //시설형태를 확인하는 함수
+            if btn.isSelected{
+                if btn == reportinputView.exactlyOpenButton{ return 1 }
+                if btn == reportinputView.OpenButton{ return 2 }
+                if btn == reportinputView.closedButton{ return 3 }
+                if btn == reportinputView.exactolyClosedButton{ return 4 }
+            }
+        }
+        return 3 //오류로 인한 타입체크 불가시 default로 3을 넘김
     }
 }
 

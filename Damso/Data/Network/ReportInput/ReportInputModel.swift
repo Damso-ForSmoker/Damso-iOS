@@ -12,14 +12,18 @@ struct ReportInputModel: Codable{
     var title: String
     var type: Int
     var installAgency: String
+    var la: Double
+    var lo: Double
     var img: [Data]?
     
-    init(location: String, title: String, type: Int, installAgency: String, img: [Data]? = nil) {
+    init(location: String, title: String, type: Int, installAgency: String, img: [Data]? = nil, la: Double, lo:Double) {
         self.location = location
         self.title = title
         self.type = type
         self.installAgency = installAgency
         self.img = img
+        self.la = la
+        self.lo = lo
     }
 }
 
