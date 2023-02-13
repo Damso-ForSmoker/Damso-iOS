@@ -25,6 +25,8 @@ class ReportVC: BaseVC {
         $0.tintColor = .black //네비게이션 아이템 색 설정
     }
     
+    lazy var la: Double = 0
+    lazy var lo: Double = 0
     //MARK: - loadView
     override func loadView() {
         self.view = reportView
@@ -50,6 +52,8 @@ class ReportVC: BaseVC {
     //MARK: - Helper
     @objc func tappedReportButton(_ sender: UIButton){
         nextVC.locationString = reportView.locationLabel.text
+        nextVC.la = self.la
+        nextVC.lo = self.lo
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
@@ -79,6 +83,9 @@ class ReportVC: BaseVC {
 extension ReportVC: CLLocationManagerDelegate, NMFMapViewTouchDelegate, NMFMapViewCameraDelegate{
     func mapView(_ mapView: NMFMapView, didTapMap latlng: NMGLatLng, point: CGPoint) {
         print("\(latlng.lat), \(latlng.lng)")
+        
+        self.la = latlng.lat
+        self.lo = latlng.lng
         
         reportView.marker.position = NMGLatLng(
             lat: latlng.lat,
