@@ -37,11 +37,12 @@ struct DetailSimple: Codable {
 // MARK: - Result
 struct Simple: Codable {
     let facilityId: Int
-    let title, img, report, rating: String
+    let title, report, rating: String
+    let img: String?
 
     enum CodingKeys: String, CodingKey {
         case facilityId = "facility_id"
-        case title, img, report, rating
+        case title, report, rating, img
     }
 }
 

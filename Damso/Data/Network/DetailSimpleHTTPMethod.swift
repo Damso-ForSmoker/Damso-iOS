@@ -16,16 +16,14 @@ class DetailSimpleHTTPMethod{
     
     private init() {}
     
-    func callDetail(completionHandler:@escaping ([Simple])->Void){
+    func callDetail(facilityID: Int, completionHandler:@escaping ([Simple])->Void){
         
-        let url = "http://3.37.122.59:3000/main/facility/simple/"
-        var detailParameters: [String:Any] = [:]
+        let url = "http://3.37.122.59:3000/main/facility/simple/\(facilityID)"
         
-        AF.request(url, method: .get, parameters: detailParameters, encoding: URLEncoding.queryString, headers: nil).validate().responseDecodable(of: DetailSimple.self){ response in
+        AF.request(url, method: .get, parameters: nil, headers: nil).validate().responseDecodable(of: DetailSimple.self){ response in
             switch response.result {
             case .success(let value):
                 print(value)
-                
                 completionHandler(value.result)
                 
             case .failure(let error):
