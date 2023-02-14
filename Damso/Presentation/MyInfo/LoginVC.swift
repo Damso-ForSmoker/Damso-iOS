@@ -13,6 +13,7 @@ import KakaoSDKAuth
 import KakaoSDKCommon
 import NaverThirdPartyLogin
 import Alamofire
+import SwiftyJSON
 
 class LoginVC: UIViewController {
 
@@ -148,6 +149,39 @@ class LoginVC: UIViewController {
         naverLoginInstance?.requestThirdPartyLogin()
       }
     
+    func sendNaverToken() {
+        guard let accessToken = naverLoginInstance?.isValidAccessTokenExpireTimeNow() else { return }
+        if !accessToken {
+            return
+        }
+
+        guard let accessToken = naverLoginInstance?.accessToken else { return }
+
+        let headers: HTTPHeaders = [
+                "x-access-token": "\(accessToken)",
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            ]
+
+        let url = "http://3.37.122.59:3000/member"
+
+        AF.request(url, method: .get, parameters: nil, encoding: JSONEncoding(options: []), headers: headers)
+            .responseJSON { response in
+
+                switch response.result {
+                case .success(let data):
+                    let json = JSON(data)
+                    let userInfo = json["result"].arrayValue[0]
+                    let userId = userInfo["user_id"].intValue
+                    print("user_id :", userId)
+                    let secondVC = afterLoginVC()
+                    self.navigationController?.pushViewController(secondVC, animated: true)
+                    
+                case .failure:
+                    print("failure")
+                }
+            }
+    }
 
     
     func naverLoginPaser() {
@@ -217,15 +251,13 @@ extension LoginVC : NaverThirdPartyLoginConnectionDelegate{
     func oauth20ConnectionDidFinishRequestACTokenWithAuthCode() {
         print("네이버 로그인 성공")
         self.naverLoginPaser()
-        let secondVC = afterLoginVC()
-        self.navigationController?.pushViewController(secondVC, animated: true)
+        self.sendNaverToken()
 
     }
     
     func oauth20ConnectionDidFinishRequestACTokenWithRefreshToken() {
         print("네이버 토큰\(naverLoginInstance?.accessToken)")
-        let secondVC = afterLoginVC()
-        self.navigationController?.pushViewController(secondVC, animated: true)
+        self.sendNaverToken()
     }
     
     func oauth20ConnectionDidFinishDeleteToken() {

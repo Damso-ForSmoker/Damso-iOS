@@ -71,7 +71,22 @@ struct Addition: Codable{
     var value: String
 }
 
+struct login: Codable {
+    let isSuccess: Bool
+    let code: Int
+    let message: String
+    let result: [loginResult]
+}
 
+//token 넘겨줄때 필요한 struct
+// MARK: - Result
+struct loginResult: Codable {
+    let userID: Int
+
+    enum CodingKeys: String, CodingKey {
+        case userID = "user_id"
+    }
+}
 
 
 
