@@ -9,24 +9,20 @@ import UIKit
 import NMapsMap
 import CoreLocation
 import Alamofire
-//import URLSession
-//import MaterialComponents.MaterialBottomSheet
 
 class MainViewController: UIViewController, UISheetPresentationControllerDelegate, CLLocationManagerDelegate{
-    
+    //MARK: - Properties
     var locationManager = CLLocationManager()
+    lazy var naverMapView = NMFNaverMapView()
     var pinArr: Array<Pin> = []
     var markerArr: Array<NMFMarker> = []
     var marker = NMFMarker()
-    var detailParameters1: [String:Any] = [:]
-    var fID: Any = 0
-    //var simpleDetail: [Simple]
     
+    
+    //MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        self.navigationItem.title = ""
-        let naverMapView = NMFNaverMapView(frame: view.frame)
+        naverMapView = NMFNaverMapView(frame: view.frame)
         naverMapView.showLocationButton = true
         view.addSubview(naverMapView)
         
@@ -50,13 +46,18 @@ class MainViewController: UIViewController, UISheetPresentationControllerDelegat
         } else {
             print("위치 서비스 Off 상태")
         }
-        
+    }
+    
+    
+    //MARK: - viewWillApear
+    override func viewWillAppear(_ animated: Bool){
+        self.markerArr = []
         
         MarkersHTTPMethod.markersHTTPMethod.callPin() { pinInfoArr in
             self.pinArr = pinInfoArr
             for data in self.pinArr{
                 self.markerArr.append(NMFMarker(position: NMGLatLng(lat: Double(data.la)!, lng: Double(data.lo)!)))
-                self.markerArr[self.markerArr.count-1].mapView = naverMapView.mapView
+                self.markerArr[self.markerArr.count-1].mapView = self.naverMapView.mapView
                 self.markerArr[self.markerArr.count-1].touchHandler = { (overlay) -> Bool in
                     DetailSimpleHTTPMethod.detailSimpleHTTPMethod.callDetail(facilityID: data.facilityId, completionHandler: {simpleArr in
                         print(simpleArr)
@@ -88,7 +89,4 @@ class MainViewController: UIViewController, UISheetPresentationControllerDelegat
             }
         }
     }
-    
-    
-    
 }
