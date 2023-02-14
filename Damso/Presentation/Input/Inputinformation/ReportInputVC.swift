@@ -23,6 +23,7 @@ class ReportInputVC: BaseVC {
     var btncheck : Bool = false
     lazy var la: Double = 0
     lazy var lo: Double = 0
+    lazy var newImage: UIImage? = nil
     //MARK: - loadView
     override func loadView(){
         view = reportinputView
@@ -87,7 +88,9 @@ class ReportInputVC: BaseVC {
         } else{ //필요한 데이터가 모두 입력되었을때
             let typeNum = checkType() //사용자가 체크한 타입을 확인
             
-            let data = ReportInputModel(location: reportinputView.locationLabel.text!, title: reportinputView.nameTextField.text!, type: typeNum, installAgency: reportinputView.supervisorTextField.text!, la: self.la, lo: self.lo) //서버로 넘길 데이터를 생성
+            print(newImage?.pngData()!)
+            
+            let data = ReportInputModel(location: reportinputView.locationLabel.text!, title: reportinputView.nameTextField.text!, type: typeNum, installAgency: reportinputView.supervisorTextField.text!,img: newImage?.pngData() ,la: self.la, lo: self.lo) //서버로 넘길 데이터를 생성
             
             print(data)
             
@@ -134,14 +137,20 @@ extension ReportInputVC: UITextFieldDelegate,UIImagePickerControllerDelegate, UI
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) { //이미지피커뷰에서 이미지 선택했을때 메소드
-        var newImage: UIImage? = nil
         
         if let possibleImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage{
             newImage = possibleImage
         } else if let possibleImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
             newImage = possibleImage
+            
         }
+        reportinputView.imgView.image = newImage
         reportinputView.imgView.image = newImage //imgView를 input 이미지로 변경
         picker.dismiss(animated: true) //피커 뷰 사라지는 메소드
+    }
+    
+    func imagePickerControllerDidCancel(_ pcker: UIImagePickerController){
+        reportinputView.imgView.image = nil
+        dismiss(animated: true)
     }
 }

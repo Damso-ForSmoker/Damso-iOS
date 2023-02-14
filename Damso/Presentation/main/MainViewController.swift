@@ -25,12 +25,13 @@ class MainViewController: UIViewController, UISheetPresentationControllerDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.navigationItem.title = ""
         let naverMapView = NMFNaverMapView(frame: view.frame)
         naverMapView.showLocationButton = true
         view.addSubview(naverMapView)
         
-        naverMapView.mapView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
-        naverMapView.mapView.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 0).isActive = true
+        naverMapView.mapView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 0).isActive = true //메인화면은 화면을 꽉차게 설정
+        naverMapView.mapView.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 0).isActive = true //대신 하단은 safeAreaLayoutGuide에 맞춰서
         
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -42,7 +43,7 @@ class MainViewController: UIViewController, UISheetPresentationControllerDelegat
             print(locationManager.location?.coordinate)
             
             //현 위치로 카메라 이동
-            let cameraUpdate = NMFCameraUpdate(scrollTo: NMGLatLng(lat: locationManager.location?.coordinate.latitude ?? 0, lng: locationManager.location?.coordinate.longitude ?? 0))
+            let cameraUpdate = NMFCameraUpdate(scrollTo: NMGLatLng(lat: locationManager.location?.coordinate.latitude ?? 37.545251, lng: locationManager.location?.coordinate.longitude ?? 126.952514)) //공덕 프론트 1을 시작점으로 세팅
             cameraUpdate.animation = .easeIn
             naverMapView.mapView.moveCamera(cameraUpdate)
             
@@ -53,45 +54,39 @@ class MainViewController: UIViewController, UISheetPresentationControllerDelegat
         
         MarkersHTTPMethod.markersHTTPMethod.callPin() { pinInfoArr in
             self.pinArr = pinInfoArr
-            for i in 0...2 {
-                self.markerArr.append(NMFMarker(position: NMGLatLng(lat: Double(pinInfoArr[i].la)!, lng: Double(pinInfoArr[i].lo)!)))
-                
-                self.markerArr[i].userInfo = ["facilityId": Int(pinInfoArr[i].facilityId)]
-                
-                
-                self.marker = self.markerArr[i]
-                
-                self.marker.touchHandler = { (overlay: NMFOverlay) -> Bool in
-                    print("\(overlay.userInfo)")
-                    self.detailParameters1 = overlay.userInfo as! [String: Any]
-                    self.fID = overlay.userInfo["facilityId"] ?? "facilityId"
-                    
-                    print(self.detailParameters1)
-                    print("--------------------------")
-                    
-                    DetailSimpleHTTPMethod.detailSimpleHTTPMethod.callDetail(){ detailInfo in
+            for data in self.pinArr{
+                self.markerArr.append(NMFMarker(position: NMGLatLng(lat: Double(data.la)!, lng: Double(data.lo)!)))
+                self.markerArr[self.markerArr.count-1].mapView = naverMapView.mapView
+                self.markerArr[self.markerArr.count-1].touchHandler = { (overlay) -> Bool in
+                    DetailSimpleHTTPMethod.detailSimpleHTTPMethod.callDetail(facilityID: data.facilityId, completionHandler: {simpleArr in
+                        print(simpleArr)
                         
-                        //self.simpleDetail = detailInfo
-                        //print(self.simpleDetail)
+                        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                        guard let bottomSheetVC = storyboard.instantiateViewController(identifier: "BottomSheetViewController") as? BottomSheetViewController else {return}
+                        bottomSheetVC.titleText = simpleArr[0].title
+                        bottomSheetVC.gradeText = simpleArr[0].rating
                         
-                    }
-                    
-                    return true
-                }
-                
-                self.marker.mapView = naverMapView.mapView
-                
-                
+                        if let sheet = bottomSheetVC.sheetPresentationController {
+                          // customize
+                            sheet.detents = [
+                                    .custom { _ in
+                                        return 200
+                                    },
+                                    .custom { context in
+                                        return context.maximumDetentValue * 0.6
+                                    }
+                                ]
+                            sheet.largestUndimmedDetentIdentifier = .medium
+                            sheet.preferredCornerRadius = 20
+                        }
+                        
+                        self.present(bottomSheetVC, animated: false, completion: nil)
 
-                //self.markerArr[self.markerArr.count-1].mapView = naverMapView.mapView
-                
+                    })
+                    return false
+                }
             }
         }
-        
-        
-
-
-        
     }
     
     
