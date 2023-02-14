@@ -39,6 +39,7 @@ class ReportVC: BaseVC {
         reportView.mapView.mapView.touchDelegate = self
         reportView.mapView.mapView.addCameraDelegate(delegate: self)
         setLocationManager()
+        
     }
     
     
@@ -73,9 +74,10 @@ class ReportVC: BaseVC {
     }
     
     func updateLocation(){
-        let cameraUpadate = NMFCameraUpdate(position: reportView.mapView.mapView.cameraPosition)
-        cameraUpadate.animation = .easeIn
-        reportView.mapView.mapView.moveCamera(cameraUpadate)
+        let cameraUpdate = NMFCameraUpdate(scrollTo: NMGLatLng(lat: locationManager.location?.coordinate.latitude ?? 37.545251, lng: locationManager.location?.coordinate.longitude ?? 126.952514)) //사용자의 위치 또는 공덕 프론트 1을 시작점으로 잡는다.
+//        let cameraUpdate = NMFCameraUpdate(position: reportView.mapView.mapView.cameraPosition) //맵뷰의 기본포지션으로 이동
+        cameraUpdate.animation = .easeIn
+        reportView.mapView.mapView.moveCamera(cameraUpdate)
     }
 }
 
