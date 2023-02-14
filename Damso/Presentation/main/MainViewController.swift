@@ -17,7 +17,10 @@ class MainViewController: UIViewController, UISheetPresentationControllerDelegat
     var locationManager = CLLocationManager()
     var pinArr: Array<Pin> = []
     var markerArr: Array<NMFMarker> = []
-    
+    var marker = NMFMarker()
+    var detailParameters1: [String:Any] = [:]
+    var fID: Any = 0
+    //var simpleDetail: [Simple]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,11 +53,47 @@ class MainViewController: UIViewController, UISheetPresentationControllerDelegat
         
         MarkersHTTPMethod.markersHTTPMethod.callPin() { pinInfoArr in
             self.pinArr = pinInfoArr
-            for i in 0...9 {
+            for i in 0...2 {
                 self.markerArr.append(NMFMarker(position: NMGLatLng(lat: Double(pinInfoArr[i].la)!, lng: Double(pinInfoArr[i].lo)!)))
-                self.markerArr[self.markerArr.count-1].mapView = naverMapView.mapView
+                
+                self.markerArr[i].userInfo = ["facilityId": Int(pinInfoArr[i].facilityId)]
+                
+                
+                self.marker = self.markerArr[i]
+                
+                self.marker.touchHandler = { (overlay: NMFOverlay) -> Bool in
+                    print("\(overlay.userInfo)")
+                    self.detailParameters1 = overlay.userInfo as! [String: Any]
+                    self.fID = overlay.userInfo["facilityId"] ?? "facilityId"
+                    
+                    print(self.detailParameters1)
+                    print("--------------------------")
+                    
+                    DetailSimpleHTTPMethod.detailSimpleHTTPMethod.callDetail(){ detailInfo in
+                        
+                        //self.simpleDetail = detailInfo
+                        //print(self.simpleDetail)
+                        
+                    }
+                    
+                    return true
+                }
+                
+                self.marker.mapView = naverMapView.mapView
+                
+                
+
+                //self.markerArr[self.markerArr.count-1].mapView = naverMapView.mapView
+                
             }
-               
         }
+        
+        
+
+
+        
     }
+    
+    
+    
 }

@@ -76,6 +76,7 @@
 		EC46E74C2995600100F767C4 /* Markers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E74B2995600100F767C4 /* Markers.swift */; };
 		EC46E74E299565DD00F767C4 /* MarkersHTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E74D299565DD00F767C4 /* MarkersHTTPMethod.swift */; };
 		EC46E7522995C23F00F767C4 /* DetailSimpleHTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E7512995C23F00F767C4 /* DetailSimpleHTTPMethod.swift */; };
+		EC46E754299A5CA900F767C4 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E753299A5CA900F767C4 /* Keys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -147,6 +148,7 @@
 		EC46E74B2995600100F767C4 /* Markers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Markers.swift; sourceTree = "<group>"; };
 		EC46E74D299565DD00F767C4 /* MarkersHTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkersHTTPMethod.swift; sourceTree = "<group>"; };
 		EC46E7512995C23F00F767C4 /* DetailSimpleHTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSimpleHTTPMethod.swift; sourceTree = "<group>"; };
+		EC46E753299A5CA900F767C4 /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keys.swift; path = ../../../../Downloads/Keys.swift; sourceTree = "<group>"; };
 		FC41CC4BF6B184B7B5B646D5 /* Pods_Damso.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Damso.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -321,6 +323,7 @@
 				DE0139EE2995604A00EC9A5A /* ReportInputModel.swift */,
 				DE0139F02995671C00EC9A5A /* ReportInputManager.swift */,
 				DE0139F229957B8D00EC9A5A /* ReportInputResult.swift */,
+				EC46E753299A5CA900F767C4 /* Keys.swift */,
 				EC46E74B2995600100F767C4 /* Markers.swift */,
 				EC46E74D299565DD00F767C4 /* MarkersHTTPMethod.swift */,
 				EC46E7512995C23F00F767C4 /* DetailSimpleHTTPMethod.swift */,
@@ -564,6 +567,7 @@
 				DEA95B1D297751D400AE8D0C /* OnboardingMessage.swift in Sources */,
 				DE0139F329957B8D00EC9A5A /* ReportInputResult.swift in Sources */,
 				DE123C51296D746300B7149B /* BaseView.swift in Sources */,
+				EC46E754299A5CA900F767C4 /* Keys.swift in Sources */,
 				0214CCDB29926D6400EC5CAE /* LoginView.swift in Sources */,
 				DE0139EF2995604A00EC9A5A /* ReportInputModel.swift in Sources */,
 				0214CCD829926D6400EC5CAE /* LoginDataView.swift in Sources */,
