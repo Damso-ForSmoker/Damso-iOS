@@ -88,7 +88,7 @@ class ReportInputView: BaseView {
     }
     
     let supervisorLabel = UILabel().then{
-        $0.text = "설치 주체"
+        $0.text = "설치 주체 *"
         $0.font = UIFont(name: "NotoSansKR-Bold", size: 15)
         $0.textColor = .black
     }

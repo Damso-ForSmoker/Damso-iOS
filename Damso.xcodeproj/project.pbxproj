@@ -216,6 +216,16 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
+		DE013A03299A70AE00EC9A5A /* ReportInput */ = {
+			isa = PBXGroup;
+			children = (
+				DE0139EE2995604A00EC9A5A /* ReportInputModel.swift */,
+				DE0139F02995671C00EC9A5A /* ReportInputManager.swift */,
+				DE0139F229957B8D00EC9A5A /* ReportInputResult.swift */,
+			);
+			path = ReportInput;
+			sourceTree = "<group>";
+		};
 		DE123C1D296C39AC00B7149B = {
 			isa = PBXGroup;
 			children = (
@@ -318,12 +328,9 @@
 		DE5F0BA029903E9600660E52 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				DE013A03299A70AE00EC9A5A /* ReportInput */,
 				DE5F0BA62990513F00660E52 /* GeocodingManager.swift */,
 				DE5F0BA82990579D00660E52 /* ReverseGCModel.swift */,
-				DE0139EE2995604A00EC9A5A /* ReportInputModel.swift */,
-				DE0139F02995671C00EC9A5A /* ReportInputManager.swift */,
-				DE0139F229957B8D00EC9A5A /* ReportInputResult.swift */,
-				EC46E753299A5CA900F767C4 /* Keys.swift */,
 				EC46E74B2995600100F767C4 /* Markers.swift */,
 				EC46E74D299565DD00F767C4 /* MarkersHTTPMethod.swift */,
 				EC46E7512995C23F00F767C4 /* DetailSimpleHTTPMethod.swift */,
