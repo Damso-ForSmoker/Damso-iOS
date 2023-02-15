@@ -8,28 +8,43 @@
 import Foundation
 
 import UIKit
-import NMapsMap
 // ReportPushViewController
-class BottomSheetViewController2: UIViewController, UISheetPresentationControllerDelegate {
+class BottomSheetViewController2: UIViewController {
 
-    @IBAction func dismissButton(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+    @IBAction func reportPush(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let bottomSheetVC = storyboard.instantiateViewController(identifier: "ReportPushViewController")
+            // 1
+        //let bottomSheet: MDCBottomSheetController  = MDCBottomSheetController(contentViewController: bottomSheetVC)
+        
+        if let sheet = bottomSheetVC.sheetPresentationController {
+          // customize
+            sheet.detents = [
+                    .custom { context in
+                        return context.maximumDetentValue * 0.4
+                    }
+                ]
+            //sheet.largestUndimmedDetentIdentifier = .medium
+            sheet.preferredCornerRadius = 20
+        }
+        
+        self.present(bottomSheetVC, animated: false, completion: nil)
     }
     
-    
-    //@IBOutlet weak var infoView: UIView!
-    //@IBOutlet weak var reviewView: UIView!
+    @IBOutlet weak var infoView: UIView!
+    @IBOutlet weak var reviewView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+        infoView.layer.shadowOffset = CGSize(width: 10, height: 10)
+        infoView.layer.shadowOpacity = 0.5
+        infoView.layer.shadowRadius = 10
+        infoView.layer.cornerRadius = 10
         
-        // Do any additional setup after loading the view.
-        //let mapView = NMFMapView(frame: view.frame)
-        //view.addSubview(mapView)
-        
-     //   mapView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
-      //  mapView.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 0).isActive = true
+        reviewView.layer.shadowOffset = CGSize(width: 10, height: 10)
+        reviewView.layer.shadowOpacity = 0.5
+        reviewView.layer.shadowRadius = 10
+        reviewView.layer.cornerRadius = 10
     }
     
 }
