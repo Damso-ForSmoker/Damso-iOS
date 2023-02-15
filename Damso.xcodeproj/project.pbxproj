@@ -71,7 +71,6 @@
 		EC46E73B29892CCE00F767C4 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E73129892CCD00F767C4 /* ReportViewController.swift */; };
 		EC46E73C29892CCE00F767C4 /* ReportPushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E73229892CCE00F767C4 /* ReportPushViewController.swift */; };
 		EC46E73D29892CCE00F767C4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E73329892CCE00F767C4 /* SearchViewController.swift */; };
-		EC46E73F29892CCE00F767C4 /* BottomSheetViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E73529892CCE00F767C4 /* BottomSheetViewController2.swift */; };
 		EC46E74029892CCE00F767C4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E73629892CCE00F767C4 /* MainViewController.swift */; };
 		EC46E74129892CCE00F767C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC46E73729892CCE00F767C4 /* Main.storyboard */; };
 		EC46E74229892CCE00F767C4 /* ReviewUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E73829892CCE00F767C4 /* ReviewUploadViewController.swift */; };
@@ -79,6 +78,8 @@
 		EC46E74C2995600100F767C4 /* Markers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E74B2995600100F767C4 /* Markers.swift */; };
 		EC46E74E299565DD00F767C4 /* MarkersHTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E74D299565DD00F767C4 /* MarkersHTTPMethod.swift */; };
 		EC46E7522995C23F00F767C4 /* DetailSimpleHTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E7512995C23F00F767C4 /* DetailSimpleHTTPMethod.swift */; };
+		EC49C53C299C615F00FD19AC /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC49C53B299C615F00FD19AC /* Keys.swift */; };
+		EC49C544299C705C00FD19AC /* BottomSheetViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC49C543299C705C00FD19AC /* BottomSheetViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -145,7 +146,6 @@
 		EC46E73129892CCD00F767C4 /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		EC46E73229892CCE00F767C4 /* ReportPushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportPushViewController.swift; sourceTree = "<group>"; };
 		EC46E73329892CCE00F767C4 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		EC46E73529892CCE00F767C4 /* BottomSheetViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController2.swift; sourceTree = "<group>"; };
 		EC46E73629892CCE00F767C4 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EC46E73729892CCE00F767C4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		EC46E73829892CCE00F767C4 /* ReviewUploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewUploadViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +154,8 @@
 		EC46E74D299565DD00F767C4 /* MarkersHTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkersHTTPMethod.swift; sourceTree = "<group>"; };
 		EC46E7512995C23F00F767C4 /* DetailSimpleHTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSimpleHTTPMethod.swift; sourceTree = "<group>"; };
 		EC46E753299A5CA900F767C4 /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keys.swift; path = ../../../../Downloads/Keys.swift; sourceTree = "<group>"; };
+		EC49C53B299C615F00FD19AC /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keys.swift; path = ../../../../../Downloads/Keys.swift; sourceTree = "<group>"; };
+		EC49C543299C705C00FD19AC /* BottomSheetViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController2.swift; sourceTree = "<group>"; };
 		FC41CC4BF6B184B7B5B646D5 /* Pods_Damso.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Damso.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -224,6 +226,7 @@
 		DE013A03299A70AE00EC9A5A /* ReportInput */ = {
 			isa = PBXGroup;
 			children = (
+				EC49C53B299C615F00FD19AC /* Keys.swift */,
 				DE0139EE2995604A00EC9A5A /* ReportInputModel.swift */,
 				DE0139F02995671C00EC9A5A /* ReportInputManager.swift */,
 				DE0139F229957B8D00EC9A5A /* ReportInputResult.swift */,
@@ -434,7 +437,7 @@
 				DE013A19299C256500EC9A5A /* DetailArea */,
 				EC46E73A29892CCE00F767C4 /* BottomSheetViewController.swift */,
 				EC46E73729892CCE00F767C4 /* Main.storyboard */,
-				EC46E73529892CCE00F767C4 /* BottomSheetViewController2.swift */,
+				EC49C543299C705C00FD19AC /* BottomSheetViewController2.swift */,
 				EC46E73229892CCE00F767C4 /* ReportPushViewController.swift */,
 				EC46E73129892CCD00F767C4 /* ReportViewController.swift */,
 				EC46E73829892CCE00F767C4 /* ReviewUploadViewController.swift */,
@@ -616,7 +619,6 @@
 				DEA95B32297AF65700AE8D0C /* UIButton+Extension.swift in Sources */,
 				DE5F0BA92990579D00660E52 /* ReverseGCModel.swift in Sources */,
 				0214CCDC29926D6400EC5CAE /* LoginVC.swift in Sources */,
-				EC46E73F29892CCE00F767C4 /* BottomSheetViewController2.swift in Sources */,
 				DEA95B0D2976A38900AE8D0C /* ReportView.swift in Sources */,
 				DE0139FE2998E66C00EC9A5A /* SearchTypeVC.swift in Sources */,
 				EC46E74229892CCE00F767C4 /* ReviewUploadViewController.swift in Sources */,
@@ -633,6 +635,7 @@
 				EC46E74029892CCE00F767C4 /* MainViewController.swift in Sources */,
 				DEA95B2C29786C6E00AE8D0C /* UIColor+Extension.swift in Sources */,
 				DEA95B3D2988410D00AE8D0C /* BookmarkView.swift in Sources */,
+				EC49C544299C705C00FD19AC /* BottomSheetViewController2.swift in Sources */,
 				DEA95B2E2978729A00AE8D0C /* OnboardingCollectionViewCell.swift in Sources */,
 				EC46E74C2995600100F767C4 /* Markers.swift in Sources */,
 				0214CCD729926D6400EC5CAE /* editVC.swift in Sources */,
@@ -775,7 +778,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AYG8MBJF93;
+				DEVELOPMENT_TEAM = SN4DKJ8AHY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Damso/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "위치 기반 서비스 제공을 위해 GPS 정보가 필요합니다.";
@@ -805,7 +808,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AYG8MBJF93;
+				DEVELOPMENT_TEAM = SN4DKJ8AHY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Damso/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "위치 기반 서비스 제공을 위해 GPS 정보가 필요합니다.";
