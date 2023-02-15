@@ -32,7 +32,7 @@ class ReportInputManager{
             
             if let img = model.img {
                 print(img)
-                    MultipartFormData.append(img,
+                    MultipartFormData.append(Data(img),
                                              withName: "img",
                                              fileName: "\(img).png",
                                              mimeType:"image/png")
