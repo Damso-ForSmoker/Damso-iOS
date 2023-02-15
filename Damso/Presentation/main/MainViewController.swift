@@ -62,6 +62,10 @@ class MainViewController: UIViewController, UISheetPresentationControllerDelegat
                     DetailSimpleHTTPMethod.detailSimpleHTTPMethod.callDetail(facilityID: data.facilityId, completionHandler: {simpleArr in
                         print(simpleArr)
                         
+                        let cameraUpdate = NMFCameraUpdate(scrollTo: NMGLatLng(lat: Double(data.la)!, lng: Double(data.lo)!)) // 선택 마커 위치로 시점 이동
+                        cameraUpdate.animation = .easeIn
+                        self.naverMapView.mapView.moveCamera(cameraUpdate)
+                        
                         let storyboard = UIStoryboard(name: "Main", bundle: nil)
                         guard let bottomSheetVC = storyboard.instantiateViewController(identifier: "BottomSheetViewController") as? BottomSheetViewController else {return}
                         bottomSheetVC.titleText = simpleArr[0].title
@@ -72,7 +76,7 @@ class MainViewController: UIViewController, UISheetPresentationControllerDelegat
                           // customize
                             sheet.detents = [
                                     .custom { _ in
-                                        return 200
+                                        return 160
                                     },
                                     .custom { context in
                                         return context.maximumDetentValue * 0.6
