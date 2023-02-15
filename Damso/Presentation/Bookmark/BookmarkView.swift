@@ -17,10 +17,14 @@ class BookmarkView: BaseView {
 //        $0.contentMode = .scaleAspectFit
 //    }
     
+    let isEmptyView = BookmarkIsEmptyView()
+    
     //MARK: - setUI
     
     override func setupUI(){
         self.addSubview(tableView)
+        tableView.backgroundView = isEmptyView //엠티 뷰 삽입
+        tableView.backgroundView?.isHidden = false
     }
     
     
