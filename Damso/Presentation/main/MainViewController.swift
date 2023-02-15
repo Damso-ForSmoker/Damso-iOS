@@ -66,6 +66,7 @@ class MainViewController: UIViewController, UISheetPresentationControllerDelegat
                         guard let bottomSheetVC = storyboard.instantiateViewController(identifier: "BottomSheetViewController") as? BottomSheetViewController else {return}
                         bottomSheetVC.titleText = simpleArr[0].title
                         bottomSheetVC.gradeText = simpleArr[0].rating
+                        bottomSheetVC.userReportArea = simpleArr[0].report
                         
                         if let sheet = bottomSheetVC.sheetPresentationController {
                           // customize
