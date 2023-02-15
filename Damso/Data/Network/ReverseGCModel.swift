@@ -87,8 +87,59 @@ struct loginResult: Codable {
         case userID = "user_id"
     }
 }
+// 유저 정보 불러올때 필요한 struct
 
+struct UserInfo: Codable {
+    let isSuccess: Bool
+    let code: Int
+    let message: Bool
+    let result: [ResultUnion]
+}
 
+enum ResultUnion: Codable {
+    case fluffyResult(FluffyResult)
+    case purpleResultArray([PurpleResult])
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.singleValueContainer()
+        if let x = try? container.decode([PurpleResult].self) {
+            self = .purpleResultArray(x)
+            return
+        }
+        if let x = try? container.decode(FluffyResult.self) {
+            self = .fluffyResult(x)
+            return
+        }
+        throw DecodingError.typeMismatch(ResultUnion.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for ResultUnion"))
+    }
+
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.singleValueContainer()
+        switch self {
+        case .fluffyResult(let x):
+            try container.encode(x)
+        case .purpleResultArray(let x):
+            try container.encode(x)
+        }
+    }
+}
+
+// MARK: - PurpleResult
+struct PurpleResult: Codable {
+    let userID: Int
+    let name, nickname, profile, status: String
+
+    enum CodingKeys: String, CodingKey {
+        case userID = "user_id"
+        case name, nickname, profile, status
+    }
+}
+
+// MARK: - FluffyResult
+struct FluffyResult: Codable {
+    let type: String
+    let data: [Int]
+}
 
 
 

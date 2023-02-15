@@ -19,6 +19,7 @@ class LoginVC: UIViewController {
 
     let loginView = LoginView()
     
+    
     let naverLoginInstance = NaverThirdPartyLoginConnection.getSharedInstance()
     
     let kakaoLoginButton = UIButton().then {
@@ -176,7 +177,7 @@ class LoginVC: UIViewController {
                     print("user_id :", userId)
                     let secondVC = afterLoginVC()
                     self.navigationController?.pushViewController(secondVC, animated: true)
-                    
+                    secondVC.user = userId
                 case .failure:
                     print("failure")
                 }

@@ -177,11 +177,11 @@
 				0214CCC829926D6400EC5CAE /* infoTableViewCell.swift */,
 				0214CCCB29926D6400EC5CAE /* LoginDataView.swift */,
 				0214CCCF29926D6400EC5CAE /* LoginVC.swift */,
+				0214CCC929926D6400EC5CAE /* PopupVC.swift */,
 				0214CCCE29926D6400EC5CAE /* LoginView.swift */,
 				0214CCD029926D6400EC5CAE /* MydataVC.swift */,
 				0214CCCC29926D6400EC5CAE /* MydataView.swift */,
 				0214CCD129926D6400EC5CAE /* MyInfoMain.storyboard */,
-				0214CCC929926D6400EC5CAE /* PopupVC.swift */,
 				0214CCCD29926D6400EC5CAE /* PopupView.swift */,
 				0214CCD429926D6400EC5CAE /* secondInfoTableViewCell.swift */,
 			);
