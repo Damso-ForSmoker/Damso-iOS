@@ -22,15 +22,18 @@ class BottomSheetViewController: UIViewController {
     override func viewDidLoad(){
         updateTitle(string: titleText)
         updateGrade(string: gradeText)
-        titleLabel.adjustsFontSizeToFitWidth = true
+        //titleLabel.adjustsFontSizeToFitWidth = true
+        
         
     }
     
     //MARK: - 
     @IBAction func nextButton(_ sender: Any) {
         guard let nextVC = self.storyboard?.instantiateViewController(identifier: "BottomSheetViewController2") as? BottomSheetViewController2 else {return}
+        //nextVC.modalPresentationStyle = .fullScreen
+        self.present(nextVC, animated: true, completion: nil)
         
-        self.navigationController?.pushViewController(nextVC, animated: true)
+        //self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
     
@@ -39,6 +42,7 @@ class BottomSheetViewController: UIViewController {
     func updateGrade(string:String?) {
         guard let string = string else {return}
         self.gradeLabel?.text = string
+        
     }
     
     func updateTitle(string: String?){
