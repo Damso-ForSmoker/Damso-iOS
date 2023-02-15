@@ -46,4 +46,30 @@ struct Simple: Codable {
     }
 }
 
+// MARK: - Detail
+struct DetailData: Codable {
+    let isSuccess: Bool
+    let code: Int
+    let message: Bool
+    let result: [Detail]
+}
+
+struct Detail: Codable {
+    let title:String
+    let img: String?
+    let report: Bool
+    let rating: Double
+    let location: String
+    let type: Int
+    let installAgency: String
+    let reviews: [Reviews]?
+    
+}
+
+struct Reviews: Codable {
+    let userid: Int
+    let rating: String
+    let content: String
+    let profileImg: String?
+}
 
