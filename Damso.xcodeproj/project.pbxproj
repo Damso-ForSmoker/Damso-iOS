@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		020D469B299B75FD00DF1F9D /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D469A299B75FD00DF1F9D /* Keys.swift */; };
 		0214CCC429926D3800EC5CAE /* NotoSansDisplay-ExtraCondensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0214CCC029926D3700EC5CAE /* NotoSansDisplay-ExtraCondensed.ttf */; };
 		0214CCC529926D3800EC5CAE /* AppleSDGothicNeo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0214CCC129926D3700EC5CAE /* AppleSDGothicNeo-Regular.ttf */; };
 		0214CCC629926D3800EC5CAE /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0214CCC229926D3800EC5CAE /* RobotoCondensed-Regular.ttf */; };
@@ -80,7 +79,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		020D469A299B75FD00DF1F9D /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		0214CCC029926D3700EC5CAE /* NotoSansDisplay-ExtraCondensed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansDisplay-ExtraCondensed.ttf"; sourceTree = "<group>"; };
 		0214CCC129926D3700EC5CAE /* AppleSDGothicNeo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AppleSDGothicNeo-Regular.ttf"; sourceTree = "<group>"; };
 		0214CCC229926D3800EC5CAE /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
@@ -219,7 +217,6 @@
 		DE013A03299A70AE00EC9A5A /* ReportInput */ = {
 			isa = PBXGroup;
 			children = (
-				020D469A299B75FD00DF1F9D /* Keys.swift */,
 				DE0139EE2995604A00EC9A5A /* ReportInputModel.swift */,
 				DE0139F02995671C00EC9A5A /* ReportInputManager.swift */,
 				DE0139F229957B8D00EC9A5A /* ReportInputResult.swift */,
@@ -575,7 +572,6 @@
 				DEA95B1D297751D400AE8D0C /* OnboardingMessage.swift in Sources */,
 				DE0139F329957B8D00EC9A5A /* ReportInputResult.swift in Sources */,
 				DE123C51296D746300B7149B /* BaseView.swift in Sources */,
-				020D469B299B75FD00DF1F9D /* Keys.swift in Sources */,
 				0214CCDB29926D6400EC5CAE /* LoginView.swift in Sources */,
 				DE0139EF2995604A00EC9A5A /* ReportInputModel.swift in Sources */,
 				0214CCD829926D6400EC5CAE /* LoginDataView.swift in Sources */,
