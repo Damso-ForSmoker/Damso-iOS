@@ -15,15 +15,17 @@ class BottomSheetViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var gradeLabel: UILabel!
     @IBOutlet weak var FacilityImg: UIImageView!
+    @IBOutlet weak var isUserReport: UILabel!
     
     var titleText:String?
     var gradeText:String?
+    lazy var userReportArea: String = ""
     
     override func viewDidLoad(){
         updateTitle(string: titleText)
         updateGrade(string: gradeText)
-        //titleLabel.adjustsFontSizeToFitWidth = true
-        
+        setUserReportLabel(string: userReportArea)
+        titleLabel.adjustsFontSizeToFitWidth = true
         
     }
     
@@ -48,6 +50,13 @@ class BottomSheetViewController: UIViewController {
     func updateTitle(string: String?){
         guard let string = string else {return}
         self.titleLabel?.text = string
+    }
+    func setUserReportLabel(string: String){
+        if string == "N"{
+            isUserReport.isHidden = true
+        } else{
+            isUserReport.isHidden = false
+        }
     }
     
     
