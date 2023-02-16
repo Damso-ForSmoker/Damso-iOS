@@ -52,7 +52,7 @@ class LoginDataView: UIView {
     }
     
     let profileImage = UIImageView().then {
-        $0.image = UIImage(named: "profile")
+        $0.image = UIImage(named: "newprofile")
         $0.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
     }
     

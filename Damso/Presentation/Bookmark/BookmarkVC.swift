@@ -25,7 +25,8 @@ class BookmarkVC: BaseVC {
     }
     
    override func setNavigationBar() {
-        
+       self.navigationItem.title = "즐겨찾기" //네비게이션바 타이틀 설정
+       self.navigationController?.navigationBar.backgroundColor = .white //네비게이션 바 배경 색 설정
     }
 
     
@@ -36,7 +37,7 @@ class BookmarkVC: BaseVC {
 
 extension BookmarkVC: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
