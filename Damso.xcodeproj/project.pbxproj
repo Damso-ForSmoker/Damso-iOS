@@ -40,7 +40,6 @@
 		DE0AF476299D8CAC00132E54 /* BookmarkIsEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0AF475299D8CAC00132E54 /* BookmarkIsEmptyView.swift */; };
 		DE0AF478299D8D9A00132E54 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0AF477299D8D9A00132E54 /* Keys.swift */; };
 		DE123C2A296C39AC00B7149B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE123C29296C39AC00B7149B /* AppDelegate.swift */; };
-		DE123C2C296C39AC00B7149B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE123C2B296C39AC00B7149B /* SceneDelegate.swift */; };
 		DE123C33296C39AE00B7149B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE123C32296C39AE00B7149B /* Assets.xcassets */; };
 		DE123C36296C39AE00B7149B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE123C34296C39AE00B7149B /* LaunchScreen.storyboard */; };
 		DE123C3F296C406500B7149B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DE123C3E296C406500B7149B /* SnapKit */; };
@@ -83,6 +82,9 @@
 		EC46E74E299565DD00F767C4 /* MarkersHTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E74D299565DD00F767C4 /* MarkersHTTPMethod.swift */; };
 		EC46E7522995C23F00F767C4 /* DetailSimpleHTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E7512995C23F00F767C4 /* DetailSimpleHTTPMethod.swift */; };
 		EC49C544299C705C00FD19AC /* BottomSheetViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC49C543299C705C00FD19AC /* BottomSheetViewController2.swift */; };
+		EC49C54A299D28F100FD19AC /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC49C549299D28F100FD19AC /* Keys.swift */; };
+		EC49C54C299D5AFD00FD19AC /* DetailHTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC49C54B299D5AFD00FD19AC /* DetailHTTPMethod.swift */; };
+		EC49C54D299D761C00FD19AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE123C2B296C39AC00B7149B /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -157,11 +159,13 @@
 		EC46E73729892CCE00F767C4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		EC46E73829892CCE00F767C4 /* ReviewUploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewUploadViewController.swift; sourceTree = "<group>"; };
 		EC46E73A29892CCE00F767C4 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
-		EC46E74B2995600100F767C4 /* Markers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Markers.swift; sourceTree = "<group>"; };
+		EC46E74B2995600100F767C4 /* Markers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Markers.swift; sourceTree = "<group>"; usesTabs = 0; };
 		EC46E74D299565DD00F767C4 /* MarkersHTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkersHTTPMethod.swift; sourceTree = "<group>"; };
 		EC46E7512995C23F00F767C4 /* DetailSimpleHTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSimpleHTTPMethod.swift; sourceTree = "<group>"; };
 		EC46E753299A5CA900F767C4 /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keys.swift; path = ../../../../Downloads/Keys.swift; sourceTree = "<group>"; };
 		EC49C543299C705C00FD19AC /* BottomSheetViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController2.swift; sourceTree = "<group>"; };
+		EC49C549299D28F100FD19AC /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keys.swift; path = ../../../../../Downloads/Keys.swift; sourceTree = "<group>"; };
+		EC49C54B299D5AFD00FD19AC /* DetailHTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHTTPMethod.swift; sourceTree = "<group>"; };
 		FC41CC4BF6B184B7B5B646D5 /* Pods_Damso.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Damso.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -232,6 +236,7 @@
 		DE013A03299A70AE00EC9A5A /* ReportInput */ = {
 			isa = PBXGroup;
 			children = (
+				EC49C549299D28F100FD19AC /* Keys.swift */,
 				DE0139EE2995604A00EC9A5A /* ReportInputModel.swift */,
 				DE0139F02995671C00EC9A5A /* ReportInputManager.swift */,
 				DE0139F229957B8D00EC9A5A /* ReportInputResult.swift */,
@@ -377,6 +382,7 @@
 				EC46E74B2995600100F767C4 /* Markers.swift */,
 				EC46E74D299565DD00F767C4 /* MarkersHTTPMethod.swift */,
 				EC46E7512995C23F00F767C4 /* DetailSimpleHTTPMethod.swift */,
+				EC49C54B299D5AFD00FD19AC /* DetailHTTPMethod.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -602,13 +608,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC49C54D299D761C00FD19AC /* SceneDelegate.swift in Sources */,
 				EC46E73C29892CCE00F767C4 /* ReportPushViewController.swift in Sources */,
 				EC46E73B29892CCE00F767C4 /* ReportViewController.swift in Sources */,
 				DE123C2A296C39AC00B7149B /* AppDelegate.swift in Sources */,
 				0214CCD529926D6400EC5CAE /* infoTableViewCell.swift in Sources */,
+				EC49C54C299D5AFD00FD19AC /* DetailHTTPMethod.swift in Sources */,
 				DEA95B362981DF2E00AE8D0C /* ReportInputVC.swift in Sources */,
 				EC46E74E299565DD00F767C4 /* MarkersHTTPMethod.swift in Sources */,
 				DEA95B3A2983F20400AE8D0C /* ReportInputView.swift in Sources */,
+				EC49C54A299D28F100FD19AC /* Keys.swift in Sources */,
 				DEA95B34297EDA5100AE8D0C /* TabBarController.swift in Sources */,
 				DE0139FC299817AF00EC9A5A /* SearchTypeView.swift in Sources */,
 				DEA95B1B29774EF900AE8D0C /* OnboardingVC.swift in Sources */,
@@ -631,7 +640,6 @@
 				0214CCDF29926D6400EC5CAE /* afterLoginVC.swift in Sources */,
 				DE0AF478299D8D9A00132E54 /* Keys.swift in Sources */,
 				DEA95B3F2988412900AE8D0C /* BookmarkVC.swift in Sources */,
-				DE123C2C296C39AC00B7149B /* SceneDelegate.swift in Sources */,
 				0214CCDD29926D6400EC5CAE /* MydataVC.swift in Sources */,
 				DEA95B43298854E900AE8D0C /* BookmarkIsEmptyCell.swift in Sources */,
 				DE0139F82997909700EC9A5A /* SearchVC.swift in Sources */,

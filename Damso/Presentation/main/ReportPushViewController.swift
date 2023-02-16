@@ -13,7 +13,7 @@ import UIKit
 class ReportPushViewController: UIViewController {
 
     @IBAction func reportComplete(_ sender: UIButton) {
-        self.presentingViewController?.dismiss(animated: true, completion: nil)
+        self.dismiss(animated: true)
     }
     
     

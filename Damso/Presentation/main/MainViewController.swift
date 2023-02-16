@@ -61,13 +61,23 @@ class MainViewController: UIViewController, UISheetPresentationControllerDelegat
                 self.markerArr[self.markerArr.count-1].touchHandler = { (overlay) -> Bool in
                     DetailSimpleHTTPMethod.detailSimpleHTTPMethod.callDetail(facilityID: data.facilityId, completionHandler: {simpleArr in
                         print(simpleArr)
-                        
+                        print(data)
                         let cameraUpdate = NMFCameraUpdate(scrollTo: NMGLatLng(lat: Double(data.la)!, lng: Double(data.lo)!)) // 선택 마커 위치로 시점 이동
                         cameraUpdate.animation = .easeIn
                         self.naverMapView.mapView.moveCamera(cameraUpdate)
                         
                         let storyboard = UIStoryboard(name: "Main", bundle: nil)
                         guard let bottomSheetVC = storyboard.instantiateViewController(identifier: "BottomSheetViewController") as? BottomSheetViewController else {return}
+                        bottomSheetVC.fID = data.facilityId
+                        bottomSheetVC.lat = data.la
+                        bottomSheetVC.lng = data.lo
+
+                        
+                        print(data.facilityId)
+                        print(data.la)
+                        print(data.lo)
+                        
+                        
                         bottomSheetVC.titleText = simpleArr[0].title
                         bottomSheetVC.gradeText = simpleArr[0].rating
                         bottomSheetVC.userReportArea = simpleArr[0].report
