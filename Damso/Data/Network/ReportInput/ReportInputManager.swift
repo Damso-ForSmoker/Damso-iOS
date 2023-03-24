@@ -30,10 +30,10 @@ class ReportInputManager{
             MultipartFormData.append(Data(model.la.description.utf8), withName: "la")
             MultipartFormData.append(Data(model.lo.description.utf8), withName: "lo")
             
-            if let img = model.img {
+            if let img = model.uploadfile {
                 print(img)
                     MultipartFormData.append(Data(img),
-                                             withName: "img",
+                                             withName: "img.name",
                                              fileName: "\(img).png",
                                              mimeType:"image/png")
             }

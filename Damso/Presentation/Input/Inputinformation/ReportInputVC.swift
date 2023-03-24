@@ -88,7 +88,7 @@ class ReportInputVC: BaseVC {
         } else{ //필요한 데이터가 모두 입력되었을때
             let typeNum = checkType() //사용자가 체크한 타입을 확인
             
-            print(newImage?.pngData()!)
+//            print(newImage?.pngData()!)
             
             let data = ReportInputModel(location: reportinputView.locationLabel.text!, title: reportinputView.nameTextField.text!, type: typeNum, installAgency: reportinputView.supervisorTextField.text!,img: newImage?.pngData() ,la: self.la, lo: self.lo) //서버로 넘길 데이터를 생성
             
