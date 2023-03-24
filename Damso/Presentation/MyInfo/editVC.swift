@@ -96,34 +96,35 @@ class editVC: UIViewController {
     }
     
     @objc func edit(_ sender: UIButton){
-        let secondVC = afterLoginVC()
-        self.navigationController?.pushViewController(secondVC, animated: true)
-        secondVC.changenickname = nickname
-        secondVC.user = userid
+//        let secondVC = afterLoginVC()
+//        self.navigationController?.pushViewController(secondVC, animated: true)
+//        secondVC.changenickname = nickname
+//        secondVC.user = userid
 //        print(nickname!)
 //
-//        let userId = userid!
-//        let headers: HTTPHeaders = [
+        let userId = userid!
+        let headers: HTTPHeaders = [
 //           "nickname":"\(nickname!)", "name":"\(name!)",
-//                "Content-Type": "application/json",
-//                "Accept": "application/json"
-//            ]
-//
-//   //    let params = ["nickname":"\(originnickname!)", "name":"\(name!)"] as Dictionary
-//        let url = "http://3.37.122.59:3000/main/profile/\(userId)/nickname"
-//
-//        AF.request(url, method: .post, parameters: nil, encoding: JSONEncoding(options: []), headers: headers)
-//            .responseJSON { response in
-//
-//                switch response.result {
-//                case .success(let data):
-//                    let secondVC = afterLoginVC()
-//                    self.navigationController?.pushViewController(secondVC, animated: true)
-//                    secondVC.user = userId
-//                case .failure:
-//                    print("failure")
-//                }
-//            }
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            ]
+
+       let params = ["nickname":"\(originnickname!)", "name":"\(name!)"] as Dictionary
+        let url = "http://3.37.122.59:3000/main/profile/\(userId)/nickname"
+
+        AF.request(url, method: .post, parameters: params
+                , encoding: JSONEncoding(options: []), headers: headers)
+            .responseJSON { response in
+
+                switch response.result {
+                case .success(let data):
+                    let secondVC = afterLoginVC()
+                    self.navigationController?.pushViewController(secondVC, animated: true)
+                    secondVC.user = userId
+                case .failure:
+                    print("failure")
+                }
+            }
     }
 
     
