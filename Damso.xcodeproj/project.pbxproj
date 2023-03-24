@@ -71,6 +71,7 @@
 		DEA95B3F2988412900AE8D0C /* BookmarkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B3E2988412900AE8D0C /* BookmarkVC.swift */; };
 		DEA95B4129884B9600AE8D0C /* SmokingAreaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B4029884B9600AE8D0C /* SmokingAreaTableViewCell.swift */; };
 		DEA95B43298854E900AE8D0C /* BookmarkIsEmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B42298854E900AE8D0C /* BookmarkIsEmptyCell.swift */; };
+		DED92C0029A2564900B5CAB2 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED92BFF29A2564900B5CAB2 /* Keys.swift */; };
 		EC46E73B29892CCE00F767C4 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E73129892CCD00F767C4 /* ReportViewController.swift */; };
 		EC46E73C29892CCE00F767C4 /* ReportPushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E73229892CCE00F767C4 /* ReportPushViewController.swift */; };
 		EC46E73D29892CCE00F767C4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E73329892CCE00F767C4 /* SearchViewController.swift */; };
@@ -151,6 +152,7 @@
 		DEA95B3E2988412900AE8D0C /* BookmarkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkVC.swift; sourceTree = "<group>"; };
 		DEA95B4029884B9600AE8D0C /* SmokingAreaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokingAreaTableViewCell.swift; sourceTree = "<group>"; };
 		DEA95B42298854E900AE8D0C /* BookmarkIsEmptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkIsEmptyCell.swift; sourceTree = "<group>"; };
+		DED92BFF29A2564900B5CAB2 /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keys.swift; path = "../../../../../../../PersonalFolder/Study/UMC/3기/앱런칭 프로젝트/iOS/Keys.swift"; sourceTree = "<group>"; };
 		EC46E73129892CCD00F767C4 /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		EC46E73229892CCE00F767C4 /* ReportPushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportPushViewController.swift; sourceTree = "<group>"; };
 		EC46E73329892CCE00F767C4 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -372,6 +374,7 @@
 		DE5F0BA029903E9600660E52 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				DED92BFF29A2564900B5CAB2 /* Keys.swift */,
 				DE0AF470299D754A00132E54 /* Search */,
 				DE013A03299A70AE00EC9A5A /* ReportInput */,
 				DE5F0BA62990513F00660E52 /* GeocodingManager.swift */,
@@ -633,6 +636,7 @@
 				0214CCD929926D6400EC5CAE /* MydataView.swift in Sources */,
 				DE013A1C299C25E000EC9A5A /* DetailAreaView.swift in Sources */,
 				DE0AF472299D755E00132E54 /* SearchResultModel.swift in Sources */,
+				DED92C0029A2564900B5CAB2 /* Keys.swift in Sources */,
 				0214CCDF29926D6400EC5CAE /* afterLoginVC.swift in Sources */,
 				DEA95B3F2988412900AE8D0C /* BookmarkVC.swift in Sources */,
 				0214CCDD29926D6400EC5CAE /* MydataVC.swift in Sources */,
@@ -802,7 +806,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SN4DKJ8AHY;
+				DEVELOPMENT_TEAM = AYG8MBJF93;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Damso/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "위치 기반 서비스 제공을 위해 GPS 정보가 필요합니다.";
@@ -832,7 +836,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SN4DKJ8AHY;
+				DEVELOPMENT_TEAM = AYG8MBJF93;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Damso/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "위치 기반 서비스 제공을 위해 GPS 정보가 필요합니다.";
