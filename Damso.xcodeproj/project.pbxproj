@@ -24,7 +24,6 @@
 		0214CCDF29926D6400EC5CAE /* afterLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0214CCD229926D6400EC5CAE /* afterLoginVC.swift */; };
 		0214CCE029926D6400EC5CAE /* editView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0214CCD329926D6400EC5CAE /* editView.swift */; };
 		0214CCE129926D6400EC5CAE /* secondInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0214CCD429926D6400EC5CAE /* secondInfoTableViewCell.swift */; };
-		02DCC347299DE40E00D1DD1A /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DCC346299DE40E00D1DD1A /* Keys.swift */; };
 		7C7EA1298971C6508DBBC2CE /* Pods_Damso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC41CC4BF6B184B7B5B646D5 /* Pods_Damso.framework */; };
 		DE0139EF2995604A00EC9A5A /* ReportInputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0139EE2995604A00EC9A5A /* ReportInputModel.swift */; };
 		DE0139F12995671C00EC9A5A /* ReportInputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0139F02995671C00EC9A5A /* ReportInputManager.swift */; };
@@ -105,7 +104,6 @@
 		0214CCD229926D6400EC5CAE /* afterLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = afterLoginVC.swift; sourceTree = "<group>"; };
 		0214CCD329926D6400EC5CAE /* editView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = editView.swift; sourceTree = "<group>"; };
 		0214CCD429926D6400EC5CAE /* secondInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondInfoTableViewCell.swift; sourceTree = "<group>"; };
-		02DCC346299DE40E00D1DD1A /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		5255AD62BEE5A9637A7D0115 /* Pods-Damso.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Damso.release.xcconfig"; path = "Target Support Files/Pods-Damso/Pods-Damso.release.xcconfig"; sourceTree = "<group>"; };
 		DB7F394FDC0E35B9274B56E2 /* Pods-Damso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Damso.debug.xcconfig"; path = "Target Support Files/Pods-Damso/Pods-Damso.debug.xcconfig"; sourceTree = "<group>"; };
 		DE0139EE2995604A00EC9A5A /* ReportInputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportInputModel.swift; sourceTree = "<group>"; };
@@ -236,7 +234,6 @@
 		DE013A03299A70AE00EC9A5A /* ReportInput */ = {
 			isa = PBXGroup;
 			children = (
-				02DCC346299DE40E00D1DD1A /* Keys.swift */,
 				DE0139EE2995604A00EC9A5A /* ReportInputModel.swift */,
 				DE0139F02995671C00EC9A5A /* ReportInputManager.swift */,
 				DE0139F229957B8D00EC9A5A /* ReportInputResult.swift */,
@@ -266,6 +263,7 @@
 			children = (
 				DE0AF46E299D750E00132E54 /* SearchModel.swift */,
 				DE0AF471299D755E00132E54 /* SearchResultModel.swift */,
+				EC46E74B2995600100F767C4 /* Markers.swift */,
 				DE0AF473299D75C200132E54 /* SearchManager.swift */,
 			);
 			path = Search;
@@ -379,7 +377,6 @@
 				DE013A03299A70AE00EC9A5A /* ReportInput */,
 				DE5F0BA62990513F00660E52 /* GeocodingManager.swift */,
 				DE5F0BA82990579D00660E52 /* ReverseGCModel.swift */,
-				EC46E74B2995600100F767C4 /* Markers.swift */,
 				EC46E74D299565DD00F767C4 /* MarkersHTTPMethod.swift */,
 				EC46E7512995C23F00F767C4 /* DetailSimpleHTTPMethod.swift */,
 				EC49C54B299D5AFD00FD19AC /* DetailHTTPMethod.swift */,
@@ -629,7 +626,6 @@
 				DEA95B1D297751D400AE8D0C /* OnboardingMessage.swift in Sources */,
 				DE0139F329957B8D00EC9A5A /* ReportInputResult.swift in Sources */,
 				DE123C51296D746300B7149B /* BaseView.swift in Sources */,
-				02DCC347299DE40E00D1DD1A /* Keys.swift in Sources */,
 				0214CCDB29926D6400EC5CAE /* LoginView.swift in Sources */,
 				DE0139EF2995604A00EC9A5A /* ReportInputModel.swift in Sources */,
 				0214CCD829926D6400EC5CAE /* LoginDataView.swift in Sources */,
@@ -734,7 +730,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -788,7 +784,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -815,6 +811,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -822,9 +819,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ILWAT-com.github.Damso";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -845,6 +846,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -852,9 +854,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ILWAT-com.github.Damso";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
