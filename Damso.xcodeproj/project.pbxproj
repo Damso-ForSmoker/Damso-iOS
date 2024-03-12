@@ -39,7 +39,6 @@
 		DE0AF474299D75C200132E54 /* SearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0AF473299D75C200132E54 /* SearchManager.swift */; };
 		DE0AF476299D8CAC00132E54 /* BookmarkIsEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0AF475299D8CAC00132E54 /* BookmarkIsEmptyView.swift */; };
 		DE123C2A296C39AC00B7149B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE123C29296C39AC00B7149B /* AppDelegate.swift */; };
-		DE123C33296C39AE00B7149B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE123C32296C39AE00B7149B /* Assets.xcassets */; };
 		DE123C36296C39AE00B7149B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE123C34296C39AE00B7149B /* LaunchScreen.storyboard */; };
 		DE123C3F296C406500B7149B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DE123C3E296C406500B7149B /* SnapKit */; };
 		DE123C42296C40B400B7149B /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = DE123C41296C40B400B7149B /* Then */; };
@@ -70,6 +69,7 @@
 		DEA95B3F2988412900AE8D0C /* BookmarkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B3E2988412900AE8D0C /* BookmarkVC.swift */; };
 		DEA95B4129884B9600AE8D0C /* SmokingAreaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B4029884B9600AE8D0C /* SmokingAreaTableViewCell.swift */; };
 		DEA95B43298854E900AE8D0C /* BookmarkIsEmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95B42298854E900AE8D0C /* BookmarkIsEmptyCell.swift */; };
+		DEC4B7142BA0655300B0F195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEC4B7132BA0655300B0F195 /* Assets.xcassets */; };
 		DED92C0029A2564900B5CAB2 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED92BFF29A2564900B5CAB2 /* Keys.swift */; };
 		EC46E73B29892CCE00F767C4 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E73129892CCD00F767C4 /* ReportViewController.swift */; };
 		EC46E73C29892CCE00F767C4 /* ReportPushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46E73229892CCE00F767C4 /* ReportPushViewController.swift */; };
@@ -122,7 +122,6 @@
 		DE123C26296C39AC00B7149B /* Damso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Damso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE123C29296C39AC00B7149B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE123C2B296C39AC00B7149B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DE123C32296C39AE00B7149B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE123C35296C39AE00B7149B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE123C37296C39AE00B7149B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE123C4E296D743C00B7149B /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
@@ -150,6 +149,7 @@
 		DEA95B3E2988412900AE8D0C /* BookmarkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkVC.swift; sourceTree = "<group>"; };
 		DEA95B4029884B9600AE8D0C /* SmokingAreaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokingAreaTableViewCell.swift; sourceTree = "<group>"; };
 		DEA95B42298854E900AE8D0C /* BookmarkIsEmptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkIsEmptyCell.swift; sourceTree = "<group>"; };
+		DEC4B7132BA0655300B0F195 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DED92BFF29A2564900B5CAB2 /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Keys.swift; path = "../../../../../../../PersonalFolder/Study/UMC/3기/앱런칭 프로젝트/iOS/Keys.swift"; sourceTree = "<group>"; };
 		EC46E73129892CCD00F767C4 /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		EC46E73229892CCE00F767C4 /* ReportPushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportPushViewController.swift; sourceTree = "<group>"; };
@@ -336,10 +336,10 @@
 		DE123C49296D6B8C00B7149B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DEC4B7132BA0655300B0F195 /* Assets.xcassets */,
 				DEA95B2B29786C6E00AE8D0C /* UIColor+Extension.swift */,
 				DEA95B31297AF65700AE8D0C /* UIButton+Extension.swift */,
 				DEA95B1E297868DB00AE8D0C /* Fonts */,
-				DE123C32296C39AE00B7149B /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -543,13 +543,13 @@
 				DEA95B282978694700AE8D0C /* NotoSansKR-Light.otf in Resources */,
 				0214CCC429926D3800EC5CAE /* NotoSansDisplay-ExtraCondensed.ttf in Resources */,
 				DEA95B292978694700AE8D0C /* NotoSansKR-Thin.otf in Resources */,
+				DEC4B7142BA0655300B0F195 /* Assets.xcassets in Resources */,
 				DEA95B252978694700AE8D0C /* NotoSansKR-Medium.otf in Resources */,
 				0214CCC729926D3800EC5CAE /* NotoSansDisplay-Bold.ttf in Resources */,
 				DE123C36296C39AE00B7149B /* LaunchScreen.storyboard in Resources */,
 				0214CCDE29926D6400EC5CAE /* MyInfoMain.storyboard in Resources */,
 				0214CCC629926D3800EC5CAE /* RobotoCondensed-Regular.ttf in Resources */,
 				DEA95B262978694700AE8D0C /* NotoSansKR-Regular.otf in Resources */,
-				DE123C33296C39AE00B7149B /* Assets.xcassets in Resources */,
 				EC46E74129892CCE00F767C4 /* Main.storyboard in Resources */,
 				DEA95B272978694700AE8D0C /* NotoSansKR-Bold.otf in Resources */,
 				DEA95B2A2978694700AE8D0C /* NotoSansKR-Black.otf in Resources */,
